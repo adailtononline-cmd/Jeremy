@@ -1,49 +1,124 @@
 {
-  "generated_at": "2026-11-15T18:05:57.812544+00:00",
-  "candidates": 2517,
-  "accepted": 1931,
+  "generated_at": "2026-11-15T18:21:14.469328+00:00",
+  "candidates": 2498,
+  "accepted": 1808,
   "by_country": {
-    "United States": 1257,
-    "Canada": 178,
-    "Australia": 51,
+    "United States": 1163,
+    "Canada": 174,
+    "Australia": 50,
     "New Zealand": 5,
-    "Brazil": 261,
+    "Brazil": 257,
     "England": 2,
-    "United Kingdom / Unclassified": 177
+    "United Kingdom / Unclassified": 157
+  },
+  "by_category": {
+    "general": 248,
+    "religious": 165,
+    "series": 153,
+    "entertainment": 149,
+    "other": 139,
+    "movies": 138,
+    "news": 113,
+    "music": 95,
+    "sports": 76,
+    "legislative": 69,
+    "kids": 68,
+    "documentary": 50,
+    "education": 50,
+    "comedy": 44,
+    "classic": 42,
+    "animation": 36,
+    "culture": 29,
+    "lifestyle": 26,
+    "shop": 24,
+    "outdoor": 18,
+    "cooking": 17,
+    "travel": 14,
+    "business": 11,
+    "family": 10,
+    "weather": 9,
+    "auto": 8,
+    "relax": 3,
+    "science": 3,
+    "public": 1
   },
   "test_results": {
-    "ok": 1931,
-    "404": 146,
+    "excluded_closed_or_nsfw": 10,
+    "excluded_france": 9,
+    "ok": 1808,
+    "403": 255,
+    "401": 5,
+    "404": 144,
     "502": 16,
-    "network": 196,
-    "403": 151,
-    "html": 30,
+    "network": 200,
+    "html": 24,
     "unknown-media": 4,
     "500": 2,
-    "400": 11,
+    "400": 10,
     "504": 6,
-    "503": 4,
-    "408": 5,
-    "416": 7,
+    "416": 8,
+    "408": 4,
     "204": 5,
+    "503": 3,
+    "405": 1,
     "523": 1,
     "218": 1,
     "574": 1
   },
   "notes": [
     "HTTP checks do not prove playback on Sparkle TV.",
-    "UK channels without explicit England/Scotland metadata are preserved under United Kingdom / Unclassified rather than discarded.",
+    "Groups are countries only (the category stays in tvg-category). UK channels without explicit England/Scotland metadata stay under United Kingdom.",
+    "France is excluded; closed or adult channels are excluded using the iptv-org catalog.",
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "verified_working": 1731,
-    "missing_or_broken": 200
+    "verified_working": 1635,
+    "missing_or_broken": 132,
+    "repaired_from_catalog": 41
   },
   "epg": {
     "status": "matched",
-    "matching_channel_ids": 34,
-    "programme_entries": 2835,
-    "error": null,
-    "source": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"
+    "channels_with_guide": 187,
+    "channels_total": 1808,
+    "programme_entries": 15287,
+    "window_days": 4,
+    "sources": {
+      "epg_ripper_UK1.xml.gz": {
+        "channels": 30,
+        "programmes": 1991
+      },
+      "epg_ripper_US2.xml.gz": {
+        "channels": 79,
+        "programmes": 8508
+      },
+      "epg_ripper_US_LOCALS1.xml.gz": {
+        "channels": 0,
+        "programmes": 0
+      },
+      "epg_ripper_US_SPORTS1.xml.gz": {
+        "channels": 0,
+        "programmes": 0
+      },
+      "epg_ripper_CA2.xml.gz": {
+        "channels": 18,
+        "programmes": 1266
+      },
+      "epg_ripper_AU1.xml.gz": {
+        "channels": 21,
+        "programmes": 1767
+      },
+      "epg_ripper_NZ1.xml.gz": {
+        "channels": 1,
+        "programmes": 108
+      },
+      "epg_ripper_BR1.xml.gz": {
+        "channels": 1,
+        "programmes": 52
+      },
+      "epg_ripper_BR2.xml.gz": {
+        "channels": 18,
+        "programmes": 1595
+      }
+    }
   }
 }

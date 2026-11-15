@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Build a country-grouped playlist from public IPTV-org feeds."""
 import concurrent.futures
+import csv
+import io
 import json
 import gzip
+import os
 import xml.etree.ElementTree as ET
 import re
 import urllib.error
@@ -13,6 +16,60 @@ from datetime import datetime, timezone
 COUNTRIES = {"United States": "us", "Canada": "ca", "Australia": "au", "New Zealand": "nz", "Brazil": "br", "Scotland": "uk", "England": "uk"}
 BASE = "https://iptv-org.github.io/iptv/countries/{}.m3u"
 UA = "Jeremy-IPTV-Checker/1.0"
+ISO = {"United States": "US", "Canada": "CA", "Australia": "AU", "New Zealand": "NZ", "Brazil": "BR",
+       "Scotland": "GB", "England": "GB", "United Kingdom / Unclassified": "GB"}
+DISPLAY = {"United Kingdom / Unclassified": "United Kingdom"}
+EPG_SOURCES = [
+    "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_US_SPORTS1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_CA2.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_AU1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_NZ1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_BR2.xml.gz",
+]
+EPG_DAYS = 4
+
+def fetch_json(url):
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=60) as response:
+            return json.load(response)
+    except Exception:
+        return []
+
+def title_of(ext):
+    """Título do canal: o texto depois da primeira vírgula FORA de aspas (atributos como http-user-agent têm vírgula)."""
+    inside = False
+    for i, ch in enumerate(ext):
+        if ch == '"':
+            inside = not inside
+        elif ch == "," and not inside:
+            return ext[i + 1:].strip()
+    return ext.rsplit(",", 1)[-1].strip()
+
+def attr(ext, name):
+    m = re.search(r'(?<![\w-])' + re.escape(name) + r'="([^"]*)"', ext)
+    return m.group(1).strip() if m else ""
+
+def set_attr(ext, name, value):
+    value = value.replace('"', "")
+    m = re.search(r'(?<![\w-])' + re.escape(name) + r'="[^"]*"', ext)
+    if m:
+        return ext[:m.start()] + name + '="' + value + '"' + ext[m.end():]
+    return add_attribute(ext, name, value)
+
+def clean_category(ext, meta):
+    raw = attr(ext, "tvg-category")
+    if not raw or raw.lower() == "undefined":
+        cats = (meta or {}).get("categories") or []
+        raw = cats[0] if cats else ""
+    first = raw.split(";")[0].strip()
+    if not first or first.lower() in ("undefined", "general"):
+        return "General" if first.lower() == "general" else "Other"
+    return first[:1].upper() + first[1:]
 def get(url, timeout=12, method="GET"):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Range": "bytes=0-4095"}, method=method)
     with urllib.request.urlopen(req, timeout=timeout) as response:
@@ -34,7 +91,7 @@ def parse(text):
     return items
 
 def region(ext):
-    title = ext.split(",", 1)[-1].lower()
+    title = title_of(ext).lower()
     group = re.search(r'group-title="([^"]*)"', ext)
     fields = (title + " " + (group.group(1).lower() if group else ""))
     if re.search(r'\b(scotland|scottish|glasgow|edinburgh|stv)\b', fields):
@@ -78,7 +135,78 @@ def add_attribute(ext, name, value):
     pos = prefix.end()
     return ext[:pos] + ' ' + name + '="' + value.replace('"', "") + '"' + ext[pos:]
 
+def norm(s):
+    return re.sub(r"[^a-z0-9]", "", re.sub(r"\([^)]*\)|\[[^]]*\]", "", (s or "").lower()))
+
+def build_epg(results, now):
+    """Une os guias de várias fontes e guarda só canais da playlist e os próximos EPG_DAYS dias."""
+    index = {}
+    for ext, _, _ in results:
+        pid = attr(ext, "tvg-id")
+        if not pid:
+            continue
+        for key in {pid, pid.split("@")[0], norm(title_of(ext)), norm(pid.split("@")[0].split(".")[0])}:
+            if key and (key == pid or key == pid.split("@")[0] or len(key) >= 4):
+                index.setdefault(key, set()).add(pid)
+    matched = set()
+    out_channels, out_programmes = [], []
+    per_source = {}
+    lo, hi = now - 24 * 3600, now + EPG_DAYS * 24 * 3600
+    for url in EPG_SOURCES:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=90) as response:
+                data = response.read(80_000_000)
+            stream = io.BytesIO(gzip.decompress(data) if data[:2] == b"\x1f\x8b" else data)
+            mapping = {}
+            count = 0
+            for event, el in ET.iterparse(stream, events=("end",)):
+                if el.tag == "channel":
+                    gid = el.get("id") or ""
+                    names = [norm(n.text) for n in el.findall("display-name")]
+                    pids = set(index.get(gid, set())) | set(index.get(gid.split("@")[0], set()))
+                    if not pids:
+                        for n in names:
+                            options = index.get(n, set()) if len(n) >= 4 else set()
+                            if options:
+                                pids |= options
+                    pids -= matched
+                    if pids:
+                        mapping[gid] = sorted(pids)
+                        matched |= pids
+                        for pid in sorted(pids):
+                            node = ET.fromstring(ET.tostring(el))
+                            node.set("id", pid)
+                            out_channels.append(node)
+                    el.clear()
+                elif el.tag == "programme":
+                    gid = el.get("channel") or ""
+                    if gid in mapping:
+                        try:
+                            start = datetime.strptime((el.get("start") or "")[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).timestamp()
+                            stop = datetime.strptime((el.get("stop") or el.get("start") or "")[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).timestamp()
+                        except ValueError:
+                            start = stop = now
+                        if start <= hi and stop >= lo:
+                            for pid in mapping[gid]:
+                                node = ET.fromstring(ET.tostring(el))
+                                node.set("channel", pid)
+                                out_programmes.append(node)
+                                count += 1
+                    el.clear()
+            per_source[url.rsplit("/", 1)[-1]] = {"channels": len(mapping), "programmes": count}
+        except Exception as exc:
+            per_source[url.rsplit("/", 1)[-1]] = {"error": str(exc)[:120]}
+    return matched, out_channels, out_programmes, per_source
+
 def main():
+    now = datetime.now(timezone.utc).timestamp()
+    channels_meta = {c.get("id"): c for c in fetch_json("https://iptv-org.github.io/api/channels.json") if c.get("id")}
+    feeds_lang = {}
+    for f in fetch_json("https://iptv-org.github.io/api/feeds.json"):
+        feeds_lang[(f.get("channel"), f.get("id"))] = f.get("languages") or []
+    lang_names = {l.get("code"): l.get("name") for l in fetch_json("https://iptv-org.github.io/api/languages.json")}
+
     candidates = []
     errors = Counter()
     seen = set()
@@ -90,172 +218,138 @@ def main():
             with urllib.request.urlopen(req, timeout=30) as response:
                 source = response.read().decode("utf-8-sig")
             for ext, url in parse(source):
-                if code == "uk":
-                    classified = region(ext)
-                    country = classified
+                assigned = region(ext) if code == "uk" else country
                 if url in seen:
                     continue
                 seen.add(url)
-                candidates.append((ext, url, country))
+                pid = attr(ext, "tvg-id")
+                meta = channels_meta.get(pid.split("@")[0])
+                if (meta and meta.get("country") == "FR") or pid.split("@")[0].lower().endswith(".fr"):
+                    errors["excluded_france"] += 1
+                    continue
+                if meta and (meta.get("is_nsfw") or meta.get("closed")):
+                    errors["excluded_closed_or_nsfw"] += 1
+                    continue
+                candidates.append((ext, url, assigned))
         except Exception:
             errors["source_" + code] += 1
     results = []
+    rejected = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=24) as pool:
-        for valid, reason in pool.map(check, candidates):
+        for item, (valid, reason) in zip(candidates, pool.map(lambda c: check(c), candidates)):
             errors[reason] += 1
             if valid:
                 results.append(valid)
+            else:
+                rejected.append((reason, item[2], title_of(item[0]), item[1]))
     order = list(COUNTRIES) + ["United Kingdom / Unclassified"]
-    results.sort(key=lambda x: (order.index(x[2]), x[0].split(",", 1)[-1].lower()))
-    epg_url = "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"
-    epg_status = "unavailable"
-    epg_matches = 0
-    epg_programmes = 0
-    epg_error = None
-    try:
-        req = urllib.request.Request(epg_url, headers={"User-Agent": UA})
-        with urllib.request.urlopen(req, timeout=25) as response:
-            epg_data = response.read(30_000_000)
-        root = ET.fromstring(gzip.decompress(epg_data) if epg_data[:2] == b"\x1f\x8b" else epg_data)
-        if root.tag != "tv":
-            raise ValueError("Not XMLTV")
-        def norm(s):
-            return re.sub(r"[^a-z0-9]", "", re.sub(r"\([^)]*\)|\[[^]]*\]", "", (s or "").lower()))
-        by_name = {}
-        for ch in root.findall("channel"):
-            for name in ch.findall("display-name"):
-                key = norm(name.text)
-                if key and len(key) >= 4:
-                    by_name.setdefault(key, set()).add(ch.get("id"))
-        guide_ids = {ch.get("id") for ch in root.findall("channel")}
-        playlist_ids = set()
-        alias = {}
-        for ext, _, _ in results:
-            m = re.search(r'tvg-id="([^"]+)"', ext)
-            if not m:
-                continue
-            pid = m.group(1)
-            playlist_ids.add(pid)
-            if pid in guide_ids:
-                alias[pid] = pid
-                continue
-            title = ext.split(",", 1)[-1]
-            keys = [norm(title), norm(pid.split("@")[0].split(".")[0])]
-            for key in keys:
-                options = by_name.get(key, set())
-                if len(options) == 1:
-                    alias[pid] = next(iter(options))
-                    break
-        epg_matches = len(alias)
-        if epg_matches:
-            reverse = {}
-            for pid, gid in alias.items():
-                reverse.setdefault(gid, []).append(pid)
-            for node in list(root):
-                if node.tag == "channel":
-                    gid = node.get("id")
-                    if gid not in reverse:
-                        root.remove(node)
-                    else:
-                        node.set("id", reverse[gid][0])
-                        for extra in reverse[gid][1:]:
-                            duplicate = ET.fromstring(ET.tostring(node))
-                            duplicate.set("id", extra)
-                            root.append(duplicate)
-                elif node.tag == "programme":
-                    gid = node.get("channel")
-                    if gid not in reverse:
-                        root.remove(node)
-                    else:
-                        node.set("channel", reverse[gid][0])
-                        for extra in reverse[gid][1:]:
-                            duplicate = ET.fromstring(ET.tostring(node))
-                            duplicate.set("channel", extra)
-                            root.append(duplicate)
-            epg_programmes = len(root.findall("programme"))
-            with open("epg.xml", "wb") as out:
-                out.write(ET.tostring(root, encoding="utf-8", xml_declaration=True))
-            epg_url = "https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/epg.xml"
-            epg_status = "matched"
-        else:
-            epg_status = "no_matching_channel_ids"
-    except Exception as exc:
-        epg_error = str(exc)[:300]
-        epg_status = "invalid_or_unreachable"
-    logo_catalog = {}
-    try:
-        req = urllib.request.Request("https://iptv-org.github.io/api/logos.json", headers={"User-Agent": UA})
-        with urllib.request.urlopen(req, timeout=25) as response:
-            logos = json.load(response)
-        for logo in logos:
-            channel_id = logo.get("channel")
-            logo_url = logo.get("url")
-            if channel_id and isinstance(logo_url, str) and logo_url.startswith("https://"):
-                logo_catalog.setdefault(channel_id, logo_url)
-    except Exception:
-        pass
-    # Additional channel-specific logo sources from IPTV-org's channel catalog.
-    # Use only an exact channel ID match, never a guessed logo.
-    try:
-        req = urllib.request.Request("https://iptv-org.github.io/api/channels.json", headers={"User-Agent": UA})
-        with urllib.request.urlopen(req, timeout=25) as response:
-            channel_records = json.load(response)
-        for ch in channel_records:
-            cid = ch.get("id")
-            logo = ch.get("logo")
-            if cid and isinstance(logo, str) and logo.startswith("https://"):
-                logo_catalog.setdefault(cid, logo)
-    except Exception:
-        pass
-    logo_stats = Counter()
-    logo_urls = set()
-    for ext, _, _ in results:
-        m = re.search(r'tvg-logo="([^"]*)"', ext)
-        if m and m.group(1).strip():
-            logo_urls.add(m.group(1).strip())
-    logo_urls.update(logo_catalog.values())
-    with concurrent.futures.ThreadPoolExecutor(max_workers=32) as pool:
-        logo_valid = dict(zip(logo_urls, pool.map(logo_works, logo_urls)))
 
-    lines = ['#EXTM3U' + (' url-tvg="' + epg_url + '" x-tvg-url="' + epg_url + '"' if epg_status == "matched" else '')]
+    # ---- logos: confere o logo atual; se quebrado, tenta TODOS os candidatos do catálogo, só por ID exato ----
+    catalog = {}
+    for logo in fetch_json("https://iptv-org.github.io/api/logos.json"):
+        cid, u = logo.get("channel"), logo.get("url")
+        if cid and isinstance(u, str) and u.startswith("https://"):
+            catalog.setdefault(cid, []).append((0 if logo.get("in_use") else 1, u))
+    for cid, rec in channels_meta.items():
+        u = rec.get("logo")
+        if isinstance(u, str) and u.startswith("https://"):
+            catalog.setdefault(cid, []).append((2, u))
+    current = {attr(e, "tvg-logo") for e, _, _ in results if attr(e, "tvg-logo")}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=32) as pool:
+        valid_logo = dict(zip(current, pool.map(logo_works, current)))
+    need = set()
+    for ext, _, _ in results:
+        if not valid_logo.get(attr(ext, "tvg-logo"), False):
+            need.update(u for _, u in sorted(catalog.get(attr(ext, "tvg-id").split("@")[0], [])))
+    need -= set(valid_logo)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=32) as pool:
+        valid_logo.update(zip(need, pool.map(logo_works, need)))
+
+    rows = []
+    logo_stats = Counter()
+    missing_logos = []
     for ext, url, country in results:
-        logo_match = re.search(r'tvg-logo="([^"]*)"', ext)
-        channel_match = re.search(r'tvg-id="([^"]*)"', ext)
-        existing_logo = logo_match.group(1).strip() if logo_match else ""
-        channel_id = channel_match.group(1).strip() if channel_match else ""
-        if existing_logo and logo_valid.get(existing_logo, False):
+        pid = attr(ext, "tvg-id")
+        base_id, _, feed = pid.partition("@")
+        meta = channels_meta.get(base_id)
+        title = title_of(ext)
+        # logo
+        logo = attr(ext, "tvg-logo")
+        if logo and valid_logo.get(logo, False):
             logo_stats["verified_working"] += 1
         else:
-            replacement = logo_catalog.get(channel_id)
-            if replacement and logo_valid.get(replacement, False):
-                if logo_match:
-                    ext = ext[:logo_match.start()] + 'tvg-logo="' + replacement + '"' + ext[logo_match.end():]
-                else:
-                    ext = add_attribute(ext, "tvg-logo", replacement)
+            fixed = next((u for _, u in sorted(catalog.get(base_id, [])) if valid_logo.get(u, False)), "")
+            if fixed:
+                ext = set_attr(ext, "tvg-logo", fixed)
                 logo_stats["repaired_from_catalog"] += 1
             else:
-                if logo_match:
-                    ext = ext[:logo_match.start()] + 'tvg-logo=""' + ext[logo_match.end():]
+                ext = set_attr(ext, "tvg-logo", "")
                 logo_stats["missing_or_broken"] += 1
-        original_group = re.search(r'group-title="([^"]*)"', ext)
-        category = original_group.group(1).strip() if original_group else ""
-        display_country = {"United Kingdom / Unclassified": "United Kingdom", "United States": "United States", "Canada": "Canada", "Australia": "Australia", "England": "England", "Scotland": "Scotland"}.get(country, country)
-        combined_group = display_country
-        if category and 'tvg-category=' not in ext:
-            ext = add_attribute(ext, "tvg-category", category)
-        ext = re.sub(r'group-title="[^"]*"', lambda _: 'group-title="' + combined_group + '"', ext)
-        if 'group-title=' not in ext:
-            ext = add_attribute(ext, "group-title", combined_group)
+                missing_logos.append((country, title, pid))
+        # metadados
+        category = clean_category(ext, meta)
+        ext = set_attr(ext, "tvg-category", category)
+        ext = set_attr(ext, "tvg-country", ISO.get(country, ""))
+        ext = set_attr(ext, "tvg-name", title)
+        codes = feeds_lang.get((base_id, feed)) or feeds_lang.get((base_id, "SD")) or []
+        names = [lang_names.get(c, c) for c in codes]
+        if names:
+            ext = set_attr(ext, "tvg-language", ";".join(names))
+        group = DISPLAY.get(country, country)
+        ext = set_attr(ext, "group-title", group)
+        rows.append((order.index(country), category.lower(), title.lower(), ext, url, country))
+    rows.sort(key=lambda r: r[:3])
+
+    # ---- guia de programação ----
+    ordered = [(r[3], r[4], r[5]) for r in rows]
+    epg_url = "https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/epg.xml"
+    matched, ep_channels, ep_programmes, per_source = build_epg(ordered, now)
+    epg_status = "matched" if matched else "no_matching_channel_ids"
+    if matched:
+        root = ET.Element("tv", {"generator-info-name": "Jeremy IPTV"})
+        for node in ep_channels + ep_programmes:
+            root.append(node)
+        with open("epg.xml", "wb") as out:
+            out.write(ET.tostring(root, encoding="utf-8", xml_declaration=True))
+    header = '#EXTM3U' + (' url-tvg="' + epg_url + '" x-tvg-url="' + epg_url + '"' if matched else '')
+    lines = [header]
+    for ext, url, _ in ordered:
         lines += [ext, url]
-    if results:
+    if rows:
         with open("jeremy.m3u", "w", encoding="utf-8") as f:
             f.write("\n".join(lines) + "\n")
-    report = {"generated_at": datetime.now(timezone.utc).isoformat(), "candidates": len(candidates), "accepted": len(results), "by_country": dict(Counter(x[2] for x in results)), "test_results": dict(errors), "notes": ["HTTP checks do not prove playback on Sparkle TV.", "UK channels without explicit England/Scotland metadata are preserved under United Kingdom / Unclassified rather than discarded.", "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."]}
-    report["logos"] = dict(logo_stats)
-    report["epg"] = {"status": epg_status, "matching_channel_ids": epg_matches, "programme_entries": epg_programmes, "error": epg_error, "source": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"}
+
+    os.makedirs("reports", exist_ok=True)
+    with open("reports/rejected_links.csv", "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["reason", "country", "channel", "url"])
+        w.writerows(sorted(rejected))
+    with open("reports/missing_logos.csv", "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["country", "channel", "tvg_id"])
+        w.writerows(sorted(missing_logos))
+
+    with_epg = sum(1 for e, _, _ in ordered if attr(e, "tvg-id") in matched)
+    report = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "candidates": len(candidates),
+        "accepted": len(rows),
+        "by_country": dict(Counter(r[5] for r in rows)),
+        "by_category": dict(Counter(r[1] for r in rows).most_common()),
+        "test_results": dict(errors),
+        "notes": [
+            "HTTP checks do not prove playback on Sparkle TV.",
+            "Groups are countries only (the category stays in tvg-category). UK channels without explicit England/Scotland metadata stay under United Kingdom.",
+            "France is excluded; closed or adult channels are excluded using the iptv-org catalog.",
+            "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot.",
+        ],
+        "logos": dict(logo_stats),
+        "epg": {"status": epg_status, "channels_with_guide": with_epg, "channels_total": len(rows),
+                "programme_entries": len(ep_programmes), "window_days": EPG_DAYS, "sources": per_source},
+    }
     with open("report.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
-    if not results:
+    if not rows:
         raise SystemExit("No valid channels: keeping any existing playlist unchanged")
 
 if __name__ == "__main__":
