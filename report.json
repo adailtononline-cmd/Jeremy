@@ -1,34 +1,32 @@
 {
-  "generated_at": "2026-11-15T17:26:05.653402+00:00",
+  "generated_at": "2026-11-15T17:29:07.922057+00:00",
   "candidates": 2517,
-  "accepted": 1934,
+  "accepted": 1904,
   "by_country": {
-    "United States": 1261,
+    "United States": 1229,
     "Canada": 178,
     "Australia": 51,
     "New Zealand": 5,
-    "Brazil": 261,
-    "England": 2,
-    "United Kingdom / Unclassified": 176
+    "Brazil": 263,
+    "England": 3,
+    "United Kingdom / Unclassified": 175
   },
   "test_results": {
-    "ok": 1934,
-    "404": 147,
-    "502": 16,
-    "network": 198,
-    "403": 144,
-    "html": 30,
+    "ok": 1904,
+    "404": 146,
+    "403": 219,
+    "network": 189,
+    "502": 6,
     "unknown-media": 4,
-    "500": 2,
     "400": 11,
     "504": 6,
-    "503": 4,
-    "408": 5,
-    "416": 7,
+    "416": 11,
+    "408": 1,
     "204": 5,
+    "503": 3,
+    "html": 9,
     "523": 1,
     "218": 1,
-    "401": 1,
     "574": 1
   },
   "notes": [
@@ -37,12 +35,12 @@
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "already_supplied": 1906,
+    "already_supplied": 1876,
     "still_missing": 28
   },
   "epg": {
     "status": "invalid_or_unreachable",
     "matching_channel_ids": 0,
-    "source": "https://iptv-epg.org/files/epg-gb.xml"
+    "source": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"
   }
 }
