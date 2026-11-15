@@ -23,8 +23,11 @@ reason,country,channel,url
 403,Brazil,BandNews (1080p),https://cdn-5.nxplay.com.br/BAND_NEWS/index.m3u8
 403,Brazil,Blitstv,https://stmv1.transmissaodigital.com/blitstv/blitstv/playlist.m3u8
 403,Brazil,Canal Saude,https://eitv7.cdn.broadpeak.io/account351-i1495/event/canalsaude/format720p.m3u8
+403,Brazil,Cartoon Network Latin America Brazil (720p) [Geo-blocked],http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8
 403,Brazil,CazeTV (1080p),http://138.204.86.4:8080/CAZE_TV/playlist.m3u8
 403,Brazil,Cultura Para (720p),http://170.84.165.204/CANAL_21_HD/index.m3u8
+403,Brazil,Discovery Kids Latin America Brazil (720p) [Geo-blocked],http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8
+403,Brazil,Discovery World Brazil (720p) [Geo-blocked],http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8
 403,Brazil,MKK Web TV (720p) [Not 24/7],https://video01.logicahost.com.br/mkkwebtv/mkkwebtv/playlist.m3u8
 403,Brazil,RCTV Brasil,https://stmv.webtvninjas.com.br/rctv/rctv/playlist.m3u8
 403,Brazil,Record (720p),http://170.84.165.204/Record_HD/index.m3u8
@@ -41,9 +44,9 @@ reason,country,channel,url
 403,Brazil,SBT Rondonopolis (720p),https://video09.logicahost.com.br/sbtroo/sbtroo/playlist.m3u8
 403,Brazil,SporTV 2 (1080p),http://195.178.110.110/sportv2/index.m3u8
 403,Brazil,SporTV 3 (1080p),http://195.178.110.110/sportv3/index.m3u8
+403,Brazil,TNT Latin America Brazil (720p) [Geo-blocked],http://15.204.246.24:8080/TNTHD/index.m3u8
 403,Brazil,TV 3 Curitiba (720p),https://stmv.webtvninjas.com.br/tv3/tv3/playlist.m3u8
 403,Brazil,TV Assembleia Piaui,https://stmv1.srvstm.com/piaui8071/piaui8071/playlist.m3u8
-403,Brazil,TV Brasil Oeste (720p),https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
 403,Brazil,TV Diario Macapa (1080p) [Not 24/7],https://5ad482a77183d.streamlock.net/marliomelohotmail.com/marliomelohotmail.com/playlist.m3u8
 403,Brazil,TV Encontro das Aguas,https://stmv7.samcast.com.br/sistemaencontrodasaguas/sistemaencontrodasaguas/playlist.m3u8
 403,Brazil,TV Globo Sao Paulo (720p),http://170.84.165.204/Globo_HD/index.m3u8
@@ -80,10 +83,6 @@ reason,country,channel,url
 403,Canada,TVA (Canada) CFTM-DT [Geo-blocked],https://tvalive-dai01.akamaized.net/Content/HLS/Live/channel(575b93c5-be31-ee34-6285-14620fd14048)/index.m3u8
 403,Canada,Uvagut TV (1080p),https://hls.uvagut.tv/hls/uvagut/playlist.m3u8
 403,New Zealand,Channel 200 (540p),https://d1jlnqid3sfc6m.cloudfront.net/out/v1/3fc2254c865a457c8d7fbbce227a2aae/index.m3u8
-403,United States,ABC KRGV-TV (720p),https://d3svnrf3rmq619.cloudfront.net/krgv-live/smil:krgv-live.smil/playlist.m3u8
-403,United States,ABC WBRZ-TV (480p),https://d2a6g6zgxepbwi.cloudfront.net/wbrz-edge/weather.stream_360p/playlist.m3u8
-403,United States,AMP 1 (720p),https://dlttx48mxf9m3.cloudfront.net/vod_clients/amp/live/ch1/video.m3u8
-403,United States,AMP 2 (720p),https://dlttx48mxf9m3.cloudfront.net/vod_clients/amp/live/ch2/video.m3u8
 403,United States,ARTN TV (1080p) [Not 24/7],https://streamer1.connectto.com/ARTN_mobile/index.m3u8
 403,United States,Access 19,https://reflect-montgomerycommunitymedia.cablecast.tv/live-8/live/stream-3/live.m3u8
 403,United States,Access 4 PAC,https://reflect-channel18vod-springfield-il-us.cablecast.tv/live-16/live/stream-4/live.m3u8
@@ -107,8 +106,10 @@ reason,country,channel,url
 403,United States,CMAC 1 (720p),https://reflect-vod-cmac.cablecast.tv/live-11/live/stream-1/live.m3u8
 403,United States,CMAC 2 (720p),https://reflect-vod-cmac.cablecast.tv/live-11/live/stream-2/live.m3u8
 403,United States,CMAC 3 (720p),https://reflect-vod-cmac.cablecast.tv/live-11/live/stream-3/live.m3u8
+403,United States,CNN HD (720p) [Geo-blocked],http://212.5.144.156:8080/cnn/index.m3u8
 403,United States,COStv,https://irctv.cablecast.tv/live/stream-1/live.m3u8
 403,United States,Capital City Connection Montgomery [Not 24/7],https://capitalcityconnection.cablecast.tv/live/stream-1/live.m3u8
+403,United States,Cartoon Network (United States) West (1080p) [Geo-blocked],http://212.5.144.156:8080/cartoon/index.m3u8
 403,United States,Channel 18 GAC,https://reflect-channel18vod-springfield-il-us.cablecast.tv/live-13/live/stream-1/live.m3u8
 403,United States,City of Fairfield Channel 26 (720p) [Geo-blocked],https://reflect-fairfield-ca.cablecast.tv/live-8/live/live.m3u8
 403,United States,City of Loveland TV (1080p),https://reflect-cityofloveland-co.cablecast.tv/live-3/live/live.m3u8
@@ -126,6 +127,7 @@ reason,country,channel,url
 403,United States,Detroit Channel 21,https://reflect-detroit-vod.cablecast.tv/live-9/live/stream-4/live.m3u8
 403,United States,Detroit Channel 22,https://reflect-detroit-vod.cablecast.tv/live-3/live/stream-3/live.m3u8
 403,United States,Detroit Channel 68,https://reflect-detroit-vod.cablecast.tv/live-10/live/stream-5/live.m3u8
+403,United States,Discovery Channel (United States) (1080p) [Geo-blocked],http://212.5.144.156:8080/discovery/index.m3u8
 403,United States,FC Public Media (1080p),https://reflect-fcpublicmedia.cablecast.tv/live-5/live/stream-1/live.m3u8
 403,United States,FCTV (1080p),https://reflect-vod-fcgov.cablecast.tv/live-9/live/stream-1/live.m3u8
 403,United States,G10TV (1080p),https://reflect-jacksonville.cablecast.tv/live-8/live/live.m3u8
@@ -136,18 +138,16 @@ reason,country,channel,url
 403,United States,HCTV Government Channel,https://reflect-hudsonctv.cablecast.tv/live-26/live/stream-2/live.m3u8
 403,United States,HCTV Public Access Channel,https://reflect-hudsonctv.cablecast.tv/live-26/live/stream-5/live.m3u8
 403,United States,HKTV (1080p) [Geo-blocked],https://reflect-hktv.cablecast.tv/live-3/live/live.m3u8
+403,United States,History (United States) (720p),http://212.5.144.156:8080/history/index.m3u8
+403,United States,Investigation Discovery (United States) (1080p) [Geo-blocked],http://212.5.144.156:8080/id/index.m3u8
 403,United States,KBEV (1080p),https://s3-us-west-2.amazonaws.com/beverly-hills-high-school.castus-vod/live/ch1/video.m3u8
 403,United States,KBRI-8 (720p),https://brightonco.cablecast.tv/live-4/live/live.m3u8
 403,United States,KCAT (1080p),https://reflect-kcat-live.cablecast.tv/live-2/live/live.m3u8
 403,United States,KFON TV (720p) [Geo-blocked],https://reflect-watchkfon-fontana.cablecast.tv/live-3/live/live.m3u8
-403,United States,KRGV-TV 5.2 (720p) [Geo-blocked],https://d3svnrf3rmq619.cloudfront.net/krgv-live/smil:krgv-somos.smil/playlist.m3u8
-403,United States,LATV (1080p) [Geo-blocked],https://amg00779-latv-amg00779c1-cineverse-us-1746.playouts.now.amagi.tv/playlist/amg00779-latvnetworkllc-latv-cineverseus/playlist.m3u8
-403,United States,Las Vegas Tonight with Dale Davidson (1080p),https://cdn.vegasplus.us/vegas/lasvegastonight/playlist.m3u8
-403,United States,Latino Channel TV (1080p),https://cdn.vegasplus.us/vegas/latch/playlist.m3u8
-403,United States,MCN6 Arts Channel (1080p) [Not 24/7],https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_COMEDY.smil/Playlist.m3u8
-403,United States,MCN6 Main Channel (1080p) [Not 24/7],https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_MAIN.smil/Playlist.m3u8
-403,United States,MCN6 Music Channel (1080p) [Not 24/7],https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_MUSIC.smil/Playlist.m3u8
-403,United States,MagellanTV Now (1080p),https://amg00376-magellan-amg00376c5-samsung-au-1708.playouts.now.amagi.tv/playlist/amg00376-magellantv-magellantvnowww-samsungau/playlist.m3u8
+403,United States,LA CityView 35 (1080p),https://reflect-losangeles.cablecast.tv/live-3/live/live.m3u8
+403,United States,LA36 (1080p),https://reflect-channel36-la.cablecast.tv/live-3/live/stream-1/live.m3u8
+403,United States,LakeFront TV (720p),https://reflect-lakefront-leesburgflorida.cablecast.tv/live-6/live/live.m3u8
+403,United States,MSTV (1080p),https://reflect-mcsb-vod.cablecast.tv/live-16/live/live.m3u8
 403,United States,Military History (720p),https://frndly.keralive.workers.dev/v1/master/840a24ccd7c75076211d060179b3ad0c64fdc6ca/militaryhistory_live_nr/ab44a8245afe413db1169317ee5cda08/index.m3u8?type=ae2
 403,United States,Monroe Community Media Education Channel,https://reflect-monroe-public-access.cablecast.tv/live-4/live/live.m3u8
 403,United States,Monroe Community Media Public Access Channel,https://reflect-monroe-public-access.cablecast.tv/live-3/live/live.m3u8
@@ -158,6 +158,7 @@ reason,country,channel,url
 403,United States,NCM Government & Politics Channel,https://reflect-npa.cablecast.tv/live-8/live/live.m3u8
 403,United States,NCM Main Channel,https://reflect-npa.cablecast.tv/live-6/live/live.m3u8
 403,United States,NYXT (1080p),https://reflect-stream-bronxnet.cablecast.tv/live-10/live/live.m3u8
+403,United States,National Geographic (United States) (720p),http://212.5.144.156:8080/natgeo/index.m3u8
 403,United States,PSD TV (720p),https://reflect-broadcast-psdschools.cablecast.tv/live-6/live/live.m3u8
 403,United States,PTL TV Network (1080p),https://storage.sardius.media/archives/-KyMV-J0vDqnClcSXs8p/events/site_1a4721d3BA/playlist.m3u8
 403,United States,Pomona Internet Streaming Channel (720p),https://reflect-pomona.cablecast.tv/live-1/live/live.m3u8
@@ -166,6 +167,7 @@ reason,country,channel,url
 403,United States,SF Commons 76 (480p),https://reflect-bayarea.cablecast.tv/live-6/live/live.m3u8
 403,United States,St Lucie Public Schools,https://reflect-stlucie-ps-fl.cablecast.tv/live-1/live/stream-1/WIFI-1896k-720p.m3u8
 403,United States,TBCN (480p),https://reflect-tampa-bay-community.cablecast.tv/live-16/live/live.m3u8
+403,United States,TNT (United States) (720p) [Geo-blocked],http://212.5.144.156/tnt/index.m3u8
 403,United States,TVE Internacional America (720p),https://barinaslive1.boldmss.com/TVE/TVE.isml/index.m3u8
 403,United States,Temecula TV (1080p),https://reflect-temecula.cablecast.tv/live-2/live/stream-1/live.m3u8
 403,United States,Thornton 8 (1080p),https://reflect-thornton.cablecast.tv/live-4/live/live.m3u8
@@ -185,7 +187,6 @@ reason,country,channel,url
 404,Brazil,Pluto TV Karaoke por Stingray (720p),https://jmp2.uk/plu-604b99d633a72b00078e05ad.m3u8
 404,Brazil,Pluto TV Minha Obsessao Favorita,https://jmp2.uk/plu-61843f5e491af10007f7eefa.m3u8
 404,Brazil,RBATV (720p),https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8
-404,Brazil,TV A Folha (720p),https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8
 404,Brazil,TV Brusque (720p),https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8
 404,Brazil,TV Camara 2 (1080p) [Not 24/7],https://stream3.camara.gov.br/tv2/manifest.m3u8
 404,Brazil,TV Difusora Leste (1080p),https://stream.amsolution.net.br:8443/live/60d0a8ea6b884/index.m3u8
@@ -220,7 +221,6 @@ reason,country,channel,url
 404,United Kingdom,Discovery History,http://37.49.224.5/stream/12/index.m3u8
 404,United Kingdom,Discovery Science Europe UK,http://37.49.224.5/stream/9/index.m3u8
 404,United Kingdom,Discovery Turbo (United Kingdom),http://37.49.224.5/stream/13/index.m3u8
-404,United Kingdom,Hala London (1080p),https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8
 404,United Kingdom,Homicide Hunter,https://jmp2.uk/plu-619e21b213ef6b0007d8c17a.m3u8
 404,United Kingdom,More TV Sci-fi,https://jmp2.uk/plu-645e00d5d3fdde000829463a.m3u8
 404,United Kingdom,Really,http://37.49.224.5/stream/36/index.m3u8
@@ -256,7 +256,6 @@ reason,country,channel,url
 404,United States,Dega TV (720p) [Not 24/7],https://59d39900ebfb8.streamlock.net/saintlouisltv/saintlouisltv/playlist.m3u8
 404,United States,Disney Junior (United States) (720p),https://tvnow.hostless.app/disney-junior.m3u8
 404,United States,Escambia County TV (720p),https://cpcdn.azureedge.net/ESCAMBIACOFLLIVE1/ESCAMBIACOFLLIVE1/playlist.m3u8
-404,United States,FMH Kids (720p),http://38.87.224.19:2220/play/a03u/index.m3u8
 404,United States,Fox (United States) KCPQ (720p),https://aegis-cloudfront-1.tubi.video/cc394198-7bde-43e8-b186-875bc0eb3037/index.m3u8
 404,United States,Fox (United States) KMPH-TV (1080p),https://linear-711.frequency.stream/dist/stirr/711/hls/master/playlist.m3u8
 404,United States,Fox (United States) KOKH-TV (1080p),https://linear-705.frequency.stream/dist/stirr/705/hls/master/playlist.m3u8
@@ -279,8 +278,14 @@ reason,country,channel,url
 404,United States,Logos TV Estudio (720p) [Not 24/7],https://streamer1.streamhost.org/salive/logosdirectaH/playlist.m3u8
 404,United States,Logos TV Salud (720p) [Not 24/7],https://streamer1.streamhost.org/salive/logossaludH/playlist.m3u8
 404,United States,Lucas & Friends,https://app.viloud.tv/hls/channel/01e3b17a3605b7c0389411ae3d5dfd6e.m3u8
+404,United States,MLB Strike Zone (720p),http://23.237.104.106:8080/USA_MLB_STRIKE_ZONE/index.m3u8
 404,United States,MNT WCIV (1080p),https://linear-700.frequency.stream/dist/stirr/700/hls/master/playlist.m3u8
 404,United States,MSG (720p),http://23.237.104.106:8080/USA_MSG/index.m3u8
+404,United States,Midpen Media Center Channel 26 (720p),https://5c2974786200d.streamlock.net/live-chan26/ngrp:ch26_all/playlist.m3u8
+404,United States,Midpen Media Center Channel 28 (720p),https://5c2974786200d.streamlock.net/live-chan28/ngrp:ch28_all/playlist.m3u8
+404,United States,Midpen Media Center Channel 29 (720p),https://5c2974786200d.streamlock.net/live-chan29/ngrp:ch29_all/playlist.m3u8
+404,United States,Midpen Media Center Channel 30 (720p),https://5c2974786200d.streamlock.net/live-chan30/ngrp:ch30_all/playlist.m3u8
+404,United States,Midpen Media Center Channel 75 (720p),https://5c2974786200d.streamlock.net/live-chan75/ngrp:ch75_all/playlist.m3u8
 404,United States,NBC KSNV (1080p),https://linear-708.frequency.stream/dist/stirr/708/hls/master/playlist.m3u8
 404,United States,NBC WJAC-TV (1080p),https://linear-698.frequency.stream/dist/stirr/698/hls/master/playlist.m3u8
 404,United States,NBC WOAI-TV (1080p),https://linear-703.frequency.stream/dist/stirr/703/hls/master/playlist.m3u8
@@ -292,9 +297,7 @@ reason,country,channel,url
 404,United States,Nicktoons (United States) (1080p),https://tvnow.hostless.app/nicktoons.m3u8
 404,United States,OAN Plus KPVM-LD,https://2-fss-2.streamhoster.com/pl_118/206858-4404458-1/playlist.m3u8
 404,United States,Overcomers TV (720p),https://glorystartv.live/Overcomers/index.m3u8
-404,United States,PBC TV Channel 20 (720p),https://pbcvideostreams1.pbc.gov/memfs/1af49f9a-6b90-4ec2-a640-7f65ceebed4a.m3u8
 404,United States,Pasco TV (480p),https://cpcdn.azureedge.net/PASCOCOFLLIVE1/PASCOCOFLLIVE1/playlist.m3u8
-404,United States,Payam Javan TV (720p) [Not 24/7],https://uni01rtmp.tulix.tv/kensecure/pjtv.stream/playlist.m3u8
 404,United States,RT en Espanol (1080p),http://15.204.246.24:8080/RTHD/index.m3u8
 404,United States,Radio Tele Kajou (480p) [Not 24/7],https://59d39900ebfb8.streamlock.net/RadioTelekAJOU/RadioTelekAJOU/playlist.m3u8
 404,United States,Radio Tele Wisdom (360p) [Not 24/7],https://59d39900ebfb8.streamlock.net/daniel/daniel/playlist.m3u8
@@ -318,17 +321,17 @@ reason,country,channel,url
 404,United States,The Bob Ross Channel (720p),https://aegis-cloudfront-1.tubi.video/45301c94-0d40-4cbb-b342-f5dc7949d76c/playlist.m3u8
 404,United States,The Burbank Channel (720p),https://cdn3.wowza.com/5/djRwZmQvTEJidmZD/burbank/G0240_009/playlist.m3u8
 404,United States,Transformers TV (720p),https://jmp2.uk/plu-60fb053712f22a0007ff14d2.m3u8
-405,United States,Univision WGBO-DT (2160p),https://unidfp-nlds154.global.ssl.fastly.net/nlds/univisionnow/univision_chi2/as/live/univision_chi2_hd_pc.m3u8?t1=null
+404,United States,WITN22 (1080p) [Not 24/7],https://witn.cablecast.tv/live-4/live/live.m3u8
 408,United States,News12 Bronx (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12XH_A1/index_new.m3u8?omap=https
-408,United States,News12 Brooklyn (720p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12KH_A1/index_new.m3u8?omap=https
 408,United States,News12 Conneticut [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12CH_FFLD_MILF_A1/index_new.m3u8?omap=https
-408,United States,News12 Long Island (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12LH_WEST_A1/index_new.m3u8?omap=https
-408,United States,News12 New Jersey (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12JH_CENT_A1/index_new.m3u8?omap=https
-408,United States,News12 Westchester (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12WH_A1/index_new.m3u8?omap=https
 408,United States,News12+ Connecticut (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_CT_A1/index_new.m3u8
+408,United States,News12+ Hudson Valley (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_WC_A1/index_new.m3u8
 408,United States,News12+ New York (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_NYC_A1/index_new.m3u8
+416,United States,News12 Brooklyn (720p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12KH_A1/index_new.m3u8?omap=https
 416,United States,News12 Hudson Valley (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12HH_A1/index_new.m3u8?omap=https
-416,United States,News12+ Hudson Valley (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_WC_A1/index_new.m3u8
+416,United States,News12 Long Island (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12LH_WEST_A1/index_new.m3u8?omap=https
+416,United States,News12 New Jersey (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12JH_CENT_A1/index_new.m3u8?omap=https
+416,United States,News12 Westchester (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12WH_A1/index_new.m3u8?omap=https
 416,United States,News12+ New Jersey (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_NJ_A1/index_new.m3u8
 416,United States,Stadium (720p),https://wurl120sports.global.transmit.live/hls/679a907dce42a042c23ace37/v1/stadium_gracenote/samsung_us/latest/main/hls/playlist.m3u8
 502,Brazil,TELE 6 (720p),https://lbgo.bozztv.com/ssh101/ssh101/tele6/playlist.m3u8
@@ -472,7 +475,6 @@ network,United Kingdom,Kalsan TV (576p),https://ap02.iqplay.tv:8082/iqb8002/ka1s
 network,United Kingdom,National Geographic (United Kingdom),http://82.47.42.44/stream/405/index.m3u8
 network,United Kingdom,Nickelodeon (United Kingdom),http://93.186.201.93/stream/397/index.m3u8
 network,United Kingdom,Planet Fun (1080p),http://66.102.126.10:8000/play/a02k/index.m3u8
-network,United Kingdom,Sheffield Live TV (360p) [Not 24/7],http://tv.sheffieldlive.org/hls/main.m3u8
 network,United Kingdom,TV Warehouse (720p),https://tvwarehouse.r.worldssl.net/mystream.m3u8
 network,United States,AFV Espanol (720p) [Not 24/7],https://linear-46.frequency.stream/dist/plex/46/hls/master/playlist.m3u8
 network,United States,AMC en Espanol,https://amc-amcespanol-1-us.lg.wurl.tv/playlist.m3u8
@@ -504,8 +506,6 @@ network,United States,Jus One (1080p),http://103.154.3.101:5001/live/961.m3u8
 network,United States,Jus Punjabi (1080p),http://103.154.3.101:5001/live/959.m3u8
 network,United States,Laff (576p),http://tvsen7.aynascope.net/laff/index.m3u8
 network,United States,Lifetime,https://tvsen7.aynascope.net/lifetime/index.m3u8
-network,United States,Lindell TV (720p),https://rumble.com/live-hls/6v67mu/playlist.m3u8
-network,United States,MLB Strike Zone (720p),http://23.237.104.106:8080/USA_MLB_STRIKE_ZONE/index.m3u8
 network,United States,MMA TV (576p),http://31.148.48.15/M1_Global/index.m3u8
 network,United States,MTV2 (720p),http://198.58.104.90:8989/mtv2/index.m3u8
 network,United States,Mega Extreno HD (720p),https://stream-cdn-iad3.vaughnsoft.net/play/live_mega_extremo.flv
