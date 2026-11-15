@@ -1,5 +1,7 @@
 name: Build Jeremy IPTV
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '20 8 * * 1'
