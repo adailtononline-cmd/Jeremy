@@ -2,6 +2,7 @@
 """Build a country-grouped playlist from public IPTV-org feeds."""
 import concurrent.futures
 import json
+import gzip
 import xml.etree.ElementTree as ET
 import re
 import urllib.error
@@ -87,14 +88,14 @@ def main():
                 results.append(valid)
     order = list(COUNTRIES) + ["United Kingdom / Unclassified"]
     results.sort(key=lambda x: (order.index(x[2]), x[0].split(",", 1)[-1].lower()))
-    epg_url = "https://iptv-epg.org/files/epg-gb.xml"
+    epg_url = "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"
     epg_status = "unavailable"
     epg_matches = 0
     try:
         req = urllib.request.Request(epg_url, headers={"User-Agent": UA})
         with urllib.request.urlopen(req, timeout=25) as response:
             epg_data = response.read(30_000_000)
-        root = ET.fromstring(epg_data)
+        root = ET.fromstring(gzip.decompress(epg_data) if epg_data[:2] == b"\\x1f\\x8b" else epg_data)
         if root.tag != "tv":
             raise ValueError("Not XMLTV")
         guide_ids = {ch.get("id") for ch in root.findall("channel")}
@@ -106,7 +107,7 @@ def main():
         epg_matches = len(guide_ids & playlist_ids)
         if epg_matches:
             with open("epg.xml", "wb") as out:
-                out.write(epg_data)
+                out.write(gzip.decompress(epg_data) if epg_data[:2] == b"\\x1f\\x8b" else epg_data)
             epg_url = "https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/epg.xml"
             epg_status = "matched"
         else:
@@ -159,7 +160,7 @@ def main():
             f.write("\n".join(lines) + "\n")
     report = {"generated_at": datetime.now(timezone.utc).isoformat(), "candidates": len(candidates), "accepted": len(results), "by_country": dict(Counter(x[2] for x in results)), "test_results": dict(errors), "notes": ["HTTP checks do not prove playback on Sparkle TV.", "UK channels without explicit England/Scotland metadata are preserved under United Kingdom / Unclassified rather than discarded.", "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."]}
     report["logos"] = dict(logo_stats)
-    report["epg"] = {"status": epg_status, "matching_channel_ids": epg_matches, "source": "https://iptv-epg.org/files/epg-gb.xml"}
+    report["epg"] = {"status": epg_status, "matching_channel_ids": epg_matches, "source": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"}
     with open("report.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
     if not results:
