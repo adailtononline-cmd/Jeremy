@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-11-15T16:52:13.702915+00:00",
+  "candidates": 1810,
+  "accepted": 733,
+  "by_country": {
+    "United States": 609,
+    "Canada": 105,
+    "Australia": 19
+  },
+  "test_results": {
+    "uk_unclassified": 303,
+    "ok": 733,
+    "206": 725,
+    "404": 93,
+    "403": 130,
+    "network": 91,
+    "502": 4,
+    "unknown-media": 3,
+    "400": 7,
+    "504": 3,
+    "408": 7,
+    "416": 5,
+    "204": 5,
+    "503": 2,
+    "html": 1,
+    "523": 1
+  },
+  "notes": [
+    "HTTP checks do not prove playback on Sparkle TV.",
+    "UK channels without explicit England/Scotland metadata excluded to avoid misclassification.",
+    "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
+  ]
+}
