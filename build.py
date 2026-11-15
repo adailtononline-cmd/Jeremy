@@ -2,6 +2,7 @@
 """Build a country-grouped playlist from public IPTV-org feeds."""
 import concurrent.futures
 import json
+import xml.etree.ElementTree as ET
 import re
 import urllib.error
 import urllib.request
@@ -87,7 +88,32 @@ def main():
     order = list(COUNTRIES) + ["United Kingdom / Unclassified"]
     results.sort(key=lambda x: (order.index(x[2]), x[0].split(",", 1)[-1].lower()))
     epg_url = "https://iptv-epg.org/files/epg-gb.xml"
-    lines = ['#EXTM3U url-tvg="' + epg_url + '" x-tvg-url="' + epg_url + '"']
+    epg_status = "unavailable"
+    epg_matches = 0
+    try:
+        req = urllib.request.Request(epg_url, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=25) as response:
+            epg_data = response.read(30_000_000)
+        root = ET.fromstring(epg_data)
+        if root.tag != "tv":
+            raise ValueError("Not XMLTV")
+        guide_ids = {ch.get("id") for ch in root.findall("channel")}
+        playlist_ids = set()
+        for ext, _, _ in results:
+            m = re.search(r'tvg-id="([^"]+)"', ext)
+            if m:
+                playlist_ids.add(m.group(1))
+        epg_matches = len(guide_ids & playlist_ids)
+        if epg_matches:
+            with open("epg.xml", "wb") as out:
+                out.write(epg_data)
+            epg_url = "https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/epg.xml"
+            epg_status = "matched"
+        else:
+            epg_status = "no_matching_channel_ids"
+    except Exception as exc:
+        epg_status = "invalid_or_unreachable"
+    lines = ['#EXTM3U' + (' url-tvg="' + epg_url + '" x-tvg-url="' + epg_url + '"' if epg_status == "matched" else '')]
     for ext, url, country in results:
         original_group = re.search(r'group-title="([^"]*)"', ext)
         category = original_group.group(1).strip() if original_group else ""
@@ -103,6 +129,7 @@ def main():
         with open("jeremy.m3u", "w", encoding="utf-8") as f:
             f.write("\n".join(lines) + "\n")
     report = {"generated_at": datetime.now(timezone.utc).isoformat(), "candidates": len(candidates), "accepted": len(results), "by_country": dict(Counter(x[2] for x in results)), "test_results": dict(errors), "notes": ["HTTP checks do not prove playback on Sparkle TV.", "UK channels without explicit England/Scotland metadata are preserved under United Kingdom / Unclassified rather than discarded.", "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."]}
+    report["epg"] = {"status": epg_status, "matching_channel_ids": epg_matches, "source": "https://iptv-epg.org/files/epg-gb.xml"}
     with open("report.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
     if not results:
