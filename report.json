@@ -1,30 +1,31 @@
 {
-  "generated_at": "2026-11-15T17:59:23.791028+00:00",
+  "generated_at": "2026-11-15T18:05:57.812544+00:00",
   "candidates": 2517,
-  "accepted": 1906,
+  "accepted": 1931,
   "by_country": {
-    "United States": 1230,
+    "United States": 1257,
     "Canada": 178,
     "Australia": 51,
     "New Zealand": 5,
-    "Brazil": 263,
-    "England": 3,
-    "United Kingdom / Unclassified": 176
+    "Brazil": 261,
+    "England": 2,
+    "United Kingdom / Unclassified": 177
   },
   "test_results": {
-    "ok": 1906,
-    "404": 141,
-    "403": 220,
-    "network": 191,
-    "502": 6,
+    "ok": 1931,
+    "404": 146,
+    "502": 16,
+    "network": 196,
+    "403": 151,
+    "html": 30,
     "unknown-media": 4,
+    "500": 2,
     "400": 11,
     "504": 6,
-    "416": 4,
-    "408": 8,
+    "503": 4,
+    "408": 5,
+    "416": 7,
     "204": 5,
-    "503": 3,
-    "html": 9,
     "523": 1,
     "218": 1,
     "574": 1
@@ -35,8 +36,8 @@
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "verified_working": 1708,
-    "missing_or_broken": 198
+    "verified_working": 1731,
+    "missing_or_broken": 200
   },
   "epg": {
     "status": "matched",
