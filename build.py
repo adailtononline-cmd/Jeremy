@@ -14,7 +14,11 @@ import urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 
-COUNTRIES = {"United States": "us", "Canada": "ca", "Australia": "au", "New Zealand": "nz", "Brazil": "br", "United Kingdom": "uk"}
+COUNTRIES = {"Brazil": "br", "United Kingdom": "uk", "United States": "us", "Canada": "ca", "Australia": "au", "New Zealand": "nz"}
+FREE_TV = {"United Kingdom": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_uk.m3u8",
+           "Brazil": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_brazil.m3u8"}
+KEEP_REGARDLESS = {"Brazil", "United Kingdom"}
+DEAD = ("404", "410", "html", "unknown-media")
 BASE = "https://iptv-org.github.io/iptv/countries/{}.m3u"
 UA = "Jeremy-IPTV-Checker/1.0"
 ISO = {"United States": "US", "Canada": "CA", "Australia": "AU", "New Zealand": "NZ", "Brazil": "BR", "United Kingdom": "GB"}
@@ -178,7 +182,7 @@ def localize_logo(job):
         return slug, False
 
 def plain_title(title):
-    return re.sub(r"\s*(\([^)]*\)|\[[^\]]*\])", "", title).strip()
+    return re.sub(r"\s*(\([^)]*\)|\[[^\]]*\]|[ⒼⓈⓎ])", "", title).strip()
 
 def tvlogos_index():
     """Logos do projeto tv-logo/tv-logos, indexados por pasta de país + nome normalizado (só igualdade exata)."""
@@ -309,8 +313,24 @@ def main():
     lang_names = {l.get("code"): l.get("name") for l in fetch_json("https://iptv-org.github.io/api/languages.json")}
 
     candidates = []
+    curated = set()
     errors = Counter()
     seen = set()
+    seen_titles = set()
+    for country, furl in FREE_TV.items():
+        try:
+            req = urllib.request.Request(furl, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=30) as response:
+                source = response.read().decode("utf-8-sig")
+            for ext, url in parse(source):
+                if url in seen or "youtube.com" in url or "youtu.be" in url:
+                    continue
+                seen.add(url)
+                seen_titles.add((country, norm(plain_title(title_of(ext)))))
+                curated.add(url)
+                candidates.append((ext, url, country))
+        except Exception:
+            errors["source_freetv_" + country] += 1
     for country, code in COUNTRIES.items():
         try:
             req = urllib.request.Request(BASE.format(code), headers={"User-Agent": UA})
@@ -321,6 +341,10 @@ def main():
                 if url in seen:
                     continue
                 seen.add(url)
+                key = (country, norm(plain_title(title_of(ext))))
+                if country in KEEP_REGARDLESS and key in seen_titles and norm(plain_title(title_of(ext))) in {k[1] for k in seen_titles if k[0] == country}:
+                    errors["duplicate_of_curated"] += 1
+                    continue
                 pid = attr(ext, "tvg-id")
                 meta = channels_meta.get(pid.split("@")[0])
                 if (meta and meta.get("country") == "FR") or pid.split("@")[0].lower().endswith(".fr"):
@@ -339,11 +363,11 @@ def main():
             errors[reason] += 1
             if valid:
                 results.append(valid)
-            elif item[2] == "United Kingdom" and (reason in ("403", "451") or (reason == "network" and MAIN_UK.match(plain_title(title_of(item[0]))))):
-                # BBC, ITV, Channel 4... só respondem dentro do Reino Unido. O teste roda fora, então
-                # o 403 aqui é bloqueio regional, não link morto: mantém para quem assiste de lá.
+            elif item[2] in KEEP_REGARDLESS and reason not in DEAD:
+                # Brasil e Reino Unido: o teste roda fora desses países, então bloqueio regional ou falta de resposta
+                # não prova link morto. Só sai o que é claramente morto (404/410) ou não é vídeo.
                 results.append(item)
-                errors["kept_uk_not_reachable_from_runner"] += 1
+                errors["kept_br_uk_not_verified"] += 1
             else:
                 rejected.append((reason, item[2], title_of(item[0]), item[1]))
     order = list(COUNTRIES)
@@ -440,7 +464,7 @@ def main():
             ext = set_attr(ext, "tvg-language", ";".join(names))
         group = DISPLAY.get(country, country)
         ext = set_attr(ext, "group-title", group)
-        rows.append((order.index(country), title.lower(), category.lower(), ext, url, country))
+        rows.append((order.index(country), 0 if url in curated else 1, title.lower(), ext, url, country))
     rows.sort(key=lambda r: r[:3])
 
     # ---- guia de programação ----
@@ -478,7 +502,7 @@ def main():
         "candidates": len(candidates),
         "accepted": len(rows),
         "by_country": dict(Counter(r[5] for r in rows)),
-        "by_category": dict(Counter(r[2] for r in rows).most_common()),
+        "by_category": {},
         "test_results": dict(errors),
         "notes": [
             "HTTP checks do not prove playback on Sparkle TV.",

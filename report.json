@@ -1,66 +1,40 @@
 {
-  "generated_at": "2026-11-15T18:58:14.059435+00:00",
-  "candidates": 2498,
-  "accepted": 1952,
+  "generated_at": "2026-11-15T19:03:59.231141+00:00",
+  "candidates": 2520,
+  "accepted": 2042,
   "by_country": {
-    "United States": 1212,
-    "Canada": 177,
-    "Australia": 50,
-    "New Zealand": 5,
-    "Brazil": 256,
-    "United Kingdom": 252
+    "Brazil": 360,
+    "United Kingdom": 304,
+    "United States": 1152,
+    "Canada": 174,
+    "Australia": 47,
+    "New Zealand": 5
   },
-  "by_category": {
-    "general": 291,
-    "other": 180,
-    "series": 167,
-    "religious": 166,
-    "entertainment": 156,
-    "movies": 143,
-    "news": 118,
-    "music": 100,
-    "sports": 81,
-    "kids": 76,
-    "legislative": 67,
-    "documentary": 53,
-    "education": 50,
-    "comedy": 45,
-    "classic": 45,
-    "animation": 39,
-    "lifestyle": 27,
-    "culture": 26,
-    "shop": 24,
-    "outdoor": 19,
-    "cooking": 18,
-    "travel": 15,
-    "business": 11,
-    "family": 10,
-    "auto": 9,
-    "weather": 9,
-    "relax": 3,
-    "science": 3,
-    "public": 1
-  },
+  "by_category": {},
   "test_results": {
-    "excluded_closed_or_nsfw": 10,
+    "duplicate_of_curated": 27,
+    "excluded_closed_or_nsfw": 9,
     "excluded_france": 9,
-    "ok": 1874,
+    "403": 258,
+    "kept_br_uk_not_verified": 226,
+    "network": 201,
+    "400": 13,
     "404": 146,
-    "403": 230,
-    "network": 189,
-    "502": 6,
+    "ok": 1816,
+    "500": 5,
+    "html": 24,
+    "218": 1,
     "unknown-media": 4,
-    "400": 10,
-    "504": 6,
-    "503": 4,
-    "408": 5,
+    "504": 7,
+    "502": 16,
+    "503": 5,
+    "574": 1,
+    "401": 5,
+    "408": 4,
     "416": 7,
     "204": 5,
-    "html": 9,
-    "523": 1,
-    "218": 1,
-    "kept_uk_not_reachable_from_runner": 78,
-    "574": 1
+    "405": 1,
+    "523": 1
   },
   "notes": [
     "HTTP checks do not prove playback on Sparkle TV.",
@@ -69,28 +43,28 @@
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "stored_original": 1739,
-    "placeholder_with_channel_name": 92,
-    "stored_repaired": 121
+    "stored_repaired": 144,
+    "stored_original": 1788,
+    "placeholder_with_channel_name": 110
   },
   "epg": {
     "status": "matched",
-    "channels_with_guide": 734,
-    "channels_total": 1952,
-    "programme_entries": 29480,
+    "channels_with_guide": 750,
+    "channels_total": 2042,
+    "programme_entries": 31424,
     "window_days": 4,
     "sources": {
       "all.xml": {
         "channels": 531,
-        "programmes": 14720
+        "programmes": 14729
       },
       "epg_ripper_UK1.xml.gz": {
-        "channels": 39,
-        "programmes": 2407
+        "channels": 46,
+        "programmes": 3430
       },
       "epg_ripper_US2.xml.gz": {
-        "channels": 69,
-        "programmes": 7604
+        "channels": 66,
+        "programmes": 7102
       },
       "epg_ripper_US_LOCALS1.xml.gz": {
         "channels": 0,
@@ -102,11 +76,11 @@
       },
       "epg_ripper_CA2.xml.gz": {
         "channels": 18,
-        "programmes": 1288
+        "programmes": 1067
       },
       "epg_ripper_AU1.xml.gz": {
-        "channels": 16,
-        "programmes": 1205
+        "channels": 15,
+        "programmes": 1519
       },
       "epg_ripper_NZ1.xml.gz": {
         "channels": 2,
@@ -117,8 +91,8 @@
         "programmes": 0
       },
       "epg_ripper_BR2.xml.gz": {
-        "channels": 18,
-        "programmes": 1595
+        "channels": 32,
+        "programmes": 2916
       }
     }
   }
