@@ -32,6 +32,8 @@ EPG_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_BR2.xml.gz",
 ]
 EPG_DAYS = 4
+# Canais principais do Reino Unido: se o teste (feito fora do país) não alcança o servidor, mantém mesmo assim.
+MAIN_UK = re.compile(r"^(BBC (One|Two|Three|Four|News|Parliament)|ITV ?[1-4X]?\b|ITVBe|Channel ?[45]\b|E4|More ?4|Film ?4|4Music|Dave|Sky News|Quest|Really|Yesterday)", re.I)
 
 def fetch_json(url):
     try:
@@ -152,6 +154,28 @@ def pluto_id(url):
 def pluto_icons():
     text = pluto_bytes().decode("utf-8", "ignore")
     return {m.group(1): m.group(2) for m in re.finditer(r'<channel id="([0-9a-f]+)">.*?<icon src="([^"]+)"', text, re.S)}
+
+
+def slug_of(base_id, title):
+    return re.sub(r"[^a-z0-9]+", "-", (base_id or "").lower()).strip("-") or hashlib.md5(title.encode()).hexdigest()[:10]
+
+def localize_logo(job):
+    """Baixa o logo, reduz para no máximo 256 px e guarda em logos/<slug>.png (o repositório serve; imgur e outros limitam acesso)."""
+    slug, url = job
+    try:
+        from PIL import Image
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=12) as response:
+            raw = response.read(3_000_000)
+        img = Image.open(io.BytesIO(raw))
+        img.load()
+        img = img.convert("RGBA")
+        img.thumbnail((256, 256))
+        os.makedirs("logos", exist_ok=True)
+        img.save("logos/" + slug + ".png", optimize=True)
+        return slug, True
+    except Exception:
+        return slug, False
 
 def plain_title(title):
     return re.sub(r"\s*(\([^)]*\)|\[[^\]]*\])", "", title).strip()
@@ -315,6 +339,11 @@ def main():
             errors[reason] += 1
             if valid:
                 results.append(valid)
+            elif item[2] == "United Kingdom" and (reason in ("403", "451") or (reason == "network" and MAIN_UK.match(plain_title(title_of(item[0]))))):
+                # BBC, ITV, Channel 4... só respondem dentro do Reino Unido. O teste roda fora, então
+                # o 403 aqui é bloqueio regional, não link morto: mantém para quem assiste de lá.
+                results.append(item)
+                errors["kept_uk_not_reachable_from_runner"] += 1
             else:
                 rejected.append((reason, item[2], title_of(item[0]), item[1]))
     order = list(COUNTRIES)
@@ -362,33 +391,44 @@ def main():
     todo = set(extra_urls.values()) - set(valid_logo)
     with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:
         valid_logo.update(zip(todo, pool.map(logo_works, todo)))
+
+    plan = {}      # slug -> endereço externo do logo
+    origin = {}    # índice do canal -> (slug, "original" | "repaired" | "none")
+    for n, (ext, _, country) in enumerate(results):
+        base_id = attr(ext, "tvg-id").split("@")[0]
+        slug = slug_of(base_id, title_of(ext))
+        logo = attr(ext, "tvg-logo")
+        if logo and valid_logo.get(logo, False):
+            plan.setdefault(slug, logo); origin[n] = (slug, "original")
+        else:
+            fixed = next((u for _, u in sorted(catalog.get(base_id, [])) if valid_logo.get(u, False)), "")
+            if fixed:
+                plan.setdefault(slug, fixed); origin[n] = (slug, "repaired")
+            else:
+                origin[n] = (slug, "none")
     if os.path.isdir("logos"):
         for old in os.listdir("logos"):
             os.remove(os.path.join("logos", old))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:
+        stored = dict(pool.map(localize_logo, plan.items()))
 
     rows = []
     logo_stats = Counter()
     missing_logos = []
-    for ext, url, country in results:
+    for n, (ext, url, country) in enumerate(results):
         pid = attr(ext, "tvg-id")
         base_id, _, feed = pid.partition("@")
         meta = channels_meta.get(base_id)
         title = plain_title(title_of(ext)) or title_of(ext)
         ext = ext[:len(ext) - len(title_of(ext))] + title
-        # logo
-        logo = attr(ext, "tvg-logo")
-        if logo and valid_logo.get(logo, False):
-            logo_stats["verified_working"] += 1
+        slug, kind = origin[n]
+        if kind != "none" and stored.get(slug, False):
+            ext = set_attr(ext, "tvg-logo", RAW_BASE + "logos/" + slug + ".png")
+            logo_stats["stored_" + kind] += 1
         else:
-            fixed = next((u for _, u in sorted(catalog.get(base_id, [])) if valid_logo.get(u, False)), "")
-            if fixed:
-                ext = set_attr(ext, "tvg-logo", fixed)
-                logo_stats["repaired_from_catalog"] += 1
-            else:
-                slug = re.sub(r"[^a-z0-9]+", "-", base_id.lower()).strip("-") or hashlib.md5(title.encode()).hexdigest()[:10]
-                ext = set_attr(ext, "tvg-logo", placeholder_logo(title, slug))
-                logo_stats["placeholder_with_channel_name"] += 1
-                missing_logos.append((country, title, pid))
+            ext = set_attr(ext, "tvg-logo", placeholder_logo(title, slug))
+            logo_stats["placeholder_with_channel_name"] += 1
+            missing_logos.append((country, title, pid))
         # metadados
         category = clean_category(ext, meta)
         ext = set_attr(ext, "tvg-category", category)

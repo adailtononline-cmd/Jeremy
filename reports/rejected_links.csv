@@ -43,6 +43,7 @@ reason,country,channel,url
 403,Brazil,SporTV 3 (1080p),http://195.178.110.110/sportv3/index.m3u8
 403,Brazil,TV 3 Curitiba (720p),https://stmv.webtvninjas.com.br/tv3/tv3/playlist.m3u8
 403,Brazil,TV Assembleia Piaui,https://stmv1.srvstm.com/piaui8071/piaui8071/playlist.m3u8
+403,Brazil,TV Brasil Oeste (720p),https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
 403,Brazil,TV Diario Macapa (1080p) [Not 24/7],https://5ad482a77183d.streamlock.net/marliomelohotmail.com/marliomelohotmail.com/playlist.m3u8
 403,Brazil,TV Encontro das Aguas,https://stmv7.samcast.com.br/sistemaencontrodasaguas/sistemaencontrodasaguas/playlist.m3u8
 403,Brazil,TV Globo Sao Paulo (720p),http://170.84.165.204/Globo_HD/index.m3u8
@@ -79,75 +80,10 @@ reason,country,channel,url
 403,Canada,TVA (Canada) CFTM-DT [Geo-blocked],https://tvalive-dai01.akamaized.net/Content/HLS/Live/channel(575b93c5-be31-ee34-6285-14620fd14048)/index.m3u8
 403,Canada,Uvagut TV (1080p),https://hls.uvagut.tv/hls/uvagut/playlist.m3u8
 403,New Zealand,Channel 200 (540p),https://d1jlnqid3sfc6m.cloudfront.net/out/v1/3fc2254c865a457c8d7fbbce227a2aae/index.m3u8
-403,United Kingdom,BBC Four/CBeebies (720p),http://193.46.58.239:8080/CbeebiesHD/index.m3u8
-403,United Kingdom,BBC One (720p) [Geo-blocked],https://vs-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_london/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC One East (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One East Midlands (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_midlands/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One East Midlands HD [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_midlands/hevc_iptv_mse_v0.mpd
-403,United Kingdom,BBC One London HD (720p),http://193.239.186.231/BBC1/index.m3u8
-403,United Kingdom,BBC One North East & Cumbria (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_east/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One North East & Cumbria HD [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_east/hevc_iptv_mse_v0.mpd
-403,United Kingdom,BBC One North West (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_west/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One North West HD [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_west/hevc_iptv_mse_v0.mpd
-403,United Kingdom,BBC One Northern Ireland (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_northern_ireland_hd/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One Northern Ireland HD [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_northern_ireland_hd/hevc_iptv_mse_v0.mpd
-403,United Kingdom,BBC One Scotland (540p) [Geo-blocked],https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_scotland_hd/pc_hd_abr_v2.m3u8
-403,United Kingdom,BBC One Scotland HD (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_scotland_hd/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One South (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One South East (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south_east/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One South West (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south_west/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One Wales (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_wales_hd/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One West (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_west/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One West Midlands (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_west_midlands/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One Yorkshire (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_yorks/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC One Yorkshire HD (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_yorkshire/pc_hd_abr_v2.mpd
-403,United Kingdom,BBC Parliament (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_parliament/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 1 (720p) [Geo-blocked],https://vs-cmaf-pushb-uk.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:red_button_one/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 10 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_010/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 11 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_011/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 12 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_012/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 13 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_013/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 14 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_014/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 15 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_015/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 16 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_016/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 17 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_017/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 18 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_018/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 19 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_019/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 2 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_002/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 20 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_020/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 21 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_021/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 22 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_022/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 23 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_023/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 24 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_024/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 3 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_003/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 4 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_004/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 5 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_005/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 6 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_006/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 7 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_007/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 8 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_008/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Red Button 9 (720p) [Geo-blocked],https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_009/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Scotland (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_scotland_hd/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Three (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_three_hd/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Two HD (720p) [Geo-blocked],https://vs-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_hd/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Two Northern Ireland (540p) [Geo-blocked],https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_northern_ireland_hd/pc_hd_abr_v2.m3u8
-403,United Kingdom,BBC Two Northern Ireland HD (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_northern_ireland_hd/iptv_hd_abr_v1.mpd
-403,United Kingdom,BBC Two Wales (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_wales_digital/iptv_hd_abr_v1.mpd
-403,United Kingdom,Blaze (576p) [Geo-blocked],https://live-blaze-ssai.simplestreamcdn.com/v1/master/774d979dd66704abea7c5b62cb34c6815fda0d35/blaze-live-broadcast-scte/index.m3u8
-403,United Kingdom,CBBC (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:cbbc_hd/iptv_hd_abr_v1.mpd
-403,United Kingdom,CBeebies (United Kingdom) (720p) [Geo-blocked],https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:cbeebies_hd/iptv_hd_abr_v1.mpd
-403,United Kingdom,Foodxp (1080p),https://techtraveleat.in/stream.m3u8?id=foodxp
-403,United Kingdom,Pop Up (1080p) [Geo-blocked],https://amg01753-amg01753c9-samsung-gb-8005.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01753-narrativeuk-popup-samsunggb/playlist.m3u8
-403,United Kingdom,S4C (1080p) [Geo-blocked],https://v2.uk.live.s4c-cdn.co.uk/out/v1/S4C/UK_TX/uk_live/uk-tx-dvb.mpd
-403,United Kingdom,Sky Sports F1 (720p),https://cdn.stmify.com/out/v1/SKY_SPORTS_F1/index.m3u8
-403,United Kingdom,Sky Sports NFL (720p),https://cdn.stmify.com/out/v1/SKY_SPORTS_ACTION/index.m3u8
-403,United Kingdom,Sky Sports News (576p),https://cdn.stmify.com/out/v1/SKY_SPORTS_PREMIER_LEAGUE/index.m3u8
-403,United Kingdom,TV One (576p),http://92.114.85.72:8000/play/a070
-403,United Kingdom,Talking Pictures TV (576p),http://92.114.85.72:8000/play/a0la
-403,United Kingdom,Tiny Pop +1 (576p),http://92.114.85.72:8000/play/a08p
-403,United Kingdom,Together TV (576p),http://92.114.85.72:8000/play/a0j8
-403,United Kingdom,Trace UK (1080p),https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
-403,United Kingdom,U&Alibi (576p),http://92.114.85.72:8000/play/a0bi
-403,United Kingdom,U&W,http://92.114.85.72:8000/play/a0bj
+403,United States,ABC KRGV-TV (720p),https://d3svnrf3rmq619.cloudfront.net/krgv-live/smil:krgv-live.smil/playlist.m3u8
+403,United States,ABC WBRZ-TV (480p),https://d2a6g6zgxepbwi.cloudfront.net/wbrz-edge/weather.stream_360p/playlist.m3u8
+403,United States,AMP 1 (720p),https://dlttx48mxf9m3.cloudfront.net/vod_clients/amp/live/ch1/video.m3u8
+403,United States,AMP 2 (720p),https://dlttx48mxf9m3.cloudfront.net/vod_clients/amp/live/ch2/video.m3u8
 403,United States,ARTN TV (1080p) [Not 24/7],https://streamer1.connectto.com/ARTN_mobile/index.m3u8
 403,United States,Access 19,https://reflect-montgomerycommunitymedia.cablecast.tv/live-8/live/stream-3/live.m3u8
 403,United States,Access 4 PAC,https://reflect-channel18vod-springfield-il-us.cablecast.tv/live-16/live/stream-4/live.m3u8
@@ -204,11 +140,14 @@ reason,country,channel,url
 403,United States,KBRI-8 (720p),https://brightonco.cablecast.tv/live-4/live/live.m3u8
 403,United States,KCAT (1080p),https://reflect-kcat-live.cablecast.tv/live-2/live/live.m3u8
 403,United States,KFON TV (720p) [Geo-blocked],https://reflect-watchkfon-fontana.cablecast.tv/live-3/live/live.m3u8
-403,United States,LA CityView 35 (1080p),https://reflect-losangeles.cablecast.tv/live-3/live/live.m3u8
-403,United States,LA36 (1080p),https://reflect-channel36-la.cablecast.tv/live-3/live/stream-1/live.m3u8
-403,United States,LakeFront TV (720p),https://reflect-lakefront-leesburgflorida.cablecast.tv/live-6/live/live.m3u8
-403,United States,MSTV (1080p),https://reflect-mcsb-vod.cablecast.tv/live-16/live/live.m3u8
-403,United States,Metaleitor TV,https://vs20.live.opencaster.com/metaleitortv_423d3342/index.m3u8
+403,United States,KRGV-TV 5.2 (720p) [Geo-blocked],https://d3svnrf3rmq619.cloudfront.net/krgv-live/smil:krgv-somos.smil/playlist.m3u8
+403,United States,LATV (1080p) [Geo-blocked],https://amg00779-latv-amg00779c1-cineverse-us-1746.playouts.now.amagi.tv/playlist/amg00779-latvnetworkllc-latv-cineverseus/playlist.m3u8
+403,United States,Las Vegas Tonight with Dale Davidson (1080p),https://cdn.vegasplus.us/vegas/lasvegastonight/playlist.m3u8
+403,United States,Latino Channel TV (1080p),https://cdn.vegasplus.us/vegas/latch/playlist.m3u8
+403,United States,MCN6 Arts Channel (1080p) [Not 24/7],https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_COMEDY.smil/Playlist.m3u8
+403,United States,MCN6 Main Channel (1080p) [Not 24/7],https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_MAIN.smil/Playlist.m3u8
+403,United States,MCN6 Music Channel (1080p) [Not 24/7],https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_MUSIC.smil/Playlist.m3u8
+403,United States,MagellanTV Now (1080p),https://amg00376-magellan-amg00376c5-samsung-au-1708.playouts.now.amagi.tv/playlist/amg00376-magellantv-magellantvnowww-samsungau/playlist.m3u8
 403,United States,Military History (720p),https://frndly.keralive.workers.dev/v1/master/840a24ccd7c75076211d060179b3ad0c64fdc6ca/militaryhistory_live_nr/ab44a8245afe413db1169317ee5cda08/index.m3u8?type=ae2
 403,United States,Monroe Community Media Education Channel,https://reflect-monroe-public-access.cablecast.tv/live-4/live/live.m3u8
 403,United States,Monroe Community Media Public Access Channel,https://reflect-monroe-public-access.cablecast.tv/live-3/live/live.m3u8
@@ -324,7 +263,6 @@ reason,country,channel,url
 404,United States,Fox (United States) WBFF (1080p),https://linear-688.frequency.stream/dist/stirr/688/hls/master/playlist.m3u8
 404,United States,Fox Deportes (720p),http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8
 404,United States,GMTV (1080p),https://livechannel.mdc.akamaized.net/stitch/livechannel/1341/master1400000.m3u8;session=live_stream_1341
-404,United States,GunAz TV,https://tv.gunaz.tv/hls/live.m3u8
 404,United States,HarPal Geo (360p),https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
 404,United States,Harvest USA (576p),https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvestusa/d57ffba6564caea2fee3f4085f19a098.sdp/playlist.m3u8
 404,United States,Humor Mill (1080p),https://damkf751d85s1.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HumorMill-DistroTV/152.m3u8?ads.vf=3I7CXmxz7vK
@@ -341,7 +279,6 @@ reason,country,channel,url
 404,United States,Logos TV Estudio (720p) [Not 24/7],https://streamer1.streamhost.org/salive/logosdirectaH/playlist.m3u8
 404,United States,Logos TV Salud (720p) [Not 24/7],https://streamer1.streamhost.org/salive/logossaludH/playlist.m3u8
 404,United States,Lucas & Friends,https://app.viloud.tv/hls/channel/01e3b17a3605b7c0389411ae3d5dfd6e.m3u8
-404,United States,MLB Strike Zone (720p),http://23.237.104.106:8080/USA_MLB_STRIKE_ZONE/index.m3u8
 404,United States,MNT WCIV (1080p),https://linear-700.frequency.stream/dist/stirr/700/hls/master/playlist.m3u8
 404,United States,MSG (720p),http://23.237.104.106:8080/USA_MSG/index.m3u8
 404,United States,NBC KSNV (1080p),https://linear-708.frequency.stream/dist/stirr/708/hls/master/playlist.m3u8
@@ -355,6 +292,7 @@ reason,country,channel,url
 404,United States,Nicktoons (United States) (1080p),https://tvnow.hostless.app/nicktoons.m3u8
 404,United States,OAN Plus KPVM-LD,https://2-fss-2.streamhoster.com/pl_118/206858-4404458-1/playlist.m3u8
 404,United States,Overcomers TV (720p),https://glorystartv.live/Overcomers/index.m3u8
+404,United States,PBC TV Channel 20 (720p),https://pbcvideostreams1.pbc.gov/memfs/1af49f9a-6b90-4ec2-a640-7f65ceebed4a.m3u8
 404,United States,Pasco TV (480p),https://cpcdn.azureedge.net/PASCOCOFLLIVE1/PASCOCOFLLIVE1/playlist.m3u8
 404,United States,Payam Javan TV (720p) [Not 24/7],https://uni01rtmp.tulix.tv/kensecure/pjtv.stream/playlist.m3u8
 404,United States,RT en Espanol (1080p),http://15.204.246.24:8080/RTHD/index.m3u8
@@ -380,18 +318,18 @@ reason,country,channel,url
 404,United States,The Bob Ross Channel (720p),https://aegis-cloudfront-1.tubi.video/45301c94-0d40-4cbb-b342-f5dc7949d76c/playlist.m3u8
 404,United States,The Burbank Channel (720p),https://cdn3.wowza.com/5/djRwZmQvTEJidmZD/burbank/G0240_009/playlist.m3u8
 404,United States,Transformers TV (720p),https://jmp2.uk/plu-60fb053712f22a0007ff14d2.m3u8
-404,United States,WITN22 (1080p) [Not 24/7],https://witn.cablecast.tv/live-4/live/live.m3u8
+405,United States,Univision WGBO-DT (2160p),https://unidfp-nlds154.global.ssl.fastly.net/nlds/univisionnow/univision_chi2/as/live/univision_chi2_hd_pc.m3u8?t1=null
+408,United States,News12 Bronx (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12XH_A1/index_new.m3u8?omap=https
+408,United States,News12 Brooklyn (720p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12KH_A1/index_new.m3u8?omap=https
 408,United States,News12 Conneticut [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12CH_FFLD_MILF_A1/index_new.m3u8?omap=https
+408,United States,News12 Long Island (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12LH_WEST_A1/index_new.m3u8?omap=https
 408,United States,News12 New Jersey (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12JH_CENT_A1/index_new.m3u8?omap=https
-416,United States,News12 Bronx (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12XH_A1/index_new.m3u8?omap=https
-416,United States,News12 Brooklyn (720p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12KH_A1/index_new.m3u8?omap=https
+408,United States,News12 Westchester (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12WH_A1/index_new.m3u8?omap=https
+408,United States,News12+ Connecticut (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_CT_A1/index_new.m3u8
+408,United States,News12+ New York (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_NYC_A1/index_new.m3u8
 416,United States,News12 Hudson Valley (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12HH_A1/index_new.m3u8?omap=https
-416,United States,News12 Long Island (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12LH_WEST_A1/index_new.m3u8?omap=https
-416,United States,News12 Westchester (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12WH_A1/index_new.m3u8?omap=https
-416,United States,News12+ Connecticut (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_CT_A1/index_new.m3u8
 416,United States,News12+ Hudson Valley (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_WC_A1/index_new.m3u8
 416,United States,News12+ New Jersey (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_NJ_A1/index_new.m3u8
-416,United States,News12+ New York (1080p) [Geo-blocked],https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_NYC_A1/index_new.m3u8
 416,United States,Stadium (720p),https://wurl120sports.global.transmit.live/hls/679a907dce42a042c23ace37/v1/stadium_gracenote/samsung_us/latest/main/hls/playlist.m3u8
 502,Brazil,TELE 6 (720p),https://lbgo.bozztv.com/ssh101/ssh101/tele6/playlist.m3u8
 502,United Kingdom,YAAAS! (720p) [Geo-blocked],https://d3knqoaufvjug3.cloudfront.net/yas.m3u8
@@ -521,28 +459,20 @@ network,New Zealand,TVNZ 2 [Geo-blocked],https://duoak7vltfob0.cloudfront.net/v1
 network,New Zealand,TVNZ DUKE [Geo-blocked],https://dayqb844napyo.cloudfront.net/v1/master/b1f4432f8f95be9e629d97baabfed15b8cacd1f8/TVNZ_Duke/master.m3u8
 network,United Kingdom,5USA (360p),https://lb.iptvnetwork.net/ls28/10115/playlist.m3u8
 network,United Kingdom,Aaj Tak (1080p),http://103.213.31.109:90/AajtakHD/playlist.m3u8
-network,United Kingdom,BBC News UK HD (1080p),http://45.153.96.44:8001
 network,United Kingdom,BBC UHD 4 (720p),http://45.14.84.37/bbc4/index.m3u8
-network,United Kingdom,Channel 4 (360p),https://lb.iptvnetwork.net/ls28/10104/playlist.m3u8
-network,United Kingdom,Channel 5 (United Kingdom) (360p),https://lb.iptvnetwork.net/ls28/10105/playlist.m3u8
 network,United Kingdom,Duck Dynasty (1080p),https://amg00276-amg00276c2-rakuten-uk-3449.playouts.now.amagi.tv/playlist.m3u8
-network,United Kingdom,E4 (360p),https://lb.iptvnetwork.net/ls28/10113/playlist.m3u8
 network,United Kingdom,Eman Channel (576p),https://ap02.iqplay.tv:8082/iqb8002/3m9n/playlist.m3u8
 network,United Kingdom,Garshom TV (360p) [Not 24/7],https://og2qd3aal7an-hls-live.5centscdn.com/garshomtv/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
 network,United Kingdom,IBC Bakthi (1080p),https://ibc.massstream.net/IBC2/index.m3u8
 network,United Kingdom,IBC Tamil (1080p),https://ibc.massstream.net/IBC/index.m3u8
-network,United Kingdom,ITV2 (360p),https://lb.iptvnetwork.net/ls28/10106/playlist.m3u8
-network,United Kingdom,ITV3 (360p),https://lb.iptvnetwork.net/ls28/10107/playlist.m3u8
-network,United Kingdom,ITV4 (360p),https://lb.iptvnetwork.net/ls28/10108/playlist.m3u8
 network,United Kingdom,Ion TV (576p),https://ap02.iqplay.tv:8082/iqb8002/i09/playlist.m3u8
 network,United Kingdom,Iqra TV,https://cdn149.anystream.uk:8082/app/iq53la/playlist.m3u8
 network,United Kingdom,Islam Channel (576p) [Not 24/7],https://live.islamchannel.tv/live11/islamtv_english/bitrate1.isml/live.m3u8
 network,United Kingdom,Kalsan TV (576p),https://ap02.iqplay.tv:8082/iqb8002/ka1s0n/playlist.m3u8
-network,United Kingdom,More4 (576p),http://82.47.42.44/stream/402/index.m3u8
 network,United Kingdom,National Geographic (United Kingdom),http://82.47.42.44/stream/405/index.m3u8
 network,United Kingdom,Nickelodeon (United Kingdom),http://93.186.201.93/stream/397/index.m3u8
 network,United Kingdom,Planet Fun (1080p),http://66.102.126.10:8000/play/a02k/index.m3u8
-network,United Kingdom,Quest,http://82.47.42.44/stream/385/index.m3u8
+network,United Kingdom,Sheffield Live TV (360p) [Not 24/7],http://tv.sheffieldlive.org/hls/main.m3u8
 network,United Kingdom,TV Warehouse (720p),https://tvwarehouse.r.worldssl.net/mystream.m3u8
 network,United States,AFV Espanol (720p) [Not 24/7],https://linear-46.frequency.stream/dist/plex/46/hls/master/playlist.m3u8
 network,United States,AMC en Espanol,https://amc-amcespanol-1-us.lg.wurl.tv/playlist.m3u8
@@ -574,6 +504,8 @@ network,United States,Jus One (1080p),http://103.154.3.101:5001/live/961.m3u8
 network,United States,Jus Punjabi (1080p),http://103.154.3.101:5001/live/959.m3u8
 network,United States,Laff (576p),http://tvsen7.aynascope.net/laff/index.m3u8
 network,United States,Lifetime,https://tvsen7.aynascope.net/lifetime/index.m3u8
+network,United States,Lindell TV (720p),https://rumble.com/live-hls/6v67mu/playlist.m3u8
+network,United States,MLB Strike Zone (720p),http://23.237.104.106:8080/USA_MLB_STRIKE_ZONE/index.m3u8
 network,United States,MMA TV (576p),http://31.148.48.15/M1_Global/index.m3u8
 network,United States,MTV2 (720p),http://198.58.104.90:8989/mtv2/index.m3u8
 network,United States,Mega Extreno HD (720p),https://stream-cdn-iad3.vaughnsoft.net/play/live_mega_extremo.flv

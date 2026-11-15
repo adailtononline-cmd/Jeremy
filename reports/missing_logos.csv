@@ -1,13 +1,14 @@
 country,channel,tvg_id
-Australia,ABC TV Plus,ABCTVPlus.au@Sydney
 Australia,PBS America,PBSAmerica.uk@SD
 Brazil,A&E Latin America Brazil,AELatinAmerica.us@Brazil
 Brazil,AMC Latin America Brazil,AMCLatinAmerica.us@Brazil
-Brazil,Cartoon Network Latin America Brazil,CartoonNetworkLatinAmerica.us@Brazil
+Brazil,Canal UOL,CanalUOL.br@SD
+Brazil,CazeTV,CazeTV.br@SD
 Brazil,Cultura Fast,CulturaFast.br@SD
 Brazil,ESPN,ESPN.br@SD
 Brazil,Lifetime Latin America Brazil,LifetimeLatinAmerica.us@Brazil
 Brazil,Plenitude TV,PlenitudeTV.br@SD
+Brazil,Pluto TV Esportes,PlutoTVEsportes.us@BR
 Brazil,Rede Seculo 21,RedeSeculo21.br@SD
 Brazil,Studio Universal Latin America Brazil,StudioUniversalLatinAmerica.us@Brazil
 Brazil,TLC Latin America Brazil,TLCLatinAmerica.us@Brazil
@@ -26,9 +27,11 @@ Canada,Stingray Easy Listening,StingrayEasyListening.ca@SD
 Canada,Stingray Jukebox Oldies,StingrayJukeboxOldies.ca@SD
 Canada,Stingray Romance Latino,StingrayRomanceLatino.ca@SD
 Canada,TVOKids,TVOKids.ca@SD
+Canada,ZenLIFE by Stingray,ZenLIFEbyStingray.ca@HD
 United Kingdom,CNBC UK,CNBCUK.uk@SD
 United Kingdom,Sangat TV,SangatTV.uk@SD
 United Kingdom,Totalmusic 2000s,Totalmusic2000s.uk@HD
+United Kingdom,Trace UK,TraceUK.uk@HD
 United Kingdom,Zee One,ZeeOne.uk@UK
 United Kingdom,talkSPORT,talkSPORT.uk@SD
 United States,30A TV Classic Movies,30ATVClassicMovies.us@SD
@@ -45,10 +48,11 @@ United States,ABC News Live 9,ABCNewsLive9.us@SD
 United States,Aastha International,AasthaInternational.in@SD
 United States,Adult Swim West,AdultSwim.us@West
 United States,America's Voice,AmericasVoice.us@SD
+United States,Blue Bloods,BlueBloods.us@SD
 United States,CC-TV,CCTV.us@SD
 United States,CNN en Espanol,CNNenEspanol.us@SD
-United States,Cartoon Network West,CartoonNetwork.us@West
 United States,Catholic Faith Network,CatholicFaithNetwork.us@SD
+United States,Channel 10,Channel10.us@SD
 United States,Cinemax West,Cinemax.us@West
 United States,Crime + Investigation,CrimePlusInvestigation.us@SD
 United States,De Pelicula US,DePeliculaUS.us@SD
@@ -56,7 +60,7 @@ United States,Entertainment Tonight,EntertainmentTonight.us@SD
 United States,Fox Business Network,FoxBusinessNetwork.us@SD
 United States,Fox News Channel,FoxNewsChannel.us@SD
 United States,Fox News International,FoxNewsInternational.us@SD
-United States,History,History.us@East
+United States,Fox Weather,FoxWeather.us@SD
 United States,Jewelry TV 2,JewelryTV2.us@SD
 United States,KMCT-TV 39.1,KMCTTV391.us@HD
 United States,LifevisionTV,LifevisionTV.us@SD
@@ -66,6 +70,7 @@ United States,Muslim Network TV,MuslimNetworkTV.us@SD
 United States,NBC LX Home,NBCLXHome.us@HD
 United States,NOST,NOST.us@SD
 United States,OWN,OWN.us@East
+United States,Placid,Placid.us@EastHD
 United States,Rev and Roll,RevandRoll.us@SD
 United States,Revry Queer,RevryQueer.us@SD
 United States,TLN Media Chicago,TLNMediaChicago.us@SD
