@@ -59,6 +59,25 @@ def check(item):
     except Exception:
         return None, "network"
 
+def logo_works(url):
+    if not url or not url.startswith("https://"):
+        return False
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Range": "bytes=0-2047"})
+        with urllib.request.urlopen(req, timeout=8) as response:
+            data = response.read(2048)
+            ctype = response.headers.get("Content-Type", "").lower()
+            return response.status in (200, 206) and (data.startswith((bytes.fromhex("89504e47"), bytes.fromhex("ffd8ff"), b"GIF87a", b"GIF89a", b"RIFF")) or b"<svg" in data[:512].lower() or (ctype.startswith("image/") and not data.lstrip().lower().startswith(b"<html")))
+    except Exception:
+        return False
+
+def add_attribute(ext, name, value):
+    prefix = re.match(r"^#EXTINF:-?\d+", ext)
+    if not prefix:
+        return ext
+    pos = prefix.end()
+    return ext[:pos] + ' ' + name + '="' + value.replace('"', "") + '"' + ext[pos:]
+
 def main():
     candidates = []
     errors = Counter()
@@ -91,6 +110,7 @@ def main():
     epg_url = "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"
     epg_status = "unavailable"
     epg_matches = 0
+    epg_programmes = 0
     epg_error = None
     try:
         req = urllib.request.Request(epg_url, headers={"User-Agent": UA})
@@ -152,6 +172,7 @@ def main():
                             duplicate = ET.fromstring(ET.tostring(node))
                             duplicate.set("channel", extra)
                             root.append(duplicate)
+            epg_programmes = len(root.findall("programme"))
             with open("epg.xml", "wb") as out:
                 out.write(ET.tostring(root, encoding="utf-8", xml_declaration=True))
             epg_url = "https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/epg.xml"
@@ -174,40 +195,51 @@ def main():
     except Exception:
         pass
     logo_stats = Counter()
+    logo_urls = set()
+    for ext, _, _ in results:
+        m = re.search(r'tvg-logo="([^"]*)"', ext)
+        if m and m.group(1).strip():
+            logo_urls.add(m.group(1).strip())
+    logo_urls.update(logo_catalog.values())
+    with concurrent.futures.ThreadPoolExecutor(max_workers=32) as pool:
+        logo_valid = dict(zip(logo_urls, pool.map(logo_works, logo_urls)))
+
     lines = ['#EXTM3U' + (' url-tvg="' + epg_url + '" x-tvg-url="' + epg_url + '"' if epg_status == "matched" else '')]
     for ext, url, country in results:
         logo_match = re.search(r'tvg-logo="([^"]*)"', ext)
         channel_match = re.search(r'tvg-id="([^"]*)"', ext)
         existing_logo = logo_match.group(1).strip() if logo_match else ""
         channel_id = channel_match.group(1).strip() if channel_match else ""
-        if not existing_logo:
+        if existing_logo and logo_valid.get(existing_logo, False):
+            logo_stats["verified_working"] += 1
+        else:
             replacement = logo_catalog.get(channel_id)
-            if replacement:
+            if replacement and logo_valid.get(replacement, False):
                 if logo_match:
                     ext = ext[:logo_match.start()] + 'tvg-logo="' + replacement + '"' + ext[logo_match.end():]
                 else:
-                    ext = ext.replace(",", ' tvg-logo="' + replacement + '",', 1)
+                    ext = add_attribute(ext, "tvg-logo", replacement)
                 logo_stats["repaired_from_catalog"] += 1
             else:
-                logo_stats["still_missing"] += 1
-        else:
-            logo_stats["already_supplied"] += 1
+                if logo_match:
+                    ext = ext[:logo_match.start()] + 'tvg-logo=""' + ext[logo_match.end():]
+                logo_stats["missing_or_broken"] += 1
         original_group = re.search(r'group-title="([^"]*)"', ext)
         category = original_group.group(1).strip() if original_group else ""
         display_country = {"United Kingdom / Unclassified": "United Kingdom", "United States": "United States", "Canada": "Canada", "Australia": "Australia", "England": "England", "Scotland": "Scotland"}.get(country, country)
         combined_group = display_country
         if category and 'tvg-category=' not in ext:
-            ext = ext.replace(",", ' tvg-category="' + category.replace('"', "") + '",', 1)
+            ext = add_attribute(ext, "tvg-category", category)
         ext = re.sub(r'group-title="[^"]*"', lambda _: 'group-title="' + combined_group + '"', ext)
         if 'group-title=' not in ext:
-            ext = ext.replace(",", ' group-title="' + combined_group + '",', 1)
+            ext = add_attribute(ext, "group-title", combined_group)
         lines += [ext, url]
     if results:
         with open("jeremy.m3u", "w", encoding="utf-8") as f:
             f.write("\n".join(lines) + "\n")
     report = {"generated_at": datetime.now(timezone.utc).isoformat(), "candidates": len(candidates), "accepted": len(results), "by_country": dict(Counter(x[2] for x in results)), "test_results": dict(errors), "notes": ["HTTP checks do not prove playback on Sparkle TV.", "UK channels without explicit England/Scotland metadata are preserved under United Kingdom / Unclassified rather than discarded.", "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."]}
     report["logos"] = dict(logo_stats)
-    report["epg"] = {"status": epg_status, "matching_channel_ids": epg_matches, "error": epg_error, "source": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"}
+    report["epg"] = {"status": epg_status, "matching_channel_ids": epg_matches, "programme_entries": epg_programmes, "error": epg_error, "source": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"}
     with open("report.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
     if not results:
