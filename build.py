@@ -71,9 +71,6 @@ def main():
             for ext, url in parse(source):
                 if code == "uk":
                     classified = region(ext)
-                    if classified == "United Kingdom / Unclassified":
-                        errors["uk_unclassified"] += 1
-                        continue
                     country = classified
                 if url in seen:
                     continue
@@ -87,7 +84,7 @@ def main():
             errors[reason] += 1
             if valid:
                 results.append(valid)
-    order = list(COUNTRIES)
+    order = list(COUNTRIES) + ["United Kingdom / Unclassified"]
     results.sort(key=lambda x: (order.index(x[2]), x[0].split(",", 1)[-1].lower()))
     lines = ["#EXTM3U"]
     for ext, url, country in results:
@@ -98,7 +95,7 @@ def main():
     if results:
         with open("jeremy.m3u", "w", encoding="utf-8") as f:
             f.write("\n".join(lines) + "\n")
-    report = {"generated_at": datetime.now(timezone.utc).isoformat(), "candidates": len(candidates), "accepted": len(results), "by_country": dict(Counter(x[2] for x in results)), "test_results": dict(errors), "notes": ["HTTP checks do not prove playback on Sparkle TV.", "UK channels without explicit England/Scotland metadata excluded to avoid misclassification.", "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."]}
+    report = {"generated_at": datetime.now(timezone.utc).isoformat(), "candidates": len(candidates), "accepted": len(results), "by_country": dict(Counter(x[2] for x in results)), "test_results": dict(errors), "notes": ["HTTP checks do not prove playback on Sparkle TV.", "UK channels without explicit England/Scotland metadata are preserved under United Kingdom / Unclassified rather than discarded.", "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."]}
     with open("report.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
     if not results:
