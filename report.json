@@ -1,37 +1,48 @@
 {
-  "generated_at": "2026-11-15T17:21:38.510116+00:00",
+  "generated_at": "2026-11-15T17:26:05.653402+00:00",
   "candidates": 2517,
-  "accepted": 1902,
+  "accepted": 1934,
   "by_country": {
-    "United States": 1226,
+    "United States": 1261,
     "Canada": 178,
     "Australia": 51,
     "New Zealand": 5,
-    "Brazil": 264,
+    "Brazil": 261,
     "England": 2,
     "United Kingdom / Unclassified": 176
   },
   "test_results": {
-    "ok": 1902,
+    "ok": 1934,
     "404": 147,
-    "403": 219,
-    "network": 189,
-    "502": 6,
+    "502": 16,
+    "network": 198,
+    "403": 144,
+    "html": 30,
     "unknown-media": 4,
-    "503": 4,
+    "500": 2,
     "400": 11,
     "504": 6,
-    "408": 4,
-    "416": 8,
+    "503": 4,
+    "408": 5,
+    "416": 7,
     "204": 5,
-    "html": 9,
     "523": 1,
     "218": 1,
+    "401": 1,
     "574": 1
   },
   "notes": [
     "HTTP checks do not prove playback on Sparkle TV.",
     "UK channels without explicit England/Scotland metadata are preserved under United Kingdom / Unclassified rather than discarded.",
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
-  ]
+  ],
+  "logos": {
+    "already_supplied": 1906,
+    "still_missing": 28
+  },
+  "epg": {
+    "status": "invalid_or_unreachable",
+    "matching_channel_ids": 0,
+    "source": "https://iptv-epg.org/files/epg-gb.xml"
+  }
 }
