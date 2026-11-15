@@ -20,6 +20,7 @@ UA = "Jeremy-IPTV-Checker/1.0"
 ISO = {"United States": "US", "Canada": "CA", "Australia": "AU", "New Zealand": "NZ", "Brazil": "BR", "United Kingdom": "GB"}
 DISPLAY = {}
 EPG_SOURCES = [
+    "https://i.mjh.nz/PlutoTV/all.xml",
     "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz",
@@ -130,6 +131,28 @@ TVLOGOS_FOLDER = {"United States": "united-states", "Canada": "canada", "Austral
 RAW_BASE = "https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/"
 FONTS = ["/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"]
 
+PLUTO_URL = "https://i.mjh.nz/PlutoTV/all.xml"
+_PLUTO = {}
+
+def pluto_bytes():
+    """Guia do Pluto TV (i.mjh.nz): baixado uma vez, casa pelo ID do canal que está no link da playlist."""
+    if "data" not in _PLUTO:
+        try:
+            req = urllib.request.Request(PLUTO_URL, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=120) as response:
+                _PLUTO["data"] = response.read(120_000_000)
+        except Exception:
+            _PLUTO["data"] = b""
+    return _PLUTO["data"]
+
+def pluto_id(url):
+    m = re.match(r"https://jmp2\.uk/plu-([0-9a-f]+)\.m3u8", url or "")
+    return m.group(1) if m else ""
+
+def pluto_icons():
+    text = pluto_bytes().decode("utf-8", "ignore")
+    return {m.group(1): m.group(2) for m in re.finditer(r'<channel id="([0-9a-f]+)">.*?<icon src="([^"]+)"', text, re.S)}
+
 def plain_title(title):
     return re.sub(r"\s*(\([^)]*\)|\[[^\]]*\])", "", title).strip()
 
@@ -190,10 +213,12 @@ def norm(s):
 def build_epg(results, now):
     """Une os guias de várias fontes e guarda só canais da playlist e os próximos EPG_DAYS dias."""
     index = {}
-    for ext, _, _ in results:
+    for ext, link, _ in results:
         pid = attr(ext, "tvg-id")
         if not pid:
             continue
+        if pluto_id(link):
+            index.setdefault(pluto_id(link), set()).add(pid)
         for key in {pid, pid.split("@")[0], norm(title_of(ext)), norm(pid.split("@")[0].split(".")[0])}:
             if key and (key == pid or key == pid.split("@")[0] or len(key) >= 4):
                 index.setdefault(key, set()).add(pid)
@@ -203,9 +228,12 @@ def build_epg(results, now):
     lo, hi = now - 24 * 3600, now + EPG_DAYS * 24 * 3600
     for url in EPG_SOURCES:
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=90) as response:
-                data = response.read(80_000_000)
+            if url == PLUTO_URL:
+                data = pluto_bytes()
+            else:
+                req = urllib.request.Request(url, headers={"User-Agent": UA})
+                with urllib.request.urlopen(req, timeout=90) as response:
+                    data = response.read(80_000_000)
             stream = io.BytesIO(gzip.decompress(data) if data[:2] == b"\x1f\x8b" else data)
             mapping = {}
             count = 0
@@ -315,11 +343,17 @@ def main():
     # segunda passada: canais ainda sem logo que funcione -> tenta o projeto tv-logos (nome exato no país)
     tv_index = tvlogos_index()
     extra_urls = {}
-    for ext, _, country in results:
+    icons = pluto_icons()
+    for ext, link, country in results:
         base_id = attr(ext, "tvg-id").split("@")[0]
         if valid_logo.get(attr(ext, "tvg-logo"), False):
             continue
         if any(valid_logo.get(u, False) for _, u in catalog.get(base_id, [])):
+            continue
+        pico = icons.get(pluto_id(link))
+        if pico and pico.startswith("https://"):
+            extra_urls[base_id] = pico
+            catalog.setdefault(base_id, []).append((0, pico))
             continue
         url = tv_index.get((TVLOGOS_FOLDER.get(country, ""), norm(plain_title(title_of(ext)))))
         if url:

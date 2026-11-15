@@ -1,42 +1,42 @@
 {
-  "generated_at": "2026-11-15T18:37:20.865227+00:00",
+  "generated_at": "2026-11-15T18:43:12.732594+00:00",
   "candidates": 2498,
-  "accepted": 1889,
+  "accepted": 1803,
   "by_country": {
-    "United States": 1222,
-    "Canada": 177,
+    "United States": 1158,
+    "Canada": 174,
     "Australia": 50,
     "New Zealand": 5,
-    "Brazil": 261,
-    "United Kingdom": 174
+    "Brazil": 256,
+    "United Kingdom": 160
   },
   "by_category": {
-    "general": 259,
-    "religious": 166,
-    "series": 166,
-    "entertainment": 154,
-    "other": 153,
-    "movies": 143,
-    "news": 118,
-    "music": 99,
-    "sports": 78,
-    "kids": 72,
-    "legislative": 67,
-    "documentary": 56,
-    "education": 51,
-    "comedy": 45,
-    "classic": 45,
-    "animation": 41,
+    "general": 245,
+    "religious": 165,
+    "series": 152,
+    "entertainment": 149,
+    "movies": 138,
+    "other": 138,
+    "news": 114,
+    "music": 94,
+    "sports": 77,
+    "kids": 69,
+    "legislative": 68,
+    "documentary": 50,
+    "education": 50,
+    "comedy": 44,
+    "classic": 42,
+    "animation": 36,
     "culture": 28,
-    "lifestyle": 27,
+    "lifestyle": 26,
     "shop": 24,
-    "outdoor": 19,
+    "outdoor": 18,
     "cooking": 17,
-    "travel": 15,
+    "travel": 14,
     "business": 11,
     "family": 10,
-    "auto": 9,
     "weather": 9,
+    "auto": 8,
     "relax": 3,
     "science": 3,
     "public": 1
@@ -44,19 +44,22 @@
   "test_results": {
     "excluded_closed_or_nsfw": 10,
     "excluded_france": 9,
-    "ok": 1889,
-    "404": 140,
-    "403": 220,
-    "network": 189,
-    "503": 5,
-    "502": 6,
+    "ok": 1803,
+    "403": 255,
+    "401": 5,
+    "404": 144,
+    "502": 16,
+    "network": 204,
+    "html": 24,
     "unknown-media": 4,
+    "500": 2,
     "400": 10,
     "504": 6,
-    "416": 10,
-    "408": 2,
+    "503": 4,
+    "408": 4,
+    "416": 8,
     "204": 5,
-    "html": 9,
+    "405": 1,
     "523": 1,
     "218": 1,
     "574": 1
@@ -68,24 +71,28 @@
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "verified_working": 1713,
-    "placeholder_with_channel_name": 79,
-    "repaired_from_catalog": 97
+    "verified_working": 1642,
+    "placeholder_with_channel_name": 72,
+    "repaired_from_catalog": 89
   },
   "epg": {
     "status": "matched",
-    "channels_with_guide": 216,
-    "channels_total": 1889,
-    "programme_entries": 18371,
+    "channels_with_guide": 695,
+    "channels_total": 1803,
+    "programme_entries": 26615,
     "window_days": 4,
     "sources": {
+      "all.xml": {
+        "channels": 519,
+        "programmes": 14225
+      },
       "epg_ripper_UK1.xml.gz": {
-        "channels": 35,
-        "programmes": 2407
+        "channels": 27,
+        "programmes": 1695
       },
       "epg_ripper_US2.xml.gz": {
-        "channels": 84,
-        "programmes": 9362
+        "channels": 65,
+        "programmes": 6993
       },
       "epg_ripper_US_LOCALS1.xml.gz": {
         "channels": 0,
@@ -96,24 +103,24 @@
         "programmes": 0
       },
       "epg_ripper_CA2.xml.gz": {
-        "channels": 24,
-        "programmes": 2116
+        "channels": 16,
+        "programmes": 852
       },
       "epg_ripper_AU1.xml.gz": {
-        "channels": 28,
-        "programmes": 2568
+        "channels": 14,
+        "programmes": 1147
       },
       "epg_ripper_NZ1.xml.gz": {
         "channels": 1,
         "programmes": 108
       },
       "epg_ripper_BR1.xml.gz": {
-        "channels": 1,
-        "programmes": 52
+        "channels": 0,
+        "programmes": 0
       },
       "epg_ripper_BR2.xml.gz": {
-        "channels": 19,
-        "programmes": 1758
+        "channels": 18,
+        "programmes": 1595
       }
     }
   }
