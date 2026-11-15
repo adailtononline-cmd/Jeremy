@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-15T19:03:59.231141+00:00",
+  "generated_at": "2026-11-15T19:07:01.016419+00:00",
   "candidates": 2520,
-  "accepted": 2042,
+  "accepted": 2110,
   "by_country": {
-    "Brazil": 360,
-    "United Kingdom": 304,
-    "United States": 1152,
-    "Canada": 174,
+    "Brazil": 365,
+    "United Kingdom": 303,
+    "United States": 1213,
+    "Canada": 177,
     "Australia": 47,
     "New Zealand": 5
   },
@@ -15,25 +15,23 @@
     "duplicate_of_curated": 27,
     "excluded_closed_or_nsfw": 9,
     "excluded_france": 9,
-    "403": 258,
-    "kept_br_uk_not_verified": 226,
-    "network": 201,
+    "403": 226,
+    "kept_br_uk_not_verified": 219,
+    "network": 191,
     "400": 13,
     "404": 146,
-    "ok": 1816,
+    "ok": 1891,
     "500": 5,
-    "html": 24,
+    "html": 9,
     "218": 1,
     "unknown-media": 4,
-    "504": 7,
-    "502": 16,
-    "503": 5,
+    "504": 6,
+    "502": 6,
+    "503": 4,
     "574": 1,
-    "401": 5,
-    "408": 4,
-    "416": 7,
+    "408": 7,
+    "416": 4,
     "204": 5,
-    "405": 1,
     "523": 1
   },
   "notes": [
@@ -43,28 +41,28 @@
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "stored_repaired": 144,
-    "stored_original": 1788,
-    "placeholder_with_channel_name": 110
+    "stored_repaired": 161,
+    "stored_original": 1831,
+    "placeholder_with_channel_name": 118
   },
   "epg": {
     "status": "matched",
-    "channels_with_guide": 750,
-    "channels_total": 2042,
-    "programme_entries": 31424,
+    "channels_with_guide": 772,
+    "channels_total": 2110,
+    "programme_entries": 33240,
     "window_days": 4,
     "sources": {
       "all.xml": {
-        "channels": 531,
-        "programmes": 14729
+        "channels": 536,
+        "programmes": 14905
       },
       "epg_ripper_UK1.xml.gz": {
-        "channels": 46,
-        "programmes": 3430
+        "channels": 47,
+        "programmes": 3515
       },
       "epg_ripper_US2.xml.gz": {
-        "channels": 66,
-        "programmes": 7102
+        "channels": 70,
+        "programmes": 7809
       },
       "epg_ripper_US_LOCALS1.xml.gz": {
         "channels": 0,
@@ -75,12 +73,12 @@
         "programmes": 0
       },
       "epg_ripper_CA2.xml.gz": {
-        "channels": 18,
-        "programmes": 1067
+        "channels": 22,
+        "programmes": 1917
       },
       "epg_ripper_AU1.xml.gz": {
-        "channels": 15,
-        "programmes": 1519
+        "channels": 17,
+        "programmes": 1517
       },
       "epg_ripper_NZ1.xml.gz": {
         "channels": 2,
