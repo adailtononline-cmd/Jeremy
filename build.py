@@ -90,7 +90,10 @@ def main():
     for ext, url, country in results:
         original_group = re.search(r'group-title="([^"]*)"', ext)
         category = original_group.group(1).strip() if original_group else ""
-        combined_group = country + (" | " + category if category and category != country else "")
+        display_country = "United Kingdom" if country == "United Kingdom / Unclassified" else country
+        combined_group = display_country
+        if category and 'tvg-category=' not in ext:
+            ext = ext.replace(",", ' tvg-category="' + category.replace('"', "") + '",', 1)
         ext = re.sub(r'group-title="[^"]*"', lambda _: 'group-title="' + combined_group + '"', ext)
         if 'group-title=' not in ext:
             ext = ext.replace(",", ' group-title="' + combined_group + '",', 1)
