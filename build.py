@@ -14,14 +14,15 @@ import urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 
-COUNTRIES = {"Brazil": "br", "United Kingdom": "uk", "United States": "us", "Canada": "ca", "Australia": "au", "New Zealand": "nz"}
-FREE_TV = {"United Kingdom": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_uk.m3u8",
+COUNTRIES = {"Brazil": "br", "United Kingdom": "uk", "Ukraine": "ua", "United States": "us", "Canada": "ca", "Australia": "au", "New Zealand": "nz"}
+FREE_TV = {"Ukraine": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_ukraine.m3u8",
+           "United Kingdom": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_uk.m3u8",
            "Brazil": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_brazil.m3u8"}
 KEEP_REGARDLESS = {"Brazil", "United Kingdom"}
 DEAD = ("404", "410", "html", "unknown-media")
 BASE = "https://iptv-org.github.io/iptv/countries/{}.m3u"
 UA = "Jeremy-IPTV-Checker/1.0"
-ISO = {"United States": "US", "Canada": "CA", "Australia": "AU", "New Zealand": "NZ", "Brazil": "BR", "United Kingdom": "GB"}
+ISO = {"United States": "US", "Canada": "CA", "Australia": "AU", "New Zealand": "NZ", "Brazil": "BR", "United Kingdom": "GB", "Ukraine": "UA"}
 DISPLAY = {}
 EPG_SOURCES = [
     "https://i.mjh.nz/PlutoTV/all.xml",
@@ -32,6 +33,7 @@ EPG_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_CA2.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_AU1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_NZ1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_UA1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_BR2.xml.gz",
 ]
@@ -133,7 +135,7 @@ def add_attribute(ext, name, value):
     return ext[:pos] + ' ' + name + '="' + value.replace('"', "") + '"' + ext[pos:]
 
 
-TVLOGOS_FOLDER = {"United States": "united-states", "Canada": "canada", "Australia": "australia", "New Zealand": "new-zealand", "Brazil": "brazil", "United Kingdom": "united-kingdom"}
+TVLOGOS_FOLDER = {"United States": "united-states", "Canada": "canada", "Australia": "australia", "New Zealand": "new-zealand", "Brazil": "brazil", "United Kingdom": "united-kingdom", "Ukraine": "ukraine"}
 RAW_BASE = "https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/"
 FONTS = ["/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"]
 
@@ -342,7 +344,7 @@ def main():
                     continue
                 seen.add(url)
                 key = (country, norm(plain_title(title_of(ext))))
-                if country in KEEP_REGARDLESS and key in seen_titles and norm(plain_title(title_of(ext))) in {k[1] for k in seen_titles if k[0] == country}:
+                if country in FREE_TV and key in seen_titles and norm(plain_title(title_of(ext))) in {k[1] for k in seen_titles if k[0] == country}:
                     errors["duplicate_of_curated"] += 1
                     continue
                 pid = attr(ext, "tvg-id")

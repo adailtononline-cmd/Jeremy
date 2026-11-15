@@ -1,37 +1,40 @@
 {
-  "generated_at": "2026-11-15T19:07:01.016419+00:00",
-  "candidates": 2520,
-  "accepted": 2110,
+  "generated_at": "2026-11-15T19:25:56.576421+00:00",
+  "candidates": 2734,
+  "accepted": 2206,
   "by_country": {
-    "Brazil": 365,
-    "United Kingdom": 303,
-    "United States": 1213,
-    "Canada": 177,
+    "Brazil": 360,
+    "United Kingdom": 304,
+    "Ukraine": 163,
+    "United States": 1153,
+    "Canada": 174,
     "Australia": 47,
     "New Zealand": 5
   },
   "by_category": {},
   "test_results": {
-    "duplicate_of_curated": 27,
-    "excluded_closed_or_nsfw": 9,
+    "duplicate_of_curated": 37,
+    "excluded_closed_or_nsfw": 10,
     "excluded_france": 9,
-    "403": 226,
-    "kept_br_uk_not_verified": 219,
-    "network": 191,
-    "400": 13,
-    "404": 146,
-    "ok": 1891,
-    "500": 5,
-    "html": 9,
+    "ok": 1982,
+    "network": 230,
+    "404": 164,
+    "403": 263,
+    "kept_br_uk_not_verified": 224,
+    "400": 12,
+    "500": 3,
+    "html": 24,
     "218": 1,
-    "unknown-media": 4,
+    "unknown-media": 5,
     "504": 6,
-    "502": 6,
-    "503": 4,
+    "502": 16,
+    "503": 3,
     "574": 1,
-    "408": 7,
+    "401": 5,
+    "408": 8,
     "416": 4,
     "204": 5,
+    "405": 1,
     "523": 1
   },
   "notes": [
@@ -41,28 +44,28 @@
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "stored_repaired": 161,
-    "stored_original": 1831,
-    "placeholder_with_channel_name": 118
+    "stored_original": 1922,
+    "stored_repaired": 151,
+    "placeholder_with_channel_name": 133
   },
   "epg": {
     "status": "matched",
-    "channels_with_guide": 772,
-    "channels_total": 2110,
-    "programme_entries": 33240,
+    "channels_with_guide": 803,
+    "channels_total": 2206,
+    "programme_entries": 33465,
     "window_days": 4,
     "sources": {
       "all.xml": {
-        "channels": 536,
-        "programmes": 14905
+        "channels": 532,
+        "programmes": 14795
       },
       "epg_ripper_UK1.xml.gz": {
-        "channels": 47,
-        "programmes": 3515
+        "channels": 46,
+        "programmes": 3408
       },
       "epg_ripper_US2.xml.gz": {
-        "channels": 70,
-        "programmes": 7809
+        "channels": 66,
+        "programmes": 7057
       },
       "epg_ripper_US_LOCALS1.xml.gz": {
         "channels": 0,
@@ -73,16 +76,20 @@
         "programmes": 0
       },
       "epg_ripper_CA2.xml.gz": {
-        "channels": 22,
-        "programmes": 1917
+        "channels": 18,
+        "programmes": 1067
       },
       "epg_ripper_AU1.xml.gz": {
-        "channels": 17,
-        "programmes": 1517
+        "channels": 16,
+        "programmes": 1919
       },
       "epg_ripper_NZ1.xml.gz": {
         "channels": 2,
         "programmes": 661
+      },
+      "epg_ripper_UA1.xml.gz": {
+        "channels": 50,
+        "programmes": 1649
       },
       "epg_ripper_BR1.xml.gz": {
         "channels": 0,
@@ -90,7 +97,7 @@
       },
       "epg_ripper_BR2.xml.gz": {
         "channels": 32,
-        "programmes": 2916
+        "programmes": 2909
       }
     }
   }

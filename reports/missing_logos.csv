@@ -1,6 +1,5 @@
 country,channel,tvg_id
 Australia,ABC TV Plus,ABCTVPlus.au@Sydney
-Brazil,A&E Latin America Brazil,AELatinAmerica.us@Brazil
 Brazil,AMC Latin America Brazil,AMCLatinAmerica.us@Brazil
 Brazil,Canal START,CanalSTART.br@SD
 Brazil,Canal UOL,CanalUOL.br@SD
@@ -16,12 +15,10 @@ Brazil,Laboral TV,LaboralTV.br@SD
 Brazil,Lifetime Latin America Brazil,LifetimeLatinAmerica.us@Brazil
 Brazil,NickOnline HD,NickOnline.br@HD
 Brazil,Plenitude TV,PlenitudeTV.br@SD
-Brazil,Pluto TV Anime BR,PlutoTVAnime.us@BR
-Brazil,RecordTV Itapoan,RecordTVItapoan.br@SD
-Brazil,RecordTV Rio,RecordTVRio.br@SD
-Brazil,RecordTV Sao Paulo,RecordTVSaoPaulo.br@SD
+Brazil,Pluto TV Esportes,PlutoTVEsportes.us@BR
 Brazil,Rede Seculo 21,RedeSeculo21.br@SD
 Brazil,SBT Kids,SBTKids.br@SD
+Brazil,SBT News,SBTNews.br@SD
 Brazil,SBT Nova Mutum,SBTNovaMutum.br@SD
 Brazil,SBT Rondonopolis,SBTRondonopolis.br@SD
 Brazil,Series Classic,SeriesClassic.br@SD
@@ -36,11 +33,9 @@ Brazil,TV Gazin,TVGazin.br@SD
 Brazil,TV Globo Brasilia,TVGloboBrasilia.br@SD
 Brazil,TV Litoral RN,TVLitoralRN.br@SD
 Brazil,TV Mackenzie,TVMackenzie.br@SD
-Brazil,TV Petropolis,TVPetropolis.br@SD
 Brazil,TikTok Radio Brasil,TikTokRadioBrasil.br@HD
 Canada,Canada One,CanadaOne.ca@SD
 Canada,PTC Punjabi Canada,PTCPunjabiCanada.ca@SD
-Canada,Pluto TV Anime CA,PlutoTVAnime.us@CA
 Canada,Sardari TV,SardariTV.ca@SD
 Canada,Savoir media CFTU-DT,Savoirmedia.ca@CFTUDT
 Canada,Stingray DJAZZ,StingrayDJAZZ.ca@SD
@@ -49,10 +44,31 @@ Canada,Stingray Jukebox Oldies,StingrayJukeboxOldies.ca@SD
 Canada,Stingray Romance Latino,StingrayRomanceLatino.ca@SD
 Canada,TVOKids,TVOKids.ca@SD
 Canada,ZenLIFE by Stingray,ZenLIFEbyStingray.ca@HD
+Ukraine,5 Kanal,5Kanal.ua
+Ukraine,Cartoon Network CEE Ukraine,CartoonNetworkCEE.uk@Ukraine
+Ukraine,Channel 24,Channel24.ua@SD
+Ukraine,ICTV Serialy,ICTVSerialy.ua
+Ukraine,Kino 2,Kino2.ua@SD
+Ukraine,Konkurent Ukraine,KonkurentUkraine.ua@SD
+Ukraine,Lux TV,LuxTV.ua@SD
+Ukraine,Maincast Cybersport,MaincastCybersport.ua@SD
+Ukraine,Maincast Sport,MaincastSport.ua@SD
+Ukraine,Megogo Music,MegogoMusic.ua@SD
+Ukraine,Nashe Lubimoe Kino Ukraine,NasheLubimoeKinoUkraine.ua@SD
+Ukraine,RAZ 3,RAZ3.ua@SD
+Ukraine,Rada TV,RadaTV.ua@SD
+Ukraine,Sonce+,SoncePlus.ua@SD
+Ukraine,Sport 5,Sport5.ua@SD
+Ukraine,Tviy serial,Tviyserial.ua@SD
+Ukraine,UA Music,UAMusic.ua@HD
+Ukraine,Viasat Epic Drama Ukraine,ViasatEpicDrama.uk@Ukraine
+Ukraine,Viasat Serial,ViasatSerial.ua@HD
+Ukraine,ПлюсПлюс,PlusPlus.ua
 United Kingdom,Aastha International,AasthaInternational.in@SD
 United Kingdom,BBC UHD 4,BBCUHD4.uk@SD
 United Kingdom,CNBC UK,CNBCUK.uk@SD
 United Kingdom,MBC,MBC.uk@HD
+United Kingdom,Mr Bean Animated,MrBeanAnimated.uk@English
 United Kingdom,Sangat TV,SangatTV.uk@SD
 United Kingdom,TRT World,TRTWorld.tr
 United Kingdom,Totalmusic 2000s,Totalmusic2000s.uk@HD
@@ -70,34 +86,34 @@ United States,ABC News Live 6,ABCNewsLive6.us@SD
 United States,ABC News Live 7,ABCNewsLive7.us@SD
 United States,ABC News Live 8,ABCNewsLive8.us@SD
 United States,ABC News Live 9,ABCNewsLive9.us@SD
-United States,Adult Swim West,AdultSwim.us@West
 United States,America's Voice,AmericasVoice.us@SD
 United States,Blue Bloods,BlueBloods.us@SD
 United States,CC-TV,CCTV.us@SD
+United States,CGTV,CGTV.us@SD
 United States,CNN en Espanol,CNNenEspanol.us@SD
-United States,Cartoon Network West,CartoonNetwork.us@West
 United States,Catholic Faith Network,CatholicFaithNetwork.us@SD
+United States,Channel 10,Channel10.us@SD
 United States,Cinemax West,Cinemax.us@West
 United States,Crime + Investigation,CrimePlusInvestigation.us@SD
-United States,De Pelicula US,DePeliculaUS.us@SD
 United States,Entertainment Tonight,EntertainmentTonight.us@SD
+United States,Flowers TV USA,FlowersTVUSA.us@SD
 United States,Fox Business Network,FoxBusinessNetwork.us@SD
 United States,Fox News Channel,FoxNewsChannel.us@SD
 United States,Fox News International,FoxNewsInternational.us@SD
-United States,History,History.us@East
-United States,InTouch+,InTouchPlus.us@HD
 United States,Jewelry TV 2,JewelryTV2.us@SD
 United States,KMCT-TV 39.1,KMCTTV391.us@HD
+United States,Kentucky Educational Television WKMJ-TV,KentuckyEducationalTelevision.us@WKMJTV
+United States,Kentucky Educational Television WKPC-TV,KentuckyEducationalTelevision.us@WKPCTV
 United States,LifevisionTV,LifevisionTV.us@SD
 United States,Love Pets,LovePets.ca@US
 United States,LoveWorld USA,LoveWorldUSA.ng@SD
+United States,Merit Street,MeritStreet.us@SD
 United States,MovieSphere Gold WFXT,MovieSphereGold.us@WFXT
 United States,Muslim Network TV,MuslimNetworkTV.us@SD
 United States,NBC LX Home,NBCLXHome.us@HD
 United States,NOST,NOST.us@SD
 United States,OWN,OWN.us@East
 United States,Placid,Placid.us@EastHD
-United States,Pluto TV Anime,PlutoTVAnime.us@US
 United States,Rev and Roll,RevandRoll.us@SD
 United States,Revry Queer,RevryQueer.us@SD
 United States,TLN Media Chicago,TLNMediaChicago.us@SD
@@ -107,7 +123,6 @@ United States,TVS Select Network,TVSSelectNetwork.us@SD
 United States,TVS Sports Bureau,TVSSportsBureau.us@SD
 United States,Telemundo Corpus Christi,TelemundoCorpusChristi.us@SD
 United States,The Archive,TheArchive.us@SD
-United States,TyC Sports USA,TyCSportsUSA.ar@SD
 United States,VICE TV,VICETV.us@SD
 United States,W14DK-D 14.2,W14DKD142.us@SD
 United States,WBTV 64.1,WBTV641.us@HD
