@@ -8,7 +8,7 @@ import urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 
-COUNTRIES = {"United States": "us", "Canada": "ca", "Australia": "au", "New Zealand": "nz", "Scotland": "uk", "England": "uk"}
+COUNTRIES = {"United States": "us", "Canada": "ca", "Australia": "au", "New Zealand": "nz", "Brazil": "br", "Scotland": "uk", "England": "uk"}
 BASE = "https://iptv-org.github.io/iptv/countries/{}.m3u"
 UA = "Jeremy-IPTV-Checker/1.0"
 def get(url, timeout=12, method="GET"):
