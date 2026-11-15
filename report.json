@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-15T17:35:24.591404+00:00",
+  "generated_at": "2026-11-15T17:50:40.590811+00:00",
   "candidates": 2517,
-  "accepted": 1901,
+  "accepted": 1905,
   "by_country": {
     "United States": 1227,
     "Canada": 178,
     "Australia": 51,
     "New Zealand": 5,
-    "Brazil": 262,
-    "England": 2,
+    "Brazil": 265,
+    "England": 3,
     "United Kingdom / Unclassified": 176
   },
   "test_results": {
-    "ok": 1901,
-    "404": 145,
-    "403": 219,
-    "network": 193,
+    "ok": 1905,
+    "404": 146,
+    "403": 218,
+    "network": 189,
     "502": 6,
     "unknown-media": 4,
     "400": 11,
     "504": 6,
-    "408": 5,
-    "416": 7,
+    "408": 8,
+    "416": 4,
     "204": 5,
     "503": 3,
     "html": 9,
@@ -35,12 +35,13 @@
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "already_supplied": 1873,
-    "still_missing": 28
+    "verified_working": 1713,
+    "missing_or_broken": 192
   },
   "epg": {
     "status": "matched",
     "matching_channel_ids": 34,
+    "programme_entries": 2835,
     "error": null,
     "source": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"
   }
