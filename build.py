@@ -120,7 +120,7 @@ def main():
         if root.tag != "tv":
             raise ValueError("Not XMLTV")
         def norm(s):
-            return re.sub(r"[^a-z0-9]", "", re.sub(r"\\([^)]*\\)", "", (s or "").lower()))
+            return re.sub(r"[^a-z0-9]", "", re.sub(r"\([^)]*\)|\[[^]]*\]", "", (s or "").lower()))
         by_name = {}
         for ch in root.findall("channel"):
             for name in ch.findall("display-name"):
