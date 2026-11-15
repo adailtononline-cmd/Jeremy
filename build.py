@@ -86,7 +86,8 @@ def main():
                 results.append(valid)
     order = list(COUNTRIES) + ["United Kingdom / Unclassified"]
     results.sort(key=lambda x: (order.index(x[2]), x[0].split(",", 1)[-1].lower()))
-    lines = ["#EXTM3U"]
+    epg_url = "https://iptv-epg.org/files/epg-gb.xml"
+    lines = ['#EXTM3U url-tvg="' + epg_url + '" x-tvg-url="' + epg_url + '"']
     for ext, url, country in results:
         original_group = re.search(r'group-title="([^"]*)"', ext)
         category = original_group.group(1).strip() if original_group else ""
