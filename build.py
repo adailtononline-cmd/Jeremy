@@ -45,7 +45,7 @@ def check(item):
     ext, url, country = item
     try:
         code, ctype, data = get(url)
-        if code != 200:
+        if code not in (200, 206):
             return None, str(code)
         if "text/html" in ctype or data.lstrip().lower().startswith((b"<!doctype html", b"<html")):
             return None, "html"
