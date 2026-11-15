@@ -88,9 +88,12 @@ def main():
     results.sort(key=lambda x: (order.index(x[2]), x[0].split(",", 1)[-1].lower()))
     lines = ["#EXTM3U"]
     for ext, url, country in results:
-        ext = re.sub(r'group-title="[^"]*"', 'group-title="' + country + '"', ext)
+        original_group = re.search(r'group-title="([^"]*)"', ext)
+        category = original_group.group(1).strip() if original_group else ""
+        combined_group = country + (" | " + category if category and category != country else "")
+        ext = re.sub(r'group-title="[^"]*"', lambda _: 'group-title="' + combined_group + '"', ext)
         if 'group-title=' not in ext:
-            ext = ext.replace(",", ' group-title="' + country + '",', 1)
+            ext = ext.replace(",", ' group-title="' + combined_group + '",', 1)
         lines += [ext, url]
     if results:
         with open("jeremy.m3u", "w", encoding="utf-8") as f:
