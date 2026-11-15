@@ -194,6 +194,19 @@ def main():
                 logo_catalog.setdefault(channel_id, logo_url)
     except Exception:
         pass
+    # Additional channel-specific logo sources from IPTV-org's channel catalog.
+    # Use only an exact channel ID match, never a guessed logo.
+    try:
+        req = urllib.request.Request("https://iptv-org.github.io/api/channels.json", headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=25) as response:
+            channel_records = json.load(response)
+        for ch in channel_records:
+            cid = ch.get("id")
+            logo = ch.get("logo")
+            if cid and isinstance(logo, str) and logo.startswith("https://"):
+                logo_catalog.setdefault(cid, logo)
+    except Exception:
+        pass
     logo_stats = Counter()
     logo_urls = set()
     for ext, _, _ in results:
