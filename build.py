@@ -99,16 +99,61 @@ def main():
         root = ET.fromstring(gzip.decompress(epg_data) if epg_data[:2] == b"\x1f\x8b" else epg_data)
         if root.tag != "tv":
             raise ValueError("Not XMLTV")
+        def norm(s):
+            return re.sub(r"[^a-z0-9]", "", re.sub(r"\\([^)]*\\)", "", (s or "").lower()))
+        by_name = {}
+        for ch in root.findall("channel"):
+            for name in ch.findall("display-name"):
+                key = norm(name.text)
+                if key and len(key) >= 4:
+                    by_name.setdefault(key, set()).add(ch.get("id"))
         guide_ids = {ch.get("id") for ch in root.findall("channel")}
         playlist_ids = set()
+        alias = {}
         for ext, _, _ in results:
             m = re.search(r'tvg-id="([^"]+)"', ext)
-            if m:
-                playlist_ids.add(m.group(1))
-        epg_matches = len(guide_ids & playlist_ids)
+            if not m:
+                continue
+            pid = m.group(1)
+            playlist_ids.add(pid)
+            if pid in guide_ids:
+                alias[pid] = pid
+                continue
+            title = ext.split(",", 1)[-1]
+            keys = [norm(title), norm(pid.split("@")[0].split(".")[0])]
+            for key in keys:
+                options = by_name.get(key, set())
+                if len(options) == 1:
+                    alias[pid] = next(iter(options))
+                    break
+        epg_matches = len(alias)
         if epg_matches:
+            reverse = {}
+            for pid, gid in alias.items():
+                reverse.setdefault(gid, []).append(pid)
+            for node in list(root):
+                if node.tag == "channel":
+                    gid = node.get("id")
+                    if gid not in reverse:
+                        root.remove(node)
+                    else:
+                        node.set("id", reverse[gid][0])
+                        for extra in reverse[gid][1:]:
+                            duplicate = ET.fromstring(ET.tostring(node))
+                            duplicate.set("id", extra)
+                            root.append(duplicate)
+                elif node.tag == "programme":
+                    gid = node.get("channel")
+                    if gid not in reverse:
+                        root.remove(node)
+                    else:
+                        node.set("channel", reverse[gid][0])
+                        for extra in reverse[gid][1:]:
+                            duplicate = ET.fromstring(ET.tostring(node))
+                            duplicate.set("channel", extra)
+                            root.append(duplicate)
             with open("epg.xml", "wb") as out:
-                out.write(gzip.decompress(epg_data) if epg_data[:2] == b"\x1f\x8b" else epg_data)
+                out.write(ET.tostring(root, encoding="utf-8", xml_declaration=True))
             epg_url = "https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/epg.xml"
             epg_status = "matched"
         else:
