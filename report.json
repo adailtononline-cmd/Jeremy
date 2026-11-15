@@ -1,35 +1,34 @@
 {
-  "generated_at": "2026-11-15T18:24:05.936964+00:00",
+  "generated_at": "2026-11-15T18:34:43.115798+00:00",
   "candidates": 2498,
-  "accepted": 1888,
+  "accepted": 1806,
   "by_country": {
-    "United States": 1223,
-    "Canada": 177,
+    "United States": 1161,
+    "Canada": 174,
     "Australia": 50,
     "New Zealand": 5,
-    "Brazil": 260,
-    "England": 3,
-    "United Kingdom / Unclassified": 170
+    "Brazil": 256,
+    "United Kingdom": 160
   },
   "by_category": {
-    "general": 261,
-    "series": 166,
+    "general": 245,
     "religious": 165,
-    "entertainment": 154,
-    "other": 152,
-    "movies": 143,
-    "news": 118,
-    "music": 99,
+    "series": 153,
+    "entertainment": 149,
+    "other": 139,
+    "movies": 138,
+    "news": 114,
+    "music": 95,
     "sports": 77,
-    "kids": 72,
-    "legislative": 67,
-    "documentary": 56,
-    "education": 51,
-    "classic": 45,
-    "comedy": 45,
-    "animation": 41,
+    "legislative": 69,
+    "kids": 68,
+    "documentary": 50,
+    "education": 50,
+    "comedy": 44,
+    "classic": 42,
+    "animation": 36,
     "culture": 28,
-    "lifestyle": 27,
+    "lifestyle": 26,
     "shop": 24,
     "outdoor": 19,
     "cooking": 17,
@@ -45,48 +44,51 @@
   "test_results": {
     "excluded_closed_or_nsfw": 10,
     "excluded_france": 9,
-    "ok": 1888,
-    "404": 142,
-    "403": 219,
-    "network": 190,
-    "502": 6,
+    "ok": 1806,
+    "403": 255,
+    "401": 5,
+    "404": 144,
+    "502": 16,
+    "network": 201,
+    "html": 24,
     "unknown-media": 4,
-    "400": 10,
+    "500": 2,
+    "400": 14,
     "504": 6,
     "503": 4,
-    "408": 6,
-    "416": 6,
+    "416": 4,
+    "408": 4,
     "204": 5,
-    "html": 9,
+    "405": 1,
     "523": 1,
     "218": 1,
     "574": 1
   },
   "notes": [
     "HTTP checks do not prove playback on Sparkle TV.",
-    "Groups are countries only (the category stays in tvg-category). UK channels without explicit England/Scotland metadata stay under United Kingdom.",
+    "Groups are countries only, sorted by channel name (the category stays in tvg-category). Resolution and tags were removed from displayed names. England and Scotland are merged into United Kingdom.",
     "France is excluded; closed or adult channels are excluded using the iptv-org catalog.",
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "verified_working": 1693,
-    "missing_or_broken": 141,
-    "repaired_from_catalog": 54
+    "verified_working": 1635,
+    "placeholder_with_channel_name": 85,
+    "repaired_from_catalog": 86
   },
   "epg": {
     "status": "matched",
-    "channels_with_guide": 215,
-    "channels_total": 1888,
-    "programme_entries": 18352,
+    "channels_with_guide": 187,
+    "channels_total": 1806,
+    "programme_entries": 15249,
     "window_days": 4,
     "sources": {
       "epg_ripper_UK1.xml.gz": {
-        "channels": 34,
-        "programmes": 2355
+        "channels": 30,
+        "programmes": 1981
       },
       "epg_ripper_US2.xml.gz": {
-        "channels": 84,
-        "programmes": 9394
+        "channels": 79,
+        "programmes": 8481
       },
       "epg_ripper_US_LOCALS1.xml.gz": {
         "channels": 0,
@@ -101,8 +103,8 @@
         "programmes": 2116
       },
       "epg_ripper_AU1.xml.gz": {
-        "channels": 28,
-        "programmes": 2569
+        "channels": 21,
+        "programmes": 1766
       },
       "epg_ripper_NZ1.xml.gz": {
         "channels": 1,

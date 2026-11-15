@@ -5,6 +5,7 @@ import csv
 import io
 import json
 import gzip
+import hashlib
 import os
 import xml.etree.ElementTree as ET
 import re
@@ -13,12 +14,11 @@ import urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 
-COUNTRIES = {"United States": "us", "Canada": "ca", "Australia": "au", "New Zealand": "nz", "Brazil": "br", "Scotland": "uk", "England": "uk"}
+COUNTRIES = {"United States": "us", "Canada": "ca", "Australia": "au", "New Zealand": "nz", "Brazil": "br", "United Kingdom": "uk"}
 BASE = "https://iptv-org.github.io/iptv/countries/{}.m3u"
 UA = "Jeremy-IPTV-Checker/1.0"
-ISO = {"United States": "US", "Canada": "CA", "Australia": "AU", "New Zealand": "NZ", "Brazil": "BR",
-       "Scotland": "GB", "England": "GB", "United Kingdom / Unclassified": "GB"}
-DISPLAY = {"United Kingdom / Unclassified": "United Kingdom"}
+ISO = {"United States": "US", "Canada": "CA", "Australia": "AU", "New Zealand": "NZ", "Brazil": "BR", "United Kingdom": "GB"}
+DISPLAY = {}
 EPG_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
@@ -90,16 +90,6 @@ def parse(text):
             pending = None
     return items
 
-def region(ext):
-    title = title_of(ext).lower()
-    group = re.search(r'group-title="([^"]*)"', ext)
-    fields = (title + " " + (group.group(1).lower() if group else ""))
-    if re.search(r'\b(scotland|scottish|glasgow|edinburgh|stv)\b', fields):
-        return "Scotland"
-    if re.search(r'\b(england|english|london|manchester|birmingham)\b', fields):
-        return "England"
-    return "United Kingdom / Unclassified"
-
 def check(item):
     ext, url, country = item
     try:
@@ -134,6 +124,65 @@ def add_attribute(ext, name, value):
         return ext
     pos = prefix.end()
     return ext[:pos] + ' ' + name + '="' + value.replace('"', "") + '"' + ext[pos:]
+
+
+TVLOGOS_FOLDER = {"United States": "united-states", "Canada": "canada", "Australia": "australia", "New Zealand": "new-zealand", "Brazil": "brazil", "United Kingdom": "united-kingdom"}
+RAW_BASE = "https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/"
+FONTS = ["/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"]
+
+def plain_title(title):
+    return re.sub(r"\s*(\([^)]*\)|\[[^\]]*\])", "", title).strip()
+
+def tvlogos_index():
+    """Logos do projeto tv-logo/tv-logos, indexados por pasta de país + nome normalizado (só igualdade exata)."""
+    data = fetch_json("https://api.github.com/repos/tv-logo/tv-logos/git/trees/main?recursive=1")
+    index = {}
+    for node in (data.get("tree", []) if isinstance(data, dict) else []):
+        p = node.get("path", "")
+        m = re.match(r"countries/([^/]+)/([^/]+)\.png$", p)
+        if not m:
+            continue
+        folder, stem = m.groups()
+        stem = re.sub(r"-(us|ca|au|nz|br|uk|gb)$", "", stem)
+        stem = re.sub(r"-(hd|sd|4k)$", "", stem)
+        index.setdefault((folder, norm(stem.replace("-", " "))), "https://raw.githubusercontent.com/tv-logo/tv-logos/main/" + p.replace(" ", "%20"))
+    return index
+
+def placeholder_logo(title, slug):
+    """Logo gerado com o nome do canal, para o canal nunca ficar sem identificação."""
+    from PIL import Image, ImageDraw, ImageFont
+    digest = int(hashlib.md5(slug.encode()).hexdigest(), 16)
+    palette = [(24, 54, 98), (92, 38, 110), (21, 94, 84), (122, 45, 45), (60, 70, 20), (30, 30, 30), (16, 76, 120), (110, 70, 15)]
+    bg = palette[digest % len(palette)]
+    size = 512
+    img = Image.new("RGB", (size, size), bg)
+    draw = ImageDraw.Draw(img)
+    name = plain_title(title) or title
+    font_path = next((f for f in FONTS if os.path.exists(f)), None)
+    for px in (84, 72, 62, 52, 44, 36):
+        font = ImageFont.truetype(font_path, px) if font_path else ImageFont.load_default()
+        lines, line = [], ""
+        for word in name.split():
+            trial = (line + " " + word).strip()
+            if draw.textlength(trial, font=font) <= size - 60:
+                line = trial
+            else:
+                if line:
+                    lines.append(line)
+                line = word
+        if line:
+            lines.append(line)
+        height = len(lines) * (px + 10)
+        if height <= size - 80 and all(draw.textlength(l, font=font) <= size - 40 for l in lines):
+            break
+    y = (size - len(lines) * (px + 10)) // 2
+    for l in lines:
+        w = draw.textlength(l, font=font)
+        draw.text(((size - w) / 2, y), l, font=font, fill=(255, 255, 255))
+        y += px + 10
+    os.makedirs("logos", exist_ok=True)
+    img.save("logos/" + slug + ".png", optimize=True)
+    return RAW_BASE + "logos/" + slug + ".png"
 
 def norm(s):
     return re.sub(r"[^a-z0-9]", "", re.sub(r"\([^)]*\)|\[[^]]*\]", "", (s or "").lower()))
@@ -211,14 +260,12 @@ def main():
     errors = Counter()
     seen = set()
     for country, code in COUNTRIES.items():
-        if code == "uk" and country == "England":
-            continue
         try:
             req = urllib.request.Request(BASE.format(code), headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=30) as response:
                 source = response.read().decode("utf-8-sig")
             for ext, url in parse(source):
-                assigned = region(ext) if code == "uk" else country
+                assigned = country
                 if url in seen:
                     continue
                 seen.add(url)
@@ -242,7 +289,7 @@ def main():
                 results.append(valid)
             else:
                 rejected.append((reason, item[2], title_of(item[0]), item[1]))
-    order = list(COUNTRIES) + ["United Kingdom / Unclassified"]
+    order = list(COUNTRIES)
 
     # ---- logos: confere o logo atual; se quebrado, tenta TODOS os candidatos do catálogo, só por ID exato ----
     catalog = {}
@@ -265,6 +312,26 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=32) as pool:
         valid_logo.update(zip(need, pool.map(logo_works, need)))
 
+    # segunda passada: canais ainda sem logo que funcione -> tenta o projeto tv-logos (nome exato no país)
+    tv_index = tvlogos_index()
+    extra_urls = {}
+    for ext, _, country in results:
+        base_id = attr(ext, "tvg-id").split("@")[0]
+        if valid_logo.get(attr(ext, "tvg-logo"), False):
+            continue
+        if any(valid_logo.get(u, False) for _, u in catalog.get(base_id, [])):
+            continue
+        url = tv_index.get((TVLOGOS_FOLDER.get(country, ""), norm(plain_title(title_of(ext)))))
+        if url:
+            extra_urls[base_id] = url
+            catalog.setdefault(base_id, []).append((3, url))
+    todo = set(extra_urls.values()) - set(valid_logo)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:
+        valid_logo.update(zip(todo, pool.map(logo_works, todo)))
+    if os.path.isdir("logos"):
+        for old in os.listdir("logos"):
+            os.remove(os.path.join("logos", old))
+
     rows = []
     logo_stats = Counter()
     missing_logos = []
@@ -272,7 +339,8 @@ def main():
         pid = attr(ext, "tvg-id")
         base_id, _, feed = pid.partition("@")
         meta = channels_meta.get(base_id)
-        title = title_of(ext)
+        title = plain_title(title_of(ext)) or title_of(ext)
+        ext = ext[:len(ext) - len(title_of(ext))] + title
         # logo
         logo = attr(ext, "tvg-logo")
         if logo and valid_logo.get(logo, False):
@@ -283,8 +351,9 @@ def main():
                 ext = set_attr(ext, "tvg-logo", fixed)
                 logo_stats["repaired_from_catalog"] += 1
             else:
-                ext = set_attr(ext, "tvg-logo", "")
-                logo_stats["missing_or_broken"] += 1
+                slug = re.sub(r"[^a-z0-9]+", "-", base_id.lower()).strip("-") or hashlib.md5(title.encode()).hexdigest()[:10]
+                ext = set_attr(ext, "tvg-logo", placeholder_logo(title, slug))
+                logo_stats["placeholder_with_channel_name"] += 1
                 missing_logos.append((country, title, pid))
         # metadados
         category = clean_category(ext, meta)
@@ -297,7 +366,7 @@ def main():
             ext = set_attr(ext, "tvg-language", ";".join(names))
         group = DISPLAY.get(country, country)
         ext = set_attr(ext, "group-title", group)
-        rows.append((order.index(country), category.lower(), title.lower(), ext, url, country))
+        rows.append((order.index(country), title.lower(), category.lower(), ext, url, country))
     rows.sort(key=lambda r: r[:3])
 
     # ---- guia de programação ----
@@ -335,11 +404,11 @@ def main():
         "candidates": len(candidates),
         "accepted": len(rows),
         "by_country": dict(Counter(r[5] for r in rows)),
-        "by_category": dict(Counter(r[1] for r in rows).most_common()),
+        "by_category": dict(Counter(r[2] for r in rows).most_common()),
         "test_results": dict(errors),
         "notes": [
             "HTTP checks do not prove playback on Sparkle TV.",
-            "Groups are countries only (the category stays in tvg-category). UK channels without explicit England/Scotland metadata stay under United Kingdom.",
+            "Groups are countries only, sorted by channel name (the category stays in tvg-category). Resolution and tags were removed from displayed names. England and Scotland are merged into United Kingdom.",
             "France is excluded; closed or adult channels are excluded using the iptv-org catalog.",
             "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot.",
         ],

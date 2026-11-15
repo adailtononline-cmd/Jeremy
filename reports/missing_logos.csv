@@ -1,142 +1,86 @@
 country,channel,tvg_id
-Australia,ABC Entertains (720p),ABCEntertains.au@Sydney
-Australia,ABC TV Plus (720p),ABCTVPlus.au@Sydney
-Australia,PBS America (576p),PBSAmerica.uk@SD
-Brazil,A&E Latin America Brazil (720p),AELatinAmerica.us@Brazil
-Brazil,AMC Latin America Brazil (720p),AMCLatinAmerica.us@Brazil
-Brazil,AXN (Brazil) (720p),AXN.br@SD
-Brazil,Box Kids TV (720p),BoxKidsTV.br@SD
-Brazil,CNN Brasil (1080p),CNNBrasil.br@SD
-Brazil,Cartoon Network Latin America Brazil (720p) [Geo-blocked],CartoonNetworkLatinAmerica.us@Brazil
-Brazil,Cultura Fast (720p),CulturaFast.br@SD
-Brazil,DumDum (720p),DumDum.br@SD
-Brazil,ESPN (Brazil) (1080p),ESPN.br@SD
-Brazil,ESPN 4 (Brazil) (1080p),ESPN4.br@SD
-Brazil,FIFA+ Portuguese (720p),FIFAPlus.uk@Portuguese
-Brazil,Jovem Pan News (720p),JovemPanNews.br@SD
-Brazil,Lifetime Latin America Brazil (720p),LifetimeLatinAmerica.us@Brazil
-Brazil,Nickelodeon Classico (720p),NickelodeonClassico.us@BR
-Brazil,Novo Tempo (720p),NovoTempo.br@SD
+Australia,ABC TV Plus,ABCTVPlus.au@Sydney
+Brazil,A&E Latin America Brazil,AELatinAmerica.us@Brazil
+Brazil,AMC Latin America Brazil,AMCLatinAmerica.us@Brazil
+Brazil,CazeTV,CazeTV.br@SD
+Brazil,Cultura Fast,CulturaFast.br@SD
+Brazil,ESPN,ESPN.br@SD
+Brazil,FIFA+ Portuguese,FIFAPlus.uk@Portuguese
+Brazil,Lifetime Latin America Brazil,LifetimeLatinAmerica.us@Brazil
 Brazil,Plenitude TV,PlenitudeTV.br@SD
-Brazil,Pluto TV Esportes,PlutoTVEsportes.us@BR
-Brazil,Rede Seculo 21 (720p),RedeSeculo21.br@SD
-Brazil,SBT News (720p),SBTNews.br@SD
-Brazil,Sony Channel (Brazil) (720p),SonyChannel.br@SD
-Brazil,Studio Universal Latin America Brazil (720p),StudioUniversalLatinAmerica.us@Brazil
-Brazil,TLC Latin America Brazil (720p),TLCLatinAmerica.us@Brazil
-Brazil,TNT Latin America Brazil (720p) [Geo-blocked],TNTLatinAmerica.us@Brazil
-Brazil,TV Difusao (720p),TVDifusao.br@SD
-Brazil,TV Globo Brasilia (1080p),TVGloboBrasilia.br@SD
-Brazil,TV Litoral RN (720p),TVLitoralRN.br@SD
-Brazil,TV Petropolis (720p),TVPetropolis.br@SD
-Brazil,TVE Bahia (1080p),TVEBahia.br@SD
-Canada,Canada One (720p) [Not 24/7],CanadaOne.ca@SD
-Canada,PTC Punjabi Canada (1080p),PTCPunjabiCanada.ca@SD
-Canada,Sardari TV (1080p) [Not 24/7],SardariTV.ca@SD
-Canada,Savoir media CFTU-DT (360p),Savoirmedia.ca@CFTUDT
-Canada,Stingray DJAZZ (1080p),StingrayDJAZZ.ca@SD
-Canada,TSC (720p),TSC.ca@SD
-Canada,TVOKids (720p),TVOKids.ca@SD
-Canada,Wild TV (1080p),WildTV.ca@SD
-New Zealand,HGTV (New Zealand) (1080p),HGTV.nz@SD
-United Kingdom / Unclassified,FIFA+ (720p),FIFAPlus.uk@English
-United Kingdom / Unclassified,GB News (1080p),GBNews.uk@SD
-United Kingdom / Unclassified,Sangat TV (576p),SangatTV.uk@SD
-United Kingdom / Unclassified,That's 80s (720p),Thats80s.uk@SD
-United Kingdom / Unclassified,Totalmusic 2000s (720p),Totalmusic2000s.uk@HD
-United Kingdom / Unclassified,Zee One (1080p),ZeeOne.uk@UK
-United Kingdom / Unclassified,talkSPORT (1080p),talkSPORT.uk@SD
-United States,30A TV Classic Movies (720p),30ATVClassicMovies.us@SD
-United States,ABC News Live 1 (720p),ABCNewsLive1.us@SD
-United States,ABC News Live 10 (720p),ABCNewsLive10.us@SD
-United States,ABC News Live 2 (720p),ABCNewsLive2.us@SD
-United States,ABC News Live 3 (720p),ABCNewsLive3.us@SD
-United States,ABC News Live 4 (720p),ABCNewsLive4.us@SD
-United States,ABC News Live 5 (720p),ABCNewsLive5.us@SD
-United States,ABC News Live 6 (720p),ABCNewsLive6.us@SD
-United States,ABC News Live 7 (720p),ABCNewsLive7.us@SD
-United States,ABC News Live 8 (720p),ABCNewsLive8.us@SD
-United States,ABC News Live 9 (720p),ABCNewsLive9.us@SD
-United States,AXS TV (576p),AXSTV.us@SD
-United States,Aastha International (576p),AasthaInternational.in@SD
-United States,Adult Swim West [Not 24/7;Geo-blocked],AdultSwim.us@West
-United States,America's Voice (720p),AmericasVoice.us@SD
-United States,American Heroes Channel (720p),AmericanHeroesChannel.us@SD
-United States,Animal Planet (United States) (720p),AnimalPlanet.us@East
-United States,Big Ten Network (720p),BigTenNetwork.us@SD
-United States,Boomerang (United States) (720p),Boomerang.us@SD
-United States,CBS News 24/7 (720p),CBSNews247.us@SD
-United States,CC-TV (720p),CCTV.us@SD
-United States,CNN en Espanol (1080p),CNNenEspanol.us@SD
-United States,Cartoon Network (United States) West (1080p) [Geo-blocked],CartoonNetwork.us@West
-United States,Catholic Faith Network (720p),CatholicFaithNetwork.us@SD
-United States,Cinemax (United States) West (720p),Cinemax.us@West
-United States,Cooking Channel (720p),CookingChannel.us@SD
-United States,Crime + Investigation (720p),CrimePlusInvestigation.us@SD
-United States,De Pelicula US (720p),DePeliculaUS.us@SD
-United States,Discovery Channel (United States) (1080p) [Geo-blocked],DiscoveryChannel.us@East
-United States,Discovery Turbo (United States) (720p),DiscoveryTurbo.us@SD
-United States,Disney Channel (United States) (720p),DisneyChannel.us@East
-United States,Disney XD (United States) (720p),DisneyXD.us@East
-United States,Dove Channel (1080p),DoveChannel.us@SD
-United States,Entertainment Tonight (1080p),EntertainmentTonight.us@SD
-United States,FIFA+ United States (720p),FIFAPlus.uk@UnitedStates
-United States,Flowers TV USA (396p),FlowersTVUSA.us@SD
-United States,Food Network (United States) (720p),FoodNetwork.us@East
-United States,Fox Business Network (576p),FoxBusinessNetwork.us@SD
-United States,Fox News Channel (1080p),FoxNewsChannel.us@SD
+Brazil,Rede Seculo 21,RedeSeculo21.br@SD
+Brazil,Studio Universal Latin America Brazil,StudioUniversalLatinAmerica.us@Brazil
+Brazil,TV Difusao,TVDifusao.br@SD
+Brazil,TV Globo Brasilia,TVGloboBrasilia.br@SD
+Brazil,TV Litoral RN,TVLitoralRN.br@SD
+Brazil,TVE Bahia,TVEBahia.br@SD
+Canada,Canada One,CanadaOne.ca@SD
+Canada,Sardari TV,SardariTV.ca@SD
+Canada,Savoir media CFTU-DT,Savoirmedia.ca@CFTUDT
+Canada,Stingray DJAZZ,StingrayDJAZZ.ca@SD
+Canada,Stingray Easy Listening,StingrayEasyListening.ca@SD
+Canada,Stingray Jukebox Oldies,StingrayJukeboxOldies.ca@SD
+Canada,Stingray Romance Latino,StingrayRomanceLatino.ca@SD
+Canada,TVOKids,TVOKids.ca@SD
+United Kingdom,CNBC UK,CNBCUK.uk@SD
+United Kingdom,FIFA+,FIFAPlus.uk@English
+United Kingdom,Sangat TV,SangatTV.uk@SD
+United Kingdom,Totalmusic 2000s,Totalmusic2000s.uk@HD
+United Kingdom,talkSPORT,talkSPORT.uk@SD
+United States,30A TV Classic Movies,30ATVClassicMovies.us@SD
+United States,ABC News Live 1,ABCNewsLive1.us@SD
+United States,ABC News Live 10,ABCNewsLive10.us@SD
+United States,ABC News Live 2,ABCNewsLive2.us@SD
+United States,ABC News Live 3,ABCNewsLive3.us@SD
+United States,ABC News Live 4,ABCNewsLive4.us@SD
+United States,ABC News Live 5,ABCNewsLive5.us@SD
+United States,ABC News Live 6,ABCNewsLive6.us@SD
+United States,ABC News Live 7,ABCNewsLive7.us@SD
+United States,ABC News Live 8,ABCNewsLive8.us@SD
+United States,ABC News Live 9,ABCNewsLive9.us@SD
+United States,Aastha International,AasthaInternational.in@SD
+United States,America's Voice,AmericasVoice.us@SD
+United States,CC-TV,CCTV.us@SD
+United States,CGTV,CGTV.us@SD
+United States,CNN en Espanol,CNNenEspanol.us@SD
+United States,Catholic Faith Network,CatholicFaithNetwork.us@SD
+United States,Channel 10,Channel10.us@SD
+United States,Cinemax West,Cinemax.us@West
+United States,Crime + Investigation,CrimePlusInvestigation.us@SD
+United States,Entertainment Tonight,EntertainmentTonight.us@SD
+United States,FIFA+ United States,FIFAPlus.uk@UnitedStates
+United States,Flowers TV USA,FlowersTVUSA.us@SD
+United States,Fox Business Network,FoxBusinessNetwork.us@SD
+United States,Fox News Channel,FoxNewsChannel.us@SD
 United States,Fox News International,FoxNewsInternational.us@SD
-United States,Fuse (1080p),Fuse.us@East
-United States,Game Show Network (720p) [Not 24/7],GameShowNetwork.us@East
-United States,Hallmark Mystery (720p) [Geo-blocked],HallmarkMystery.us@East
-United States,History (United States) (720p),History.us@East
-United States,Investigation Discovery (United States) (1080p) [Geo-blocked],InvestigationDiscovery.us@East
-United States,Jewelry TV 2 (720p),JewelryTV2.us@SD
+United States,Jewelry TV 2,JewelryTV2.us@SD
 United States,KMCT-TV 39.1,KMCTTV391.us@HD
-United States,LifevisionTV (406p) [Not 24/7],LifevisionTV.us@SD
-United States,Love Pets (1080p),LovePets.ca@US
-United States,LoveWorld USA (720p),LoveWorldUSA.ng@SD
-United States,MS NOW (432p),MSNOW.us@SD
-United States,MTV (United States) (1080p),MTV.us@East
-United States,Marquee Sports Network (576p),MarqueeSportsNetwork.us@SD
-United States,MovieSphere Gold WFXT (1080p),MovieSphereGold.us@WFXT
+United States,Kentucky Educational Television WKMJ-TV,KentuckyEducationalTelevision.us@WKMJTV
+United States,Kentucky Educational Television WKPC-TV,KentuckyEducationalTelevision.us@WKPCTV
+United States,LifevisionTV,LifevisionTV.us@SD
+United States,Love Pets,LovePets.ca@US
+United States,LoveWorld USA,LoveWorldUSA.ng@SD
+United States,Merit Street,MeritStreet.us@SD
+United States,MovieSphere Gold WFXT,MovieSphereGold.us@WFXT
 United States,Muslim Network TV,MuslimNetworkTV.us@SD
-United States,NBA TV (720p),NBATV.us@SD
-United States,NBC LX Home (1080p),NBCLXHome.us@HD
-United States,NOST (720p),NOST.us@SD
-United States,National Geographic (United States) (720p),NationalGeographic.us@East
-United States,Newsmax TV (720p),NewsmaxTV.us@SD
-United States,Newsy (1080p),Newsy.us@SD
-United States,OWN (720p),OWN.us@East
-United States,One America News Network (720p),OneAmericaNewsNetwork.us@SD
-United States,Paramount Network (United States) (1080p),ParamountNetwork.us@East
-United States,Rev and Roll (720p),RevandRoll.us@SD
-United States,Revry Queer (720p),RevryQueer.us@SD
-United States,SEC Network (1080p),SECNetwork.us@SD
-United States,Sony Movies (United States) (720p),SonyMovies.us@SD
-United States,TCM (720p) [Geo-blocked],TCM.us@East
-United States,TCM West (720p) [Geo-blocked],TCM.us@West
-United States,TLN Media Chicago (720p),TLNMediaChicago.us@SD
-United States,TLN Media San Francisco (720p),TLNMediaSanFrancisco.us@SD
-United States,TNT (United States) (720p) [Geo-blocked],TNT.us@East
-United States,TNT (United States) West (720p) [Geo-blocked],TNT.us@West
-United States,TVS Music Network (720p),TVSMusicNetwork.us@SD
-United States,TVS Select Network (720p),TVSSelectNetwork.us@SD
-United States,TVS Sports Bureau (720p),TVSSportsBureau.us@SD
-United States,Telemundo Corpus Christi (720p),TelemundoCorpusChristi.us@SD
-United States,The Archive (1080p),TheArchive.us@SD
+United States,NBC LX Home,NBCLXHome.us@HD
+United States,NOST,NOST.us@SD
+United States,OWN,OWN.us@East
+United States,Rev and Roll,RevandRoll.us@SD
+United States,Revry Queer,RevryQueer.us@SD
+United States,TLN Media Chicago,TLNMediaChicago.us@SD
+United States,TLN Media San Francisco,TLNMediaSanFrancisco.us@SD
+United States,TVS Music Network,TVSMusicNetwork.us@SD
+United States,TVS Select Network,TVSSelectNetwork.us@SD
+United States,TVS Sports Bureau,TVSSportsBureau.us@SD
+United States,The Archive,TheArchive.us@SD
 United States,TyC Sports USA,TyCSportsUSA.ar@SD
-United States,VH1 (1080p),VH1.us@East
-United States,VICE TV (1080p),VICETV.us@SD
-United States,WBTV 64.1 (720p),WBTV641.us@HD
-United States,WLNG Radio (410p) [Not 24/7],WLNGRadio.us@SD
-United States,WPLG 10.1 (720p),WPLG101.us@HD
-United States,WVCU-LP (1080p),WVCULP.us@SD
-United States,WVVH-CD 18.1 (720p),WVVHCD181.us@HD
-United States,We TV (1080p),WeTV.us@East
-United States,Westerns 4U (1080p),Westerns4U.us@SD
+United States,VICE TV,VICETV.us@SD
+United States,WBTV 64.1,WBTV641.us@HD
+United States,WLNG Radio,WLNGRadio.us@SD
+United States,WPLG 10.1,WPLG101.us@HD
+United States,WVCU-LP,WVCULP.us@SD
+United States,WVVH-CD 18.1,WVVHCD181.us@HD
+United States,Westerns 4U,Westerns4U.us@SD
 United States,Wild 'N Out,WildNOut.us@SD
-United States,Yes Network (720p),YesNetwork.us@SD
-United States,beIN Sports USA (576p),beINSportsUSA.us@SD
-United States,truTV (720p),truTV.us@East
-United States,truTV West (720p) [Geo-blocked],truTV.us@West
+United States,beIN Sports USA,beINSportsUSA.us@SD
