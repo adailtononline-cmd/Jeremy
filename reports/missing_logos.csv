@@ -1,8 +1,9 @@
 country,channel,tvg_id
 Australia,ABC TV Plus,ABCTVPlus.au@Sydney
+Australia,PBS America,PBSAmerica.uk@SD
 Brazil,A&E Latin America Brazil,AELatinAmerica.us@Brazil
 Brazil,AMC Latin America Brazil,AMCLatinAmerica.us@Brazil
-Brazil,CazeTV,CazeTV.br@SD
+Brazil,Cartoon Network Latin America Brazil,CartoonNetworkLatinAmerica.us@Brazil
 Brazil,Cultura Fast,CulturaFast.br@SD
 Brazil,ESPN,ESPN.br@SD
 Brazil,FIFA+ Portuguese,FIFAPlus.uk@Portuguese
@@ -10,11 +11,14 @@ Brazil,Lifetime Latin America Brazil,LifetimeLatinAmerica.us@Brazil
 Brazil,Plenitude TV,PlenitudeTV.br@SD
 Brazil,Rede Seculo 21,RedeSeculo21.br@SD
 Brazil,Studio Universal Latin America Brazil,StudioUniversalLatinAmerica.us@Brazil
+Brazil,TNT Latin America Brazil,TNTLatinAmerica.us@Brazil
 Brazil,TV Difusao,TVDifusao.br@SD
 Brazil,TV Globo Brasilia,TVGloboBrasilia.br@SD
 Brazil,TV Litoral RN,TVLitoralRN.br@SD
+Brazil,TV Petropolis,TVPetropolis.br@SD
 Brazil,TVE Bahia,TVEBahia.br@SD
 Canada,Canada One,CanadaOne.ca@SD
+Canada,PTC Punjabi Canada,PTCPunjabiCanada.ca@SD
 Canada,Sardari TV,SardariTV.ca@SD
 Canada,Savoir media CFTU-DT,Savoirmedia.ca@CFTUDT
 Canada,Stingray DJAZZ,StingrayDJAZZ.ca@SD
@@ -26,41 +30,29 @@ United Kingdom,CNBC UK,CNBCUK.uk@SD
 United Kingdom,FIFA+,FIFAPlus.uk@English
 United Kingdom,Sangat TV,SangatTV.uk@SD
 United Kingdom,Totalmusic 2000s,Totalmusic2000s.uk@HD
+United Kingdom,Zee One,ZeeOne.uk@UK
 United Kingdom,talkSPORT,talkSPORT.uk@SD
 United States,30A TV Classic Movies,30ATVClassicMovies.us@SD
-United States,ABC News Live 1,ABCNewsLive1.us@SD
-United States,ABC News Live 10,ABCNewsLive10.us@SD
-United States,ABC News Live 2,ABCNewsLive2.us@SD
-United States,ABC News Live 3,ABCNewsLive3.us@SD
-United States,ABC News Live 4,ABCNewsLive4.us@SD
-United States,ABC News Live 5,ABCNewsLive5.us@SD
-United States,ABC News Live 6,ABCNewsLive6.us@SD
-United States,ABC News Live 7,ABCNewsLive7.us@SD
-United States,ABC News Live 8,ABCNewsLive8.us@SD
-United States,ABC News Live 9,ABCNewsLive9.us@SD
 United States,Aastha International,AasthaInternational.in@SD
+United States,Adult Swim West,AdultSwim.us@West
 United States,America's Voice,AmericasVoice.us@SD
 United States,CC-TV,CCTV.us@SD
-United States,CGTV,CGTV.us@SD
 United States,CNN en Espanol,CNNenEspanol.us@SD
+United States,Cartoon Network West,CartoonNetwork.us@West
 United States,Catholic Faith Network,CatholicFaithNetwork.us@SD
-United States,Channel 10,Channel10.us@SD
-United States,Cinemax West,Cinemax.us@West
 United States,Crime + Investigation,CrimePlusInvestigation.us@SD
+United States,De Pelicula US,DePeliculaUS.us@SD
 United States,Entertainment Tonight,EntertainmentTonight.us@SD
 United States,FIFA+ United States,FIFAPlus.uk@UnitedStates
 United States,Flowers TV USA,FlowersTVUSA.us@SD
 United States,Fox Business Network,FoxBusinessNetwork.us@SD
 United States,Fox News Channel,FoxNewsChannel.us@SD
 United States,Fox News International,FoxNewsInternational.us@SD
+United States,History,History.us@East
 United States,Jewelry TV 2,JewelryTV2.us@SD
 United States,KMCT-TV 39.1,KMCTTV391.us@HD
-United States,Kentucky Educational Television WKMJ-TV,KentuckyEducationalTelevision.us@WKMJTV
-United States,Kentucky Educational Television WKPC-TV,KentuckyEducationalTelevision.us@WKPCTV
 United States,LifevisionTV,LifevisionTV.us@SD
-United States,Love Pets,LovePets.ca@US
 United States,LoveWorld USA,LoveWorldUSA.ng@SD
-United States,Merit Street,MeritStreet.us@SD
 United States,MovieSphere Gold WFXT,MovieSphereGold.us@WFXT
 United States,Muslim Network TV,MuslimNetworkTV.us@SD
 United States,NBC LX Home,NBCLXHome.us@HD
@@ -73,9 +65,11 @@ United States,TLN Media San Francisco,TLNMediaSanFrancisco.us@SD
 United States,TVS Music Network,TVSMusicNetwork.us@SD
 United States,TVS Select Network,TVSSelectNetwork.us@SD
 United States,TVS Sports Bureau,TVSSportsBureau.us@SD
+United States,Telemundo Corpus Christi,TelemundoCorpusChristi.us@SD
 United States,The Archive,TheArchive.us@SD
 United States,TyC Sports USA,TyCSportsUSA.ar@SD
 United States,VICE TV,VICETV.us@SD
+United States,W14DK-D 14.2,W14DKD142.us@SD
 United States,WBTV 64.1,WBTV641.us@HD
 United States,WLNG Radio,WLNGRadio.us@SD
 United States,WPLG 10.1,WPLG101.us@HD
