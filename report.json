@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-15T19:29:11.122507+00:00",
+  "generated_at": "2026-11-16T18:39:04.800180+00:00",
   "candidates": 2734,
-  "accepted": 2279,
+  "accepted": 2308,
   "by_country": {
-    "Brazil": 367,
+    "Brazil": 370,
     "United Kingdom": 303,
-    "Ukraine": 163,
-    "United States": 1217,
-    "Canada": 177,
-    "Australia": 47,
+    "Ukraine": 165,
+    "United States": 1240,
+    "Canada": 180,
+    "Australia": 45,
     "New Zealand": 5
   },
   "by_category": {},
@@ -16,24 +16,23 @@
     "duplicate_of_curated": 37,
     "excluded_closed_or_nsfw": 10,
     "excluded_france": 9,
-    "ok": 2062,
-    "network": 217,
+    "ok": 2093,
     "404": 160,
-    "403": 230,
-    "kept_br_uk_not_verified": 217,
-    "400": 14,
-    "500": 4,
-    "html": 9,
+    "network": 220,
+    "403": 163,
+    "kept_br_uk_not_verified": 215,
+    "400": 12,
+    "500": 5,
+    "html": 29,
     "218": 1,
-    "unknown-media": 5,
+    "unknown-media": 6,
     "504": 6,
-    "502": 6,
-    "503": 3,
+    "502": 16,
+    "503": 5,
     "574": 1,
-    "408": 3,
-    "416": 7,
-    "204": 5,
-    "523": 1
+    "408": 6,
+    "416": 6,
+    "204": 5
   },
   "notes": [
     "HTTP checks do not prove playback on Sparkle TV.",
@@ -42,28 +41,28 @@
     "Jeremy's previously approved channel numbers cannot be safely matched without his original snapshot."
   ],
   "logos": {
-    "stored_original": 1977,
-    "stored_repaired": 161,
-    "placeholder_with_channel_name": 141
+    "stored_original": 1999,
+    "stored_repaired": 84,
+    "placeholder_with_channel_name": 225
   },
   "epg": {
     "status": "matched",
-    "channels_with_guide": 828,
-    "channels_total": 2279,
-    "programme_entries": 35571,
+    "channels_with_guide": 818,
+    "channels_total": 2308,
+    "programme_entries": 34164,
     "window_days": 4,
     "sources": {
       "all.xml": {
-        "channels": 537,
-        "programmes": 14971
+        "channels": 534,
+        "programmes": 14868
       },
       "epg_ripper_UK1.xml.gz": {
         "channels": 47,
-        "programmes": 3513
+        "programmes": 3453
       },
       "epg_ripper_US2.xml.gz": {
-        "channels": 71,
-        "programmes": 7912
+        "channels": 70,
+        "programmes": 7695
       },
       "epg_ripper_US_LOCALS1.xml.gz": {
         "channels": 0,
@@ -74,20 +73,20 @@
         "programmes": 0
       },
       "epg_ripper_CA2.xml.gz": {
-        "channels": 22,
-        "programmes": 1917
+        "channels": 20,
+        "programmes": 1528
       },
       "epg_ripper_AU1.xml.gz": {
         "channels": 18,
-        "programmes": 1916
+        "programmes": 2108
       },
       "epg_ripper_NZ1.xml.gz": {
         "channels": 2,
-        "programmes": 661
+        "programmes": 663
       },
       "epg_ripper_UA1.xml.gz": {
         "channels": 50,
-        "programmes": 1773
+        "programmes": 869
       },
       "epg_ripper_BR1.xml.gz": {
         "channels": 0,
@@ -95,7 +94,7 @@
       },
       "epg_ripper_BR2.xml.gz": {
         "channels": 32,
-        "programmes": 2908
+        "programmes": 2980
       }
     }
   }

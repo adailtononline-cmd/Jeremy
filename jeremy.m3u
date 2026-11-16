@@ -69,6 +69,8 @@ https://jmp2.uk/plu-5ff768b6a4c8b80008498610.m3u8
 https://stmv1.transmissaodigital.com/blitstv/blitstv/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="BM&C News" tvg-country="BR" tvg-category="News" tvg-id="BMCNews.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bmcnews-br.png" group-title="Brazil",BM&C News
 https://jmp2.uk/plu-666c9c60a7efd40008f552f0.m3u8
+#EXTINF:-1 tvg-language="Portuguese" tvg-name="Boas Novas" tvg-country="BR" tvg-category="Other" tvg-id="BoasNovas.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/boasnovas-br.png" group-title="Brazil",Boas Novas
+https://cdn.jmvstream.com/w/LVW-9375/LVW9375_6i0wPBCHYc/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="Bob Esponja Calca Quadrada" tvg-country="BR" tvg-category="Kids" tvg-id="BobEsponjaCalcaQuadrada.us@BR" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bobesponjacalcaquadrada-us.png" group-title="Brazil",Bob Esponja Calca Quadrada
 https://jmp2.uk/plu-62545c0b002f4b0007688b61.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="Box Kids TV" tvg-country="BR" tvg-category="Kids" tvg-id="BoxKidsTV.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/boxkidstv-br.png" group-title="Brazil",Box Kids TV
@@ -163,6 +165,8 @@ http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8
 http://186.219.52.187/zoomoo/index.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="Elemental Channel" tvg-country="BR" tvg-category="Entertainment" tvg-id="ElementalChannel.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/elementalchannel-br.png" group-title="Brazil",Elemental Channel
 https://5d82644094cc0.streamlock.net/8116/8116/playlist.m3u8
+#EXTINF:-1 tvg-language="Portuguese" tvg-name="ElyTV" tvg-country="BR" tvg-category="Entertainment" tvg-id="ElyTV.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/elytv-br.png" group-title="Brazil",ElyTV
+https://stmv1.srvsite.com/ely/ely/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="ESPN" tvg-country="BR" tvg-category="Sports" tvg-id="ESPN.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/espn-br.png" group-title="Brazil",ESPN
 http://181.78.197.59:8000/play/a07z/index.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="ESPN 3" tvg-country="BR" tvg-category="Sports" tvg-id="ESPN3.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/espn3-br.png" group-title="Brazil",ESPN 3
@@ -583,6 +587,8 @@ http://45.177.114.115/TV_BRASIL/index.m3u8
 https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="TV BRICS Portuguese" tvg-country="BR" tvg-category="General" tvg-id="TVBRICSPortuguese.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvbricsportuguese-br.png" group-title="Brazil",TV BRICS Portuguese
 https://porbrics.mediacdn.ru/cdn/brics/portuguese/playlist.m3u8
+#EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Brusque" tvg-country="BR" tvg-category="News" tvg-id="TVBrusque.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvbrusque-br.png" group-title="Brazil",TV Brusque
+https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Camara Salvador" tvg-country="BR" tvg-category="Legislative" tvg-id="TVCamaraSalvador.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvcamarasalvador-br.png" group-title="Brazil",TV Camara Salvador
 https://596639ebdd89b.streamlock.net/8114/8114/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Cancao Nova" tvg-country="BR" tvg-category="Other" tvg-id="TVCancaoNova.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvcancaonova-br.png" group-title="Brazil",TV Cancao Nova
@@ -615,8 +621,6 @@ https://5d82644094cc0.streamlock.net/empiremagazinetv/empiremagazinetv/playlist.
 https://stmv7.samcast.com.br/sistemaencontrodasaguas/sistemaencontrodasaguas/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Evangelizar" tvg-country="BR" tvg-category="Religious" tvg-id="TVEvangelizar.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvevangelizar-br.png" group-title="Brazil",TV Evangelizar
 http://170.83.16.50/TV_EVANGELIZAR/index.m3u8
-#EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Fronteira" tvg-country="BR" tvg-category="Other" tvg-id="TVFronteira.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvfronteira-br.png" group-title="Brazil",TV Fronteira
-https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Gazeta" tvg-country="BR" tvg-category="Other" tvg-id="TVGazeta.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvgazeta-br.png" group-title="Brazil",TV Gazeta
 http://186.219.52.187/gazeta/index.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Gazin" tvg-country="BR" tvg-category="General" tvg-id="TVGazin.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvgazin-br.png" group-title="Brazil",TV Gazin
@@ -685,6 +689,8 @@ http://170.83.16.50/TV_SENADO/index.m3u8
 https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Sim Sao Mateus" tvg-country="BR" tvg-category="News" tvg-id="TVSimSaoMateus.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvsimsaomateus-br.png" group-title="Brazil",TV Sim Sao Mateus
 https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8
+#EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Sul Bahia" tvg-country="BR" tvg-category="Other" tvg-id="TVSulBahia.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvsulbahia-br.png" group-title="Brazil",TV Sul Bahia
+https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Terceiro Anjo" tvg-country="BR" tvg-category="Religious" tvg-id="TVTerceiroAnjo.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvterceiroanjo-br.png" group-title="Brazil",TV Terceiro Anjo
 https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8
 #EXTINF:-1 tvg-language="Portuguese" tvg-name="TV Thathi" tvg-country="BR" tvg-category="General" tvg-id="TVThathi.br@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvthathi-br.png" group-title="Brazil",TV Thathi
@@ -1399,8 +1405,6 @@ https://dash2.antik.sk/live/telekanal_dim/playlist.m3u8
 https://ext.cdn.nashnet.tv/228.0.0.15/index.m3u8
 #EXTINF:-1 tvg-category="Other" tvg-name="ПлюсПлюс" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/plusplus-ua.png" tvg-id="PlusPlus.ua" tvg-chno="19" tvg-country="UA" group-title="Ukraine",ПлюсПлюс
 http://stream.mcquack.net/339/index.m3u8
-#EXTINF:-1 tvg-language="Ukrainian" tvg-category="Kids" tvg-name="Піксель TV" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/pixeltv-ua.png" tvg-id="PixelTV.ua" tvg-chno="25" tvg-country="UA" group-title="Ukraine",Піксель TV
-https://cdn15.live-tv.cloud/ua_infinitas_tv/pixel-abr/playlist.m3u8
 #EXTINF:-1 tvg-language="Ukrainian" tvg-category="General" tvg-name="Суспільне Kropyvnytskyi" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/suspilnekropyvnytskyi-ua.png" tvg-id="SuspilneKropyvnytskyi.ua" tvg-chno="8" tvg-country="UA" group-title="Ukraine",Суспільне Kropyvnytskyi
 http://cdnua05.hls.tv/650/hls/f62d71219200da4130d13b21d23fb23c/4788/stream.m3u8
 #EXTINF:-1 tvg-language="Ukrainian" tvg-category="General" tvg-name="Суспільне Дніпро" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/suspilnednipro-ua.png" tvg-id="SuspilneDnipro.ua" tvg-chno="2" tvg-country="UA" group-title="Ukraine",Суспільне Дніпро
@@ -1569,12 +1573,16 @@ http://stream.mcquack.net/403/index.m3u8
 http://stream.mcquack.net/262/index.m3u8
 #EXTINF:-1 tvg-language="Ukrainian" tvg-name="Niki Kids" tvg-country="UA" tvg-category="Kids" tvg-id="NikiKids.ua@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/nikikids-ua.png" group-title="Ukraine",Niki Kids
 http://stream.mcquack.net/271/index.m3u8
+#EXTINF:-1 tvg-language="Russian" tvg-name="Novorossiya TV" tvg-country="UA" tvg-category="News" tvg-id="NovorossiyaTV.ru@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/novorossiyatv-ru.png" group-title="Ukraine",Novorossiya TV
+http://31.131.139.253:9002/novoros/index.m3u8
 #EXTINF:-1 tvg-language="Russian" tvg-name="NTS" tvg-country="UA" tvg-category="General" tvg-id="NTS.ru@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/nts-ru.png" group-title="Ukraine",NTS
 https://peqk71plnjy.a.trbcdn.net/livemaster/w4kz7pki62_nts_tv/playlist.m3u8
 #EXTINF:-1 tvg-language="Ukrainian" tvg-name="Obozrevatel TV" tvg-country="UA" tvg-category="News" tvg-id="ObozrevatelTV.ua@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/obozrevateltv-ua.png" http-user-agent="curl/8.16.0" group-title="Ukraine",Obozrevatel TV
 https://ext.cdn.nashnet.tv/228.0.0.148/index.m3u8
 #EXTINF:-1 tvg-language="Russian" tvg-name="Obshchestvennoe Nezavisimoe Televidenie" tvg-country="UA" tvg-category="News" tvg-id="ObshchestvennoeNezavisimoeTelevidenie.ua@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/obshchestvennoenezavisimoetelevidenie-ua.png" group-title="Ukraine",Obshchestvennoe Nezavisimoe Televidenie
 http://85.238.112.40:8810/hls_sec/239.33.75.33-.m3u8
+#EXTINF:-1 tvg-language="Russian" tvg-name="Oplot TV SD" tvg-country="UA" tvg-category="News" tvg-id="OplotTV.ru@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/oplottv-ru.png" group-title="Ukraine",Oplot TV SD
+http://31.131.139.253:9002/oplot_hd/index.m3u8
 #EXTINF:-1 tvg-language="Ukrainian" tvg-name="Orbita TV" tvg-country="UA" tvg-category="General" tvg-id="OrbitaTV.ua@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/orbitatv-ua.png" group-title="Ukraine",Orbita TV
 http://ftp.orbita.dn.ua/hls/orbita.m3u8
 #EXTINF:-1 tvg-language="Ukrainian" tvg-name="OTSE" tvg-country="UA" tvg-category="Entertainment" tvg-id="OTSE.ua@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/otse-ua.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Ukraine",OTSE
@@ -1589,6 +1597,8 @@ http://stream.mcquack.net/246/index.m3u8
 https://streaming.televizor-24-tochka.ru/live/27.m3u8
 #EXTINF:-1 tvg-language="Ukrainian" tvg-name="Pixel TV" tvg-country="UA" tvg-category="Kids" tvg-id="PixelTV.ua@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/pixeltv-ua.png" group-title="Ukraine",Pixel TV
 http://stream.mcquack.net/323/index.m3u8
+#EXTINF:-1 tvg-language="Ukrainian" tvg-name="PTV" tvg-country="UA" tvg-category="News" tvg-id="PTV.ua@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/ptv-ua.png" group-title="Ukraine",PTV
+https://cdn15.live-tv.cloud/ua_infinitas_tv/hrpl-abr/playlist.m3u8
 #EXTINF:-1 tvg-language="Russian;English;Ukrainian" tvg-name="Rada TV" tvg-country="UA" tvg-category="Legislative" tvg-id="RadaTV.ua@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/radatv-ua.png" group-title="Ukraine",Rada TV
 https://cdn15.live-tv.cloud/ua_infinitas_tv/rada-abr/playlist.m3u8
 #EXTINF:-1 tvg-language="Russian" tvg-name="RAZ 1" tvg-country="UA" tvg-category="Entertainment" tvg-id="RAZ1.ua@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/raz1-ua.png" group-title="Ukraine",RAZ 1
@@ -1803,10 +1813,16 @@ https://amc-absolutereality-1-us.plex.wurl.tv/playlist.m3u8
 https://jmp2.uk/plu-64dab1f835425100080e1e7b.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="ACC Digital Network" tvg-country="US" tvg-category="Sports" tvg-id="ACCDigitalNetwork.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/accdigitalnetwork-us.png" group-title="United States",ACC Digital Network
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Access 19" tvg-country="US" tvg-category="General" tvg-id="Access19.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/access19-us.png" group-title="United States",Access 19
+https://reflect-montgomerycommunitymedia.cablecast.tv/live-8/live/stream-3/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Access 4 PAC" tvg-country="US" tvg-category="General" tvg-id="Access4PAC.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/access4pac-us.png" group-title="United States",Access 4 PAC
+https://reflect-channel18vod-springfield-il-us.cablecast.tv/live-16/live/stream-4/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Access Humboldt" tvg-country="US" tvg-category="General" tvg-id="AccessHumboldt.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/accesshumboldt-us.png" group-title="United States",Access Humboldt
 https://rtmp-live-ingest-ap-northeast-2-universe-dacast-com.akamaized.net/transmuxv1/streams/f08fcd45-1d04-9a8c-39ca-f56091820e5c.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Access Nashua" tvg-country="US" tvg-category="General" tvg-id="AccessNashua.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/accessnashua-us.png" group-title="United States",Access Nashua
 https://livestream.telvue.com/nashuanh1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Access Tuolumne" tvg-country="US" tvg-category="General" tvg-id="AccessTuolumne.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/accesstuolumne-us.png" group-title="United States",Access Tuolumne
+https://reflect-tuolumne.cablecast.tv/live-3/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="AccessVision Channel 16" tvg-country="US" tvg-category="General" tvg-id="AccessVisionChannel16.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/accessvisionchannel16-us.png" group-title="United States",AccessVision Channel 16
 https://livestream.telvue.com/accvision1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="AccessVision Channel 17" tvg-country="US" tvg-category="Legislative" tvg-id="AccessVisionChannel17.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/accessvisionchannel17-us.png" group-title="United States",AccessVision Channel 17
@@ -1931,8 +1947,6 @@ https://linear-900.frequency.stream/dist/cineverse/900/hls/master/playlist.m3u8
 https://uptv-aspiretvlife-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="At Home with Family Handyman" tvg-country="US" tvg-category="Series" tvg-id="AtHomewithFamilyHandyman.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/athomewithfamilyhandyman-us.png" group-title="United States",At Home with Family Handyman
 https://d1ik2p49apxqjf.cloudfront.net/playlist.m3u8
-#EXTINF:-1 tvg-language="English;Spanish" tvg-name="ATL 26" tvg-country="US" tvg-category="Legislative" tvg-id="ATL26.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/atl26-us.png" group-title="United States",ATL 26
-https://securestream11.champds.com/LIVE/AtlantaGALIVE/AtlantaGALIVE.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Atlanta Channel" tvg-country="US" tvg-category="General" tvg-id="AtlantaChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/atlantachannel-us.png" group-title="United States",Atlanta Channel
 http://media4.tripsmarter.com:1935/LiveTV/ACVBHD/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Atlas" tvg-country="US" tvg-category="Documentary" tvg-id="Atlas.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/atlas-us.png" group-title="United States",Atlas
@@ -2007,8 +2021,6 @@ https://livestream.telvue.com/billerica4/f7b44cfafd5c52223d5498196c8a2e7b.sdp/pl
 https://jmp2.uk/plu-666815f24b9fb400083f7e31.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="BET Cinema" tvg-country="US" tvg-category="Movies" tvg-id="BETCinema.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/betcinema-us.png" group-title="United States",BET Cinema
 https://jmp2.uk/plu-58af4c093a41ca9d4ecabe96.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="BET Classics Pluto TV" tvg-country="US" tvg-category="Entertainment" tvg-id="BETClassicsPlutoTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/betclassicsplutotv-us.png" group-title="United States",BET Classics Pluto TV
-https://jmp2.uk/plu-60f85644a9493e0007a1f035.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="BET Comedy Movies" tvg-country="US" tvg-category="Movies" tvg-id="BETComedyMovies.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/betcomedymovies-us.png" group-title="United States",BET Comedy Movies
 https://jmp2.uk/plu-68c32d88f56983aba40052bd.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="BET Pluto TV" tvg-country="US" tvg-category="Entertainment" tvg-id="BETPlutoTV.us@US" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/betplutotv-us.png" group-title="United States",BET Pluto TV
@@ -2035,6 +2047,10 @@ https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/beverlyhills/G0072_006/playlist.m3u8
 https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/beverlyhills/G0072_007/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Big Brother" tvg-country="US" tvg-category="Entertainment" tvg-id="BigBrother.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bigbrother-us.png" group-title="United States",Big Brother
 https://jmp2.uk/plu-6661f11a41af6400080e90d8.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="BIG Civic Channel" tvg-country="US" tvg-category="General" tvg-id="BIGCivicChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bigcivicchannel-us.png" group-title="United States",BIG Civic Channel
+https://reflect-brookline-interactive-group.cablecast.tv/live-5/live/stream-2/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="BIG Community Channel" tvg-country="US" tvg-category="General" tvg-id="BIGCommunityChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bigcommunitychannel-us.png" group-title="United States",BIG Community Channel
+https://reflect-brookline-interactive-group.cablecast.tv/live-4/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Big Ten Network" tvg-country="US" tvg-category="Other" tvg-id="BigTenNetwork.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bigtennetwork-us.png" group-title="United States",Big Ten Network
 http://23.237.104.106:8080/USA_BTN/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Billiard TV" tvg-country="US" tvg-category="Sports" tvg-id="BilliardTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/billiardtv-us.png" group-title="United States",Billiard TV
@@ -2077,6 +2093,8 @@ https://hls.botflix.tv/tv/index.m3u8
 http://23.237.104.106:8080/USA_BOUNCE/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Bounce XL" tvg-country="US" tvg-category="Entertainment" tvg-id="BounceXL.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bouncexl-us.png" group-title="United States",Bounce XL
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-bouncexl-tablo/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="BPTV" tvg-country="US" tvg-category="Legislative" tvg-id="BPTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bptv-us.png" group-title="United States",BPTV
+https://buenapark.cablecast.tv/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="French;Haitian" tvg-name="BPX TV Radio" tvg-country="US" tvg-category="Music" tvg-id="BPXTVRadio.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bpxtvradio-us.png" group-title="United States",BPX TV Radio
 https://video1.getstreamhosting.com:1936/8212/8212/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Brat TV" tvg-country="US" tvg-category="Kids" tvg-id="BratTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/brattv-us.png" group-title="United States",Brat TV
@@ -2093,6 +2111,16 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2220
 https://cdnapisec.kaltura.com/p/2184561/sp/218456100/playManifest/entryId/1_68qxw4eu/format/applehttp/a.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Buzzr" tvg-country="US" tvg-category="Entertainment" tvg-id="Buzzr.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/buzzr-us.png" group-title="United States",Buzzr
 http://23.237.104.106:8080/USA_BUZZR/index.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="BX Arts" tvg-country="US" tvg-category="Culture" tvg-id="BXArts.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bxarts-us.png" group-title="United States",BX Arts
+https://reflect-stream-bronxnet.cablecast.tv/live-19/live/stream-2/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="BX Culture" tvg-country="US" tvg-category="Culture" tvg-id="BXCulture.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bxculture-us.png" group-title="United States",BX Culture
+https://reflect-stream-bronxnet.cablecast.tv/live-7/live/stream-3/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="BX Inform" tvg-country="US" tvg-category="General" tvg-id="BXInform.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bxinform-us.png" group-title="United States",BX Inform
+https://reflect-stream-bronxnet.cablecast.tv/live-8/live/stream-4/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="BX Inspire" tvg-country="US" tvg-category="Religious" tvg-id="BXInspire.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bxinspire-us.png" group-title="United States",BX Inspire
+https://reflect-stream-bronxnet.cablecast.tv/live-18/live/stream-7/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="BX Omni" tvg-country="US" tvg-category="General" tvg-id="BXOmni.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bxomni-us.png" group-title="United States",BX Omni
+https://reflect-stream-bronxnet.cablecast.tv/live-16/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="BYU TV" tvg-country="US" tvg-category="Other" tvg-id="BYUTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/byutv-us.png" group-title="United States",BYU TV
 https://d13j8jpstr8iqz.cloudfront.net/BYUtv.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="California Music Channel" tvg-country="US" tvg-category="Music" tvg-id="CaliforniaMusicChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/californiamusicchannel-us.png" group-title="United States",California Music Channel
@@ -2113,12 +2141,12 @@ https://cantv.streamguys1.com/cantv/cantv36hls/playlist.m3u8
 https://cdn-cloudfront.us-east-1.prod.ingest.aws-infra.dacast.com/live/dad6a736-9efb-40ce-89b6-81d1d54f92bd/master.m3u8
 #EXTINF:-1 tvg-language="Spanish" tvg-name="Canela TV" tvg-country="US" tvg-category="Entertainment" tvg-id="CanelaTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/canelatv-us.png" group-title="United States",Canela TV
 https://d3cx6yargdnl7q.cloudfront.net/canelatv.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Capital City Connection Montgomery" tvg-country="US" tvg-category="Legislative" tvg-id="CapitalCityConnectionMontgomery.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/capitalcityconnectionmontgomery-us.png" group-title="United States",Capital City Connection Montgomery
+https://capitalcityconnection.cablecast.tv/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Car Chase" tvg-country="US" tvg-category="Entertainment" tvg-id="CarChase.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/carchase-us.png" group-title="United States",Car Chase
 https://jmp2.uk/plu-65244c403fd33c0008ffff31.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Cars.TV" tvg-country="US" tvg-category="Auto" tvg-id="CarsTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/carstv-us.png" group-title="United States",Cars.TV
 https://a-cdn.klowdtv.com/live2/carstv_720p/playlist.m3u8
-#EXTINF:-1 tvg-language="English;Spanish;Portuguese" tvg-name="Cartoon Network West" tvg-country="US" tvg-category="Animation" tvg-id="CartoonNetwork.us@West" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cartoonnetwork-us.png" group-title="United States",Cartoon Network West
-http://212.5.144.156:8080/cartoon/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Catholic Faith Network" tvg-country="US" tvg-category="Religious" tvg-id="CatholicFaithNetwork.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/catholicfaithnetwork-us.png" group-title="United States",Catholic Faith Network
 https://uni8rtmp.tulix.tv/cfntv/cfntv/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Catholic TV" tvg-country="US" tvg-category="Religious" tvg-id="CatholicTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/catholictv-us.png" group-title="United States",Catholic TV
@@ -2181,6 +2209,8 @@ https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00327-coxmediagroup-wjaxbreaking-on
 https://aegis-cloudfront-1.tubi.video/d8fc1d6c-fd55-45c8-973b-b7327ee1a6e0/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="CC-TV" tvg-country="US" tvg-category="Other" tvg-id="CCTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cctv-us.png" group-title="United States",CC-TV
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/charlotte/G0055_009/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="CCX1" tvg-country="US" tvg-category="General" tvg-id="CCX1.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/ccx1-us.png" group-title="United States",CCX1
+http://reflect-ccx.cablecast.tv/live-9/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Celebrity Name Game" tvg-country="US" tvg-category="Series" tvg-id="CelebrityNameGame.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/celebritynamegame-us.png" group-title="United States",Celebrity Name Game
 https://amg00353-amg00353c19-xumo-us-2608.playouts.now.amagi.tv/lionsgate-clbng/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Celebrity Scene TV" tvg-country="US" tvg-category="Other" tvg-id="CelebritySceneTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/celebrityscenetv-us.png" group-title="United States",Celebrity Scene TV
@@ -2189,8 +2219,12 @@ https://rpn.bozztv.com/gusa/gusa-celebrityscene/index.m3u8
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/cerritos/G0010_002/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="CFM TV Channel 98" tvg-country="US" tvg-category="Legislative" tvg-id="CFMTVChannel98.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cfmtvchannel98-us.png" group-title="United States",CFM TV Channel 98
 https://cdn3.wowza.com/5/djRwZmQvTEJidmZD/cityftmyers/G2083_002/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="CGTV" tvg-country="US" tvg-category="Legislative" tvg-id="CGTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cgtv-us.png" group-title="United States",CGTV
+https://champaign-cablecast.cablecast.tv/live/stream-2/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Channel 10" tvg-country="US" tvg-category="Legislative" tvg-id="Channel10.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/channel10-us.png" group-title="United States",Channel 10
 https://cdn3.wowza.com/5/cFh0V0QwUVc4SDl2/santa-paula/G0930_002/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Channel 18 GAC" tvg-country="US" tvg-category="Legislative" tvg-id="Channel18GAC.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/channel18gac-us.png" group-title="United States",Channel 18 GAC
+https://reflect-channel18vod-springfield-il-us.cablecast.tv/live-13/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Charge!" tvg-country="US" tvg-category="Movies" tvg-id="Charge.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/charge-us.png" group-title="United States",Charge!
 https://fast-channels.sinclairstoryline.com/CHARGE/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Cheddar News" tvg-country="US" tvg-category="News" tvg-id="CheddarNews.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cheddarnews-us.png" group-title="United States",Cheddar News
@@ -2231,6 +2265,8 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2223
 https://gsn-cinevault-westerns-2-us.roku.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="City of Fort Pierce" tvg-country="US" tvg-category="Legislative" tvg-id="CityofFortPierce.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cityoffortpierce-us.png" group-title="United States",City of Fort Pierce
 https://edge-f.swagit.com/live/fortpiercefl/live-1-a/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="City of Monroe Government Channel" tvg-country="US" tvg-category="Legislative" tvg-id="CityofMonroeGovernmentChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cityofmonroegovernmentchannel-us.png" group-title="United States",City of Monroe Government Channel
+https://reflect-monroe-mi-ci.cablecast.tv/live-1/live/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="City of Pompano Beach" tvg-country="US" tvg-category="Legislative" tvg-id="CityofPompanoBeach.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cityofpompanobeach-us.png" group-title="United States",City of Pompano Beach
 https://cdn3.wowza.com/5/M0lyamVmM2JWcjhQ/pompano/G0765_005/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="City TV Carlsbad" tvg-country="US" tvg-category="General" tvg-id="CityTVCarlsbad.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/citytvcarlsbad-us.png" group-title="United States",City TV Carlsbad
@@ -2243,6 +2279,8 @@ https://cdn3.wowza.com/5/bGZUOHp2TnhudnM2/santamonica/G0039_002/playlist.m3u8
 https://dlttx48mxf9m3.cloudfront.net/vod_clients/lakewood/live/ch1/video.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="CityTV San Diego" tvg-country="US" tvg-category="Legislative" tvg-id="CityTVSanDiego.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/citytvsandiego-us.png" group-title="United States",CityTV San Diego
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/sandiego/G1826_005/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="CityTV Whittier" tvg-country="US" tvg-category="Legislative" tvg-id="CityTVWhittier.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/citytvwhittier-us.png" group-title="United States",CityTV Whittier
+https://whittier.cablecast.tv/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Clarity 4K" tvg-country="US" tvg-category="General" tvg-id="Clarity4K.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/clarity4k-us.png" group-title="United States",Clarity 4K
 https://pb-qyrvophnifz47.akamaized.net/Clarity_4K.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Classic Cinema" tvg-country="US" tvg-category="Movies" tvg-id="ClassicCinema.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/classiccinema-us.png" group-title="United States",Classic Cinema
@@ -2263,6 +2301,12 @@ https://jmp2.uk/plu-61325d18f5166c00081b84e0.m3u8
 https://jmp2.uk/plu-5f779951372da90007fd45e8.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Cloudflare TV" tvg-country="US" tvg-category="Education" tvg-id="CloudflareTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cloudflaretv-us.png" group-title="United States",Cloudflare TV
 https://cloudflare.tv/hls/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="CMAC 1" tvg-country="US" tvg-category="General" tvg-id="CMAC1.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cmac1-us.png" group-title="United States",CMAC 1
+https://reflect-vod-cmac.cablecast.tv/live-11/live/stream-1/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="CMAC 2" tvg-country="US" tvg-category="Education" tvg-id="CMAC2.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cmac2-us.png" group-title="United States",CMAC 2
+https://reflect-vod-cmac.cablecast.tv/live-11/live/stream-2/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="CMAC 3" tvg-country="US" tvg-category="Legislative" tvg-id="CMAC3.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cmac3-us.png" group-title="United States",CMAC 3
+https://reflect-vod-cmac.cablecast.tv/live-11/live/stream-3/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="CMAP Channel 17" tvg-country="US" tvg-category="Legislative" tvg-id="CMAPChannel17.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cmapchannel17-us.png" group-title="United States",CMAP Channel 17
 https://livestream.telvue.com/cmap1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="CMAP Channel 18" tvg-country="US" tvg-category="General" tvg-id="CMAPChannel18.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cmapchannel18-us.png" group-title="United States",CMAP Channel 18
@@ -2283,8 +2327,6 @@ https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/costamesa/G0075_002/playlist.m3u8
 https://tvsen6.aynaott.com/cnn/index.m3u8
 #EXTINF:-1 tvg-language="Spanish" tvg-name="CNN en Espanol" tvg-country="US" tvg-category="News" tvg-id="CNNenEspanol.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cnnenespanol-us.png" group-title="United States",CNN en Espanol
 https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="CNN HD" tvg-country="US" tvg-category="News" tvg-id="CNN.us@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cnn-us.png" group-title="United States",CNN HD
-http://212.5.144.156:8080/cnn/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="CNN Originals" tvg-country="US" tvg-category="News" tvg-id="CNNOriginals.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cnnoriginals-us.png" group-title="United States",CNN Originals
 https://amg01918-cnnus-amg01918c2-vizio-us-9192.playouts.now.amagi.tv/playlist/amg01918-cnnus-cnnoriginals-vizious/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Cold Case Files" tvg-country="US" tvg-category="Series" tvg-id="ColdCaseFiles.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/coldcasefiles-us.png" group-title="United States",Cold Case Files
@@ -2301,12 +2343,18 @@ https://a-cdn.klowdtv.com/live2/comedytv_720p/playlist.m3u8
 http://45.70.201.81:8000/play/a014/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Comet" tvg-country="US" tvg-category="Entertainment" tvg-id="Comet.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/comet-us.png" group-title="United States",Comet
 https://fast-channels.sinclairstoryline.com/COMET/index.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="CommunityTV Channel 189" tvg-country="US" tvg-category="General" tvg-id="CommunityTVChannel189.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/communitytvchannel189-us.png" group-title="United States",CommunityTV Channel 189
+https://reflect-tacm.cablecast.tv/live-3/live/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Concord TV" tvg-country="US" tvg-category="General" tvg-id="ConcordTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/concordtv-us.png" group-title="United States",Concord TV
+https://concordca.cablecast.tv/live/stream-2/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Cooking Channel" tvg-country="US" tvg-category="Cooking" tvg-id="CookingChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cookingchannel-us.png" group-title="United States",Cooking Channel
 http://23.237.104.106:8080/USA_COOKING/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Cooking Panda" tvg-country="US" tvg-category="Cooking" tvg-id="CookingPanda.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cookingpanda-us.png" group-title="United States",Cooking Panda
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=46
 #EXTINF:-1 tvg-language="English" tvg-name="Cornerstone TV" tvg-country="US" tvg-category="Religious" tvg-id="CornerstoneTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cornerstonetv-us.png" group-title="United States",Cornerstone TV
 https://2-fss-1.themediacdn.com/pl_122/206280-3059514-1/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="COStv" tvg-country="US" tvg-category="Legislative" tvg-id="COStv.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/costv-us.png" group-title="United States",COStv
+https://irctv.cablecast.tv/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Court TV" tvg-country="US" tvg-category="Documentary" tvg-id="CourtTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/courttv-us.png" group-title="United States",Court TV
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-courttv-tablo/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Create" tvg-country="US" tvg-category="Education" tvg-id="Create.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/create-us.png" group-title="United States",Create
@@ -2397,10 +2445,16 @@ https://livestream.telvue.com/derrynh2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/play
 https://amg00353-amg00353c40-xumo-us-4839.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Destination America" tvg-country="US" tvg-category="Travel" tvg-id="DestinationAmerica.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/destinationamerica-us.png" group-title="United States",Destination America
 http://23.237.104.106:8080/USA_DESTINATION_AMERICA/index.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Detroit Channel 10" tvg-country="US" tvg-category="Legislative" tvg-id="DetroitChannel10.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/detroitchannel10-us.png" group-title="United States",Detroit Channel 10
+https://reflect-detroit-vod.cablecast.tv/live-2/live/stream-6/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Detroit Channel 21" tvg-country="US" tvg-category="General" tvg-id="DetroitChannel21.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/detroitchannel21-us.png" group-title="United States",Detroit Channel 21
+https://reflect-detroit-vod.cablecast.tv/live-9/live/stream-4/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Detroit Channel 22" tvg-country="US" tvg-category="Education" tvg-id="DetroitChannel22.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/detroitchannel22-us.png" group-title="United States",Detroit Channel 22
+https://reflect-detroit-vod.cablecast.tv/live-3/live/stream-3/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Detroit Channel 68" tvg-country="US" tvg-category="General" tvg-id="DetroitChannel68.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/detroitchannel68-us.png" group-title="United States",Detroit Channel 68
+https://reflect-detroit-vod.cablecast.tv/live-10/live/stream-5/live.m3u8
 #EXTINF:-1 tvg-language="Persian" tvg-name="Didgah TV" tvg-country="US" tvg-category="News" tvg-id="DidgahTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/didgahtv-us.png" group-title="United States",Didgah TV
 https://media.streambrothers.com:1936/8276/8276/playlist.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Discovery Channel" tvg-country="US" tvg-category="Entertainment" tvg-id="DiscoveryChannel.us@East" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/discoverychannel-us.png" group-title="United States",Discovery Channel
-http://212.5.144.156:8080/discovery/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Discovery Turbo" tvg-country="US" tvg-category="Auto" tvg-id="DiscoveryTurbo.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/discoveryturbo-us.png" group-title="United States",Discovery Turbo
 http://41.205.93.154/ESPNNEWS/index.m3u8
 #EXTINF:-1 tvg-language="English;Spanish" tvg-name="Disney Channel" tvg-country="US" tvg-category="Kids" tvg-id="DisneyChannel.us@East" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/disneychannel-us.png" group-title="United States",Disney Channel
@@ -2487,14 +2541,16 @@ https://jmp2.uk/plu-699c1b4c9c3b075ecd513139.m3u8
 https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc5us/master.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Fast TV" tvg-country="US" tvg-category="Other" tvg-id="FastTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/fasttv-us.png" group-title="United States",Fast TV
 https://live-manifest.production-public.tubi.io/live/e7be5ad5-9044-4151-95d4-a9aae10ab0a5/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="FC Public Media" tvg-country="US" tvg-category="General" tvg-id="FCPublicMedia.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/fcpublicmedia-us.png" group-title="United States",FC Public Media
+https://reflect-fcpublicmedia.cablecast.tv/live-5/live/stream-1/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="FCTV" tvg-country="US" tvg-category="General" tvg-id="FCTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/fctv-us.png" group-title="United States",FCTV
+https://reflect-vod-fcgov.cablecast.tv/live-9/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Fear Factor" tvg-country="US" tvg-category="Series" tvg-id="FearFactor.us@US" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/fearfactor-us.png" group-title="United States",Fear Factor
 https://amg00627-banijaygroup-fearfactor-samsungau-9vdod.amagi.tv/playlist/amg00627-banijaygroup-fearfactor-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Feel Good Drama" tvg-country="US" tvg-category="Series" tvg-id="FeelGoodDrama.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/feelgooddrama-us.png" group-title="United States",Feel Good Drama
 https://jmp2.uk/plu-65775af3b3801200084a3aa4.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Fernandina Beach Channel" tvg-country="US" tvg-category="Legislative" tvg-id="FernandinaBeachChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/fernandinabeachchannel-us.png" group-title="United States",Fernandina Beach Channel
 https://edge-f.swagit.com/live/fernandinabeachfl/live-1-a/playlist.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="FGTV" tvg-country="US" tvg-category="Legislative" tvg-id="FGTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/fgtv-us.png" group-title="United States",FGTV
-https://securestream11.champds.com/LIVE/FultonCoGALIVE/FultonCoGALIVE.m3u8
 #EXTINF:-1 tvg-language="Spanish" tvg-name="Fierro a Fondo TV" tvg-country="US" tvg-category="Auto" tvg-id="FierroaFondoTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/fierroafondotv-us.png" group-title="United States",Fierro a Fondo TV
 http://45.70.201.81:8000/play/a00x/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="FIFA+ United States" tvg-country="US" tvg-category="Sports" tvg-id="FIFAPlus.uk@UnitedStates" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/fifaplus-uk.png" group-title="United States",FIFA+ United States
@@ -2607,12 +2663,6 @@ https://amg01460-gemshoppingnetw-gem-ono-x662c.amagi.tv/playlist.m3u8
 https://2-fss-1.streamhoster.com/pl_122/amlst:206018-2645902/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Giggle Mug" tvg-country="US" tvg-category="Kids" tvg-id="GiggleMug.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/gigglemug-us.png" group-title="United States",Giggle Mug
 https://tvsen3.aynaott.com/uYpFg3RV/index.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Gillette Public Access Television Channel 189" tvg-country="US" tvg-category="Education" tvg-id="GillettePublicAccessTelevisionChannel189.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/gillettepublicaccesstelevisionchannel189-us.png" group-title="United States",Gillette Public Access Television Channel 189
-https://securestream11.champds.com/LIVE/GilletteWYLIVE3/GilletteWYLIVE3.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Gillette Public Access Television Channel 190" tvg-country="US" tvg-category="General" tvg-id="GillettePublicAccessTelevisionChannel190.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/gillettepublicaccesstelevisionchannel190-us.png" group-title="United States",Gillette Public Access Television Channel 190
-https://securestream11.champds.com/LIVE/GilletteWYLIVE/GilletteWYLIVE.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Gillette Public Access Television Channel 192" tvg-country="US" tvg-category="Legislative" tvg-id="GillettePublicAccessTelevisionChannel192.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/gillettepublicaccesstelevisionchannel192-us.png" group-title="United States",Gillette Public Access Television Channel 192
-https://securestream11.champds.com/LIVE/GilletteWYLIVE2/GilletteWYLIVE2.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Girlfriends Films" tvg-country="US" tvg-category="Movies" tvg-id="GirlfriendsFilms.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/girlfriendsfilms-us.png" group-title="United States",Girlfriends Films
 https://jmp2.uk/plu-66ba1e4446762a000855cd87.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Glendale 11 AZ" tvg-country="US" tvg-category="Legislative" tvg-id="Glendale11AZ.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/glendale11az-us.png" group-title="United States",Glendale 11 AZ
@@ -2649,6 +2699,8 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-gritxtra-tabl
 https://amogonetworx-grjngo-3-dk.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-language="Chinese" tvg-name="Guangdong TV America" tvg-country="US" tvg-category="General" tvg-id="GuangdongTVAmerica.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/guangdongtvamerica-us.png" group-title="United States",Guangdong TV America
 https://h5cul1yar48um3t.wcetv.com/hls/gdtv.m3u8
+#EXTINF:-1 tvg-language="Azerbaijani" tvg-name="GunAz TV" tvg-country="US" tvg-category="General" tvg-id="GunAzTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/gunaztv-us.png" group-title="United States",GunAz TV
+https://tv.gunaz.tv/hls/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Gunsmoke" tvg-country="US" tvg-category="Series" tvg-id="Gunsmoke.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/gunsmoke-us.png" group-title="United States",Gunsmoke
 https://jmp2.uk/plu-60f75771dfc72a00071fd0e0.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Hallmark Movies & More" tvg-country="US" tvg-category="Movies" tvg-id="HallmarkMoviesMore.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/hallmarkmoviesmore-us.png" group-title="United States",Hallmark Movies & More
@@ -2667,6 +2719,14 @@ https://amg02713-amg02713c11-amgplt0852.playout.now3.amagi.tv/ts-us-e2-n2/playli
 https://amg01446-blueantmediacan-haunttvaussam-samsungau-vcnai.amagi.tv/playlist/amg01446-blueantmediacan-haunttvaussam-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="HBCU-GO Sports" tvg-country="US" tvg-category="Sports" tvg-id="HBCUGOSports.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/hbcugosports-us.png" group-title="United States",HBCU-GO Sports
 https://a-cdn.klowdtv.com/live3/hbcugo_720p/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="HBTV" tvg-country="US" tvg-category="General" tvg-id="HBTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/hbtv-us.png" group-title="United States",HBTV
+https://reflect-huntingtonbeach.cablecast.tv/live-4/live/stream-1/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="HCTV Educational Access Channel" tvg-country="US" tvg-category="Education" tvg-id="HCTVEducationalAccessChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/hctveducationalaccesschannel-us.png" group-title="United States",HCTV Educational Access Channel
+https://reflect-hudsonctv.cablecast.tv/live-26/live/stream-1/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="HCTV Government Channel" tvg-country="US" tvg-category="Legislative" tvg-id="HCTVGovernmentChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/hctvgovernmentchannel-us.png" group-title="United States",HCTV Government Channel
+https://reflect-hudsonctv.cablecast.tv/live-26/live/stream-2/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="HCTV Public Access Channel" tvg-country="US" tvg-category="General" tvg-id="HCTVPublicAccessChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/hctvpublicaccesschannel-us.png" group-title="United States",HCTV Public Access Channel
+https://reflect-hudsonctv.cablecast.tv/live-26/live/stream-5/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Heartland" tvg-country="US" tvg-category="Entertainment" tvg-id="Heartland.us@Eastern" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/heartland-us.png" group-title="United States",Heartland
 https://2-fss-2.streamhoster.com/pl_120/201950-2724904-1/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Heartland Web" tvg-country="US" tvg-category="Entertainment" tvg-id="Heartland.us@Web" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/heartland-us.png" group-title="United States",Heartland Web
@@ -2679,8 +2739,6 @@ https://streamer1.connectto.com/HIGHVISION_WEB_1205/index.m3u8
 https://cdn3.wowza.com/5/M0lyamVmM2JWcjhQ/hillsboroughcounty/G2155_002/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="His Glory TV" tvg-country="US" tvg-category="General" tvg-id="HisGloryTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/hisglorytv-us.png" group-title="United States",His Glory TV
 https://customer-6itfaqopbksp5p0q.cloudflarestream.com/3972e89fb79bf6d6dd2a16c75455087a/manifest/video.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="History" tvg-country="US" tvg-category="Documentary" tvg-id="History.us@East" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/history-us.png" group-title="United States",History
-http://212.5.144.156:8080/history/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="History Hit" tvg-country="US" tvg-category="Documentary" tvg-id="HistoryHit.uk@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/historyhit-uk.png" group-title="United States",History Hit
 https://lds-timeline-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-language="English;Spanish" tvg-name="HLN" tvg-country="US" tvg-category="News" tvg-id="HLN.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/hln-us.png" group-title="United States",HLN
@@ -2745,8 +2803,6 @@ https://jmp2.uk/plu-60549e98061b5f000776866a.m3u8
 https://amg01540-amg01540c1-amgplt0095.playout.now3.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Investiga US" tvg-country="US" tvg-category="Series" tvg-id="Investiga.us@US" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/investiga-us.png" group-title="United States",Investiga US
 https://jmp2.uk/plu-5cf96b8f4f1ca3f0629f4bf1.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Investigation Discovery" tvg-country="US" tvg-category="Documentary" tvg-id="InvestigationDiscovery.us@East" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/investigationdiscovery-us.png" group-title="United States",Investigation Discovery
-http://212.5.144.156:8080/id/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="INWILD" tvg-country="US" tvg-category="Documentary" tvg-id="INWILD.nl@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/inwild-nl.png" group-title="United States",INWILD
 https://amg00861-terninternation-inwild-samsunguk-w5wic.amagi.tv/playlist/amg00861-terninternation-inwild-samsunguk/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="ION Plus" tvg-country="US" tvg-category="Entertainment" tvg-id="IONPlus.us@East" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/ionplus-us.png" group-title="United States",ION Plus
@@ -2803,8 +2859,6 @@ https://jmp2.uk/plu-5db0ad56edc89300090d2ebb.m3u8
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 #EXTINF:-1 tvg-language="Armenian;English" tvg-name="KIIO-LD 10.1" tvg-country="US" tvg-category="Culture" tvg-id="KIIOLD101.us@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/kiiold101-us.png" group-title="United States",KIIO-LD 10.1
 http://livestream.usatv.com/hls/master-iUSATVLIVENET.m3u8
-#EXTINF:-1 tvg-language="Armenian;English" tvg-name="KIIO-LD 10.4" tvg-country="US" tvg-category="Culture" tvg-id="KIIOLD104.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/kiiold104-us.png" group-title="United States",KIIO-LD 10.4
-https://streamer1.connectto.com/AABC_WEB_1201/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="KMCT-TV 39.1" tvg-country="US" tvg-category="Entertainment" tvg-id="KMCTTV391.us@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/kmcttv391-us.png" group-title="United States",KMCT-TV 39.1
 https://wggstv16.ddns.net:9953/hls/KMCT1.m3u8
 #EXTINF:-1 tvg-language="Spanish" tvg-name="KNino" tvg-country="US" tvg-category="Entertainment" tvg-id="KNino.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/knino-us.png" group-title="United States",KNino
@@ -2831,12 +2885,12 @@ https://api.v3.invintus.com/StreamURI/persis/2147483647/KTOO360TV.stream/media.m
 https://jk3lzkn4lw79-hls-live.5centscdn.com/VTN2/bcaafe9ad8d42834b08e762ac58596b8.sdp/playlist.m3u8
 #EXTINF:-1 tvg-language="English;Spanish" tvg-name="La Voz de Jesus HD" tvg-country="US" tvg-category="Religious" tvg-id="LaVozdeJesusHD.do@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/lavozdejesushd-do.png" group-title="United States",La Voz de Jesus HD
 https://183.giatvcdn.com/giatvplayout7/giatv-208429/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="LA36" tvg-country="US" tvg-category="Education" tvg-id="LA36.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/la36-us.png" group-title="United States",LA36
+https://reflect-channel36-la.cablecast.tv/live-3/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Lacrosse TV" tvg-country="US" tvg-category="Sports" tvg-id="LacrosseTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/lacrossetv-us.png" group-title="United States",Lacrosse TV
 https://a-cdn.klowdtv.com/live2/lsn_720p/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Lake Havasu City 4" tvg-country="US" tvg-category="Legislative" tvg-id="LakeHavasuCity4.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/lakehavasucity4-us.png" group-title="United States",Lake Havasu City 4
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/lakehavasucity/G0643_003/playlist.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Las Vegas Tonight with Dale Davidson" tvg-country="US" tvg-category="General" tvg-id="LasVegasTonightwithDaleDavidson.us@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/lasvegastonightwithdaledavidson-us.png" group-title="United States",Las Vegas Tonight with Dale Davidson
-https://cdn.vegasplus.us/vegas/lasvegastonight/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Latino Channel TV" tvg-country="US" tvg-category="General" tvg-id="LatinoChannelTV.us@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/latinochanneltv-us.png" group-title="United States",Latino Channel TV
 https://cdn.vegasplus.us/vegas/latch/playlist.m3u8
 #EXTINF:-1 tvg-language="English;Spanish" tvg-name="LATV" tvg-country="US" tvg-category="Entertainment" tvg-id="LATV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/latv-us.png" group-title="United States",LATV
@@ -3003,8 +3057,14 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-wfld-lgus/playlist
 https://live-streaming-mcdn.api.graylive.quickplay.com/woio-xos1-input-1/woio-xos1-input-1.isml/woio-xos1-input-1-audio_eng=96000-video=388000.m3u8
 #EXTINF:-1 tvg-language="Persian" tvg-name="Mohabat TV" tvg-country="US" tvg-category="Religious" tvg-id="MohabatTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/mohabattv-us.png" group-title="United States",Mohabat TV
 http://media.mohabat.tv:1935/live_transcoder/ngrp:mohabat.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Monroe Community Media Education Channel" tvg-country="US" tvg-category="Education" tvg-id="MonroeCommunityMediaEducationChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/monroecommunitymediaeducationchannel-us.png" group-title="United States",Monroe Community Media Education Channel
+https://reflect-monroe-public-access.cablecast.tv/live-4/live/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Monroe Community Media Public Access Channel" tvg-country="US" tvg-category="General" tvg-id="MonroeCommunityMediaPublicAccessChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/monroecommunitymediapublicaccesschannel-us.png" group-title="United States",Monroe Community Media Public Access Channel
+https://reflect-monroe-public-access.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Monroe County TV" tvg-country="US" tvg-category="Legislative" tvg-id="MonroeCountyTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/monroecountytv-us.png" group-title="United States",Monroe County TV
 https://castus-vod-dev.s3.amazonaws.com/vod_clients/monroe/live/ch1/video.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Montgomery Channel" tvg-country="US" tvg-category="General" tvg-id="MontgomeryChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/montgomerychannel-us.png" group-title="United States",Montgomery Channel
+https://reflect-montgomerycommunitymedia.cablecast.tv/live-11/live/stream-4/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="More True Crime" tvg-country="US" tvg-category="Series" tvg-id="MoreTrueCrime.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/moretruecrime-us.png" group-title="United States",More True Crime
 https://jmp2.uk/plu-6532e6a9bdf3cf000887ab29.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="More TV Drama" tvg-country="US" tvg-category="Entertainment" tvg-id="MoreTVDrama.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/moretvdrama-us.png" group-title="United States",More TV Drama
@@ -3065,8 +3125,6 @@ https://livestream.telvue.com/natickpegasus1/f7b44cfafd5c52223d5498196c8a2e7b.sd
 https://livestream.telvue.com/natickpegasus3/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Natick Public Access Channel" tvg-country="US" tvg-category="General" tvg-id="NatickPublicAccessChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/natickpublicaccesschannel-us.png" group-title="United States",Natick Public Access Channel
 https://livestream.telvue.com/natickpegasus2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="National Geographic" tvg-country="US" tvg-category="Documentary" tvg-id="NationalGeographic.us@East" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/nationalgeographic-us.png" group-title="United States",National Geographic
-http://212.5.144.156:8080/natgeo/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="NBA TV" tvg-country="US" tvg-category="Sports" tvg-id="NBATV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/nbatv-us.png" group-title="United States",NBA TV
 http://23.237.104.106:8080/USA_NBA/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="NBC Comedy Vault" tvg-country="US" tvg-category="Comedy" tvg-id="NBCComedyVault.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/nbccomedyvault-us.png" group-title="United States",NBC Comedy Vault
@@ -3151,8 +3209,6 @@ https://d265y4sk8257lt.cloudfront.net/nh.m3u8
 https://jmp2.uk/plu-5ca6748a37b88b269472dad9.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Nickelodeon en espanol" tvg-country="US" tvg-category="Kids" tvg-id="Nickelodeonenespanol.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/nickelodeonenespanol-us.png" group-title="United States",Nickelodeon en espanol
 https://jmp2.uk/plu-5d8d08395f39465da6fb3ec4.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Nickelodeon Pluto TV" tvg-country="US" tvg-category="Animation" tvg-id="NickelodeonPlutoTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/nickelodeonplutotv-us.png" group-title="United States",Nickelodeon Pluto TV
-https://jmp2.uk/plu-5ca673e0d0bd6c2689c94ce3.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Ninja Kidz TV" tvg-country="US" tvg-category="Kids" tvg-id="NinjaKidzTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/ninjakidztv-us.png" group-title="United States",Ninja Kidz TV
 https://playworksdigital-ninjakidztv-1-us.xumo.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="NMBTV" tvg-country="US" tvg-category="Legislative" tvg-id="NMBTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/nmbtv-us.png" group-title="United States",NMBTV
@@ -3225,6 +3281,8 @@ http://23.237.104.106:8080/USA_PARAMOUNT_NETWORK/index.m3u8
 https://jmp2.uk/plu-5ff8c708653d080007361b14.m3u8
 #EXTINF:-1 tvg-language="Persian" tvg-name="Pars TV" tvg-country="US" tvg-category="General" tvg-id="ParsTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/parstv-us.png" group-title="United States",Pars TV
 https://parshls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Pasco TV" tvg-country="US" tvg-category="Legislative" tvg-id="PascoTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/pascotv-us.png" group-title="United States",Pasco TV
+https://cpcdn.azureedge.net/PASCOCOFLLIVE1/PASCOCOFLLIVE1/playlist.m3u8
 #EXTINF:-1 tvg-language="Persian" tvg-name="Payam Javan TV" tvg-country="US" tvg-category="Education" tvg-id="PayamJavanTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/payamjavantv-us.png" group-title="United States",Payam Javan TV
 https://uni01rtmp.tulix.tv/kensecure/pjtv.stream/playlist.m3u8
 #EXTINF:-1 tvg-language="Dari (Parsi);Pashto" tvg-name="Payam-e-Afghan TV" tvg-country="US" tvg-category="General" tvg-id="PayameAfghanTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/payameafghantv-us.png" group-title="United States",Payam-e-Afghan TV
@@ -3233,8 +3291,6 @@ https://g5nl6xx5lpq6-hls-live.5centscdn.com/live1234/2621b29e501b445fabf227b0861
 https://hls.keshishhamid.live/hls/stream.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Payvand TV" tvg-country="US" tvg-category="News" tvg-id="PayvandTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/payvandtv-us.png" group-title="United States",Payvand TV
 https://tgn.bozztv.com/cus01/ucur1/Payvand/index.m3u8
-#EXTINF:-1 tvg-language="Persian" tvg-name="PBC Tapesh TV" tvg-country="US" tvg-category="General" tvg-id="PBCTapeshTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/pbctapeshtv-us.png" group-title="United States",PBC Tapesh TV
-https://iptv.tapesh.tv/tapesh/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="PBC TV Channel 20" tvg-country="US" tvg-category="Legislative" tvg-id="PBCTVChannel20.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/pbctvchannel20-us.png" group-title="United States",PBC TV Channel 20
 https://pbcvideostreams1.pbc.gov/memfs/1af49f9a-6b90-4ec2-a640-7f65ceebed4a.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="PBR RidePass" tvg-country="US" tvg-category="Sports" tvg-id="PBRRidePass.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/pbrridepass-us.png" group-title="United States",PBR RidePass
@@ -3525,6 +3581,8 @@ https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/scottsdale/G0040_007/chunklist.m3u8
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2240
 #EXTINF:-1 tvg-language="English" tvg-name="Scripps News" tvg-country="US" tvg-category="News" tvg-id="ScrippsNews.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/scrippsnews-us.png" group-title="United States",Scripps News
 https://aka-live1050.delivery.roku.com/a48b72c9-5755-4ede-9dac-9e51e4ca5cc8/t2-origin/out/v1/live.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="SCVTV" tvg-country="US" tvg-category="General" tvg-id="SCVTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/scvtv-us.png" group-title="United States",SCVTV
+https://reflect-scvtv.cablecast.tv/live-2/live/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="SEC Network" tvg-country="US" tvg-category="Other" tvg-id="SECNetwork.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/secnetwork-us.png" group-title="United States",SEC Network
 http://23.237.104.106:8080/USA_SEC_NETWORK/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="SFGovTV" tvg-country="US" tvg-category="Legislative" tvg-id="SFGovTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/sfgovtv-us.png" group-title="United States",SFGovTV
@@ -3535,8 +3593,6 @@ https://cdn3.wowza.com/5/ZFdxUW9BQWt2UWRL/sanfrancisco/G0051_050/playlist.m3u8
 https://rpn.bozztv.com/gusa/gusa-stgn/index.m3u8
 #EXTINF:-1 tvg-language="Persian" tvg-name="Shabakeh 7" tvg-country="US" tvg-category="Entertainment" tvg-id="Shabakeh7.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/shabakeh7-us.png" group-title="United States",Shabakeh 7
 https://sh7hls.wns.live/hls/stream.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Shemaroo Bollywood" tvg-country="US" tvg-category="Other" tvg-id="ShemarooBollywood.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/shemaroobollywood-us.png" group-title="United States",Shemaroo Bollywood
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Shop LC" tvg-country="US" tvg-category="Shop" tvg-id="ShopLC.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/shoplc-us.png" group-title="United States",Shop LC
 https://cdn-shop-lc-01.akamaized.net/Content/DASH_DASH/Live/channel(ott)/master.mpd
 #EXTINF:-1 tvg-language="English" tvg-name="Shout! Factory TV" tvg-country="US" tvg-category="General" tvg-id="ShoutFactoryTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/shoutfactorytv-us.png" group-title="United States",Shout! Factory TV
@@ -3575,8 +3631,6 @@ https://wurlsonypicturestv.global.transmit.live/hls/68deeb1c0238cda82df543dd/v1/
 https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Sound View Community Media" tvg-country="US" tvg-category="General" tvg-id="SoundViewCommunityMedia.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/soundviewcommunitymedia-us.png" group-title="United States",Sound View Community Media
 https://livestream.telvue.com/soundviewcmt2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Spike Outdoors" tvg-country="US" tvg-category="Outdoor" tvg-id="SpikeOutdoors.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/spikeoutdoors-us.png" group-title="United States",Spike Outdoors
-https://jmp2.uk/plu-5c393cad2de254456f7ef8c2.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Spike Pluto TV" tvg-country="US" tvg-category="Documentary" tvg-id="SpikePlutoTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/spikeplutotv-us.png" group-title="United States",Spike Pluto TV
 https://jmp2.uk/plu-5812bcc8237a6ff45d16c407.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Spirit TV" tvg-country="US" tvg-category="Music" tvg-id="SpiritTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/spirittv-us.png" group-title="United States",Spirit TV
@@ -3585,6 +3639,8 @@ https://cdnlive.myspirit.tv/LS-ATL-43240-2/index.m3u8
 https://sportsgrid-tribal.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="SPTV" tvg-country="US" tvg-category="Legislative" tvg-id="SPTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/sptv-us.png" group-title="United States",SPTV
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/stpete/G0187_003/playlist.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="St Lucie Public Schools" tvg-country="US" tvg-category="Education" tvg-id="StLuciePublicSchools.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/stluciepublicschools-us.png" group-title="United States",St Lucie Public Schools
+https://reflect-stlucie-ps-fl.cablecast.tv/live-1/live/stream-1/WIFI-1896k-720p.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Star Action" tvg-country="US" tvg-category="Movies" tvg-id="StarAction.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/staraction-us.png" group-title="United States",Star Action
 http://85.237.89.159:3342/ar-s/STAR-Action-HD/index.m3u8
 #EXTINF:-1 tvg-language="Greek" tvg-name="Star Channel International" tvg-country="US" tvg-category="Entertainment" tvg-id="StarChannelInternational.gr@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/starchannelinternational-gr.png" group-title="United States",Star Channel International
@@ -3643,8 +3699,6 @@ https://livestream.telvue.com/lompoccmttv3/f7b44cfafd5c52223d5498196c8a2e7b.sdp/
 https://rakutenaa-tm-intl-aus-rakuten-eu-n1gtg.amagi.tv/playlist/rakutenAA-tm-intl-aus-rakuten-eu/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Tastemade Travel" tvg-country="US" tvg-category="Cooking" tvg-id="TastemadeTravel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tastemadetravel-us.png" group-title="United States",Tastemade Travel
 https://d6ef3usc6d9cl.cloudfront.net/Tastemade_Travel.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="TBN Armenia" tvg-country="US" tvg-category="Other" tvg-id="TBNArmenia.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tbnarmenia-us.png" group-title="United States",TBN Armenia
-https://164475.gvideo.io/mpegts/164475_650646/master_mpegts.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="TBN Pacific" tvg-country="US" tvg-category="Other" tvg-id="TBNPacific.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tbnpacific-us.png" group-title="United States",TBN Pacific
 https://broadcast.tbnpacific.org.au:4430/stream/TBNPacificTV/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="TBN Ukraine" tvg-country="US" tvg-category="Other" tvg-id="TBNUkraine.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tbnukraine-us.png" group-title="United States",TBN Ukraine
@@ -3679,6 +3733,8 @@ https://d368vp0qqzvkid.cloudfront.net/11603/88889705/hls/master.m3u8?ads.xumo_ch
 http://45.5.117.57:8900/play/a058/index.m3u8
 #EXTINF:-1 tvg-language="Spanish" tvg-name="Telemundo WTMO-CD" tvg-country="US" tvg-category="General" tvg-id="Telemundo.us@WTMOCD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/telemundo-us.png" group-title="United States",Telemundo WTMO-CD
 https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/adcee832-5511-4ed1-bcef-58616c0f530f/4.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Temecula TV" tvg-country="US" tvg-category="Other" tvg-id="TemeculaTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/temeculatv-us.png" group-title="United States",Temecula TV
+https://reflect-temecula.cablecast.tv/live-2/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Tempe 11" tvg-country="US" tvg-category="Other" tvg-id="Tempe11.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tempe11-us.png" group-title="United States",Tempe 11
 https://cdn3.wowza.com/5/cFh0V0QwUVc4SDl2/tempe/G0355_003/chunklist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Tennis Channel" tvg-country="US" tvg-category="Sports" tvg-id="TennisChannel.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tennischannel-us.png" group-title="United States",Tennis Channel
@@ -3781,16 +3837,12 @@ https://fuel-streaming-prod01.fuelmedia.io/v1/sem/cb165faa-41c9-42ad-83ee-ad5ca9
 https://fuel-streaming-prod01.fuelmedia.io/v1/sem/b29d27bb-88af-42d1-937a-5bdf76b71c17.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="TMZ" tvg-country="US" tvg-category="Entertainment" tvg-id="TMZ.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tmz-us.png" group-title="United States",TMZ
 https://aegis-cloudfront-1.tubi.video/57c1fa3c-566b-4998-b6de-d6de67031d99/index.m3u8
-#EXTINF:-1 tvg-language="English;Spanish" tvg-name="TNT" tvg-country="US" tvg-category="General" tvg-id="TNT.us@East" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tnt-us.png" group-title="United States",TNT
-http://212.5.144.156/tnt/index.m3u8
 #EXTINF:-1 tvg-language="English;Spanish;Portuguese" tvg-name="TNT West" tvg-country="US" tvg-category="General" tvg-id="TNT.us@West" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tnt-us.png" group-title="United States",TNT West
 https://turnerlive.warnermediacdn.com/hls/live/2023170/tntwest/slate/VIDEO_0_3564000.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="TODAY All Day" tvg-country="US" tvg-category="News" tvg-id="TODAYAllDay.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/todayallday-us.png" group-title="United States",TODAY All Day
 https://d37kx062o4ii0p.cloudfront.net/master.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Tom And Jerry" tvg-country="US" tvg-category="Kids" tvg-id="TomAndJerry.do@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tomandjerry-do.png" group-title="United States",Tom And Jerry
 https://183.giatvcdn.com/giatvplayout7/giatv-208314/playlist.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="Tom Sings TV" tvg-country="US" tvg-category="Kids" tvg-id="TomSingsTV.us@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tomsingstv-us.png" http-referrer="https://tomsings.bamboo-cloud.com/channel/6af043956f49ecefd30d7fd4" group-title="United States",Tom Sings TV
-https://vodcdn.bamboo-cloud.com/livehls/6af043956f49ecefd30d7fd4/master.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Toonami Aftermath" tvg-country="US" tvg-category="Animation" tvg-id="ToonamiAftermath.us@East" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/toonamiaftermath-us.png" group-title="United States",Toonami Aftermath
 http://api.toonamiaftermath.com:3000/est/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Toonami Aftermath West" tvg-country="US" tvg-category="Animation" tvg-id="ToonamiAftermath.us@West" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/toonamiaftermath-us.png" group-title="United States",Toonami Aftermath West
@@ -3833,6 +3885,8 @@ https://jmp2.uk/plu-5d40bebc5e3d2750a2239d7e.m3u8
 https://jmp2.uk/plu-5c2d64ffbdf11b71587184b8.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="TV Panou" tvg-country="US" tvg-category="General" tvg-id="TVPanou.ht@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvpanou-ht.png" group-title="United States",TV Panou
 http://tvpanoucom.srfms.com:1935/tvpanoucom/livestream/playlist.m3u8
+#EXTINF:-1 tvg-language="Spanish" tvg-name="TV Quisqueya" tvg-country="US" tvg-category="General" tvg-id="TVQuisqueya.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvquisqueya-us.png" group-title="United States",TV Quisqueya
+https://cloud5.livescast.com:19360/canaltvquisqueya/canaltvquisqueya.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="TV4" tvg-country="US" tvg-category="Legislative" tvg-id="TV4.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tv4-us.png" group-title="United States",TV4
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/bullheadcity/G0860_002/playlist.m3u8
 #EXTINF:-1 tvg-language="Spanish" tvg-name="TVE Internacional America HD" tvg-country="US" tvg-category="Other" tvg-id="TVEInternacionalAmerica.es@HD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tveinternacionalamerica-es.png" group-title="United States",TVE Internacional America HD
@@ -4017,6 +4071,8 @@ https://stream.swagit.com/live-edge/whiteplainsny/smil:std-4x3-1-b/playlist.m3u8
 https://stream.swagit.com/live-edge/hastingsonhudsonny/smil:std-4x3-1-a/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Wild 'N Out" tvg-country="US" tvg-category="Series" tvg-id="WildNOut.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/wildnout-us.png" group-title="United States",Wild 'N Out
 https://jmp2.uk/plu-5d48678d34ceb37d3c458a55.m3u8
+#EXTINF:-1 tvg-language="English" tvg-name="Willamette Falls Media Center" tvg-country="US" tvg-category="General" tvg-id="WillametteFallsMediaCenter.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/willamettefallsmediacenter-us.png" group-title="United States",Willamette Falls Media Center
+https://reflect-greater-clackamas-county-tv.cablecast.tv/live-7/live/stream-4/live.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Willow Sports" tvg-country="US" tvg-category="Sports" tvg-id="WillowSports.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/willowsports-us.png" group-title="United States",Willow Sports
 https://d36r8jifhgsk5j.cloudfront.net/Willow_TV.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Window TV" tvg-country="US" tvg-category="Other" tvg-id="WindowTV.us@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/windowtv-us.png" group-title="United States",Window TV
@@ -4113,6 +4169,8 @@ https://jmp2.uk/plu-68679fc6bb46d0bdd38ac9a4.m3u8
 https://janya-ayaztv.vgcdn.net/ptnr-WebApp/title-Ayaz_TV/v1/vglive-sk-934820/main.m3u8
 #EXTINF:-1 tvg-language="Azerbaijani" tvg-name="Az Star TV" tvg-country="CA" tvg-category="General" tvg-id="AzStarTV.ca@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/azstartv-ca.png" group-title="Canada",Az Star TV
 https://live.livestreamtv.ca/azstar/amlst:azstar/playlist.m3u8
+#EXTINF:-1 tvg-language="Bengali" tvg-name="Azan TV" tvg-country="CA" tvg-category="Religious" tvg-id="AzanTV.ca@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/azantv-ca.png" group-title="Canada",Azan TV
+https://dbcanada.sonarbanglatv.com/azantv/atv/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Bar Rescue CA" tvg-country="CA" tvg-category="Series" tvg-id="BarRescue.us@CA" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/barrescue-us.png" group-title="Canada",Bar Rescue CA
 https://jmp2.uk/plu-655f2ee6c0fc88000877d26c.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Best of The Drew Barrymore Show" tvg-country="CA" tvg-category="Entertainment" tvg-id="BestofTheDrewBarrymoreShow.us@CA" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/bestofthedrewbarrymoreshow-us.png" group-title="Canada",Best of The Drew Barrymore Show
@@ -4149,6 +4207,8 @@ https://jmp2.uk/plu-62e91af00c43540007f2bb43.m3u8
 https://jmp2.uk/plu-64f8a408bd341e000818fcda.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="CP24" tvg-country="CA" tvg-category="News" tvg-id="CP24.ca@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/cp24-ca.png" group-title="Canada",CP24
 https://tvsen6.aynaott.com/cp24/index.m3u8
+#EXTINF:-1 tvg-language="Bengali" tvg-name="DesheBideshe TV" tvg-country="CA" tvg-category="General" tvg-id="DesheBidesheTV.ca@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/deshebideshetv-ca.png" group-title="Canada",DesheBideshe TV
+https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8
 #EXTINF:-1 tvg-language="Bengali" tvg-name="Deshi TV" tvg-country="CA" tvg-category="General" tvg-id="DeshiTV.ca@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/deshitv-ca.png" group-title="Canada",Deshi TV
 https://deshitv.deshitv24.net/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Doc Martin" tvg-country="CA" tvg-category="Series" tvg-id="DocMartin.us@CA" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/docmartin-us.png" group-title="Canada",Doc Martin
@@ -4313,6 +4373,8 @@ https://jmp2.uk/plu-62e9289f8d467f0007fbc701.m3u8
 https://jmp2.uk/plu-62bdacc96a3751000811842d.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Prime Asia TV" tvg-country="CA" tvg-category="Other" tvg-id="PrimeAsiaTV.ca@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/primeasiatv-ca.png" group-title="Canada",Prime Asia TV
 http://primeasia.selfip.net/Samsung/index.m3u8
+#EXTINF:-1 tvg-language="Bengali" tvg-name="Probashi TV News" tvg-country="CA" tvg-category="News" tvg-id="ProbashiTVNews.ca@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/probashitvnews-ca.png" group-title="Canada",Probashi TV News
+http://158.69.24.53:8080/probashi_tv/index.m3u8
 #EXTINF:-1 tvg-language="Panjabi" tvg-name="PTC Punjabi Canada" tvg-country="CA" tvg-category="Other" tvg-id="PTCPunjabiCanada.ca@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/ptcpunjabicanada-ca.png" group-title="Canada",PTC Punjabi Canada
 https://stream.ottlive.co.in/ptccanada/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Puto TV Classic TV Crime Drama" tvg-country="CA" tvg-category="Classic" tvg-id="PutoTVClassicTVCrimeDrama.us@CA" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/putotvclassictvcrimedrama-us.png" group-title="Canada",Puto TV Classic TV Crime Drama
@@ -4505,8 +4567,6 @@ http://tv1.intv.mk:1935/live2/folkklub/index.m3u8
 https://skynewsau-live-premium.akamaized.net/hls/live/2105307/foxsportsnews/live_1080p.m3u8
 #EXTINF:-1 tvg-language="Macedonian" tvg-name="INTV Australia" tvg-country="AU" tvg-category="Music" tvg-id="INTVAustralia.au@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/intvaustralia-au.png" group-title="Australia",INTV Australia
 http://tv1.intv.mk:1935/live/intv/index.m3u8
-#EXTINF:-1 tvg-language="Bengali" tvg-name="JonmoBhumi TV" tvg-country="AU" tvg-category="General" tvg-id="JonmoBhumiTV.au@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/jonmobhumitv-au.png" group-title="Australia",JonmoBhumi TV
-https://jtvs.ncare.live/Gznr84Woj7UEye3OPVeWq2ForboWAgdV/jonmobhumitv.stream/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="Kordia TV" tvg-country="AU" tvg-category="Other" tvg-id="KordiaTV.nz@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/kordiatv-nz.png" group-title="Australia",Kordia TV
 https://ptvlive.kordia.net.nz/out/v1/3fc2254c865a457c8d7fbbce227a2aae/index.m3u8
 #EXTINF:-1 tvg-language="Italian" tvg-name="Mediaset Italia Australia" tvg-country="AU" tvg-category="General" tvg-id="MediasetItalia.it@Australia" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/mediasetitalia-it.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Australia",Mediaset Italia Australia
@@ -4541,8 +4601,6 @@ https://636ffd31f0e12.streamlock.net/RacingStream1/RacingStream1/playlist.m3u8
 https://stream.swamiji.tv/YogaIPTV/smil:YogaStreamAU.smil/playlist.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="The Pet Collective Australia" tvg-country="AU" tvg-category="Family" tvg-id="ThePetCollective.us@Australia" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/thepetcollective-us.png" group-title="Australia",The Pet Collective Australia
 https://the-pet-collective-international-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-language="English" tvg-name="ticker News" tvg-country="AU" tvg-category="News" tvg-id="tickerNews.au@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tickernews-au.png" group-title="Australia",ticker News
-https://live-hls-7agy.livepush.io/live_abr_cdn/nsitWAl1pTZtwca/emnmZbKZcO8RfwJR/index.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="TVSN" tvg-country="AU" tvg-category="Shop" tvg-id="TVSN.au@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/tvsn-au.png" group-title="Australia",TVSN
 https://tvsnhlslivetest.akamaized.net/hls/live/2034711/TVSN-MSL4/master.m3u8
 #EXTINF:-1 tvg-language="English" tvg-name="WeatherSpy" tvg-country="AU" tvg-category="Weather" tvg-id="WeatherSpy.au@SD" tvg-logo="https://raw.githubusercontent.com/adailtononline-cmd/Jeremy/main/logos/weatherspy-au.png" group-title="Australia",WeatherSpy
